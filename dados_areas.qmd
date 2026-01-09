@@ -1,0 +1,70 @@
+---
+title: "Dados de Áreas"
+---
+
+<a id="dados-de-areas"></a>
+
+Dados de áreas (areal data) são observações agregadas em unidades espaciais discretas, como bairros, municípios ou regiões administrativas. Essas unidades são representadas por polígonos em um sistema de informação geográfica (SIG). Exemplos comuns incluem taxas de criminalidade por bairro, incidência de doenças por município e dados socioeconômicos por região.
+
+Nesta abordagem, modelamos uma variável resposta agregada em polígonos (ex: taxas de crime por bairro) usando variáveis independentes, corrigindo a autocorrelação espacial via matriz de pesos $W$.
+
+- **Pacotes:** `spdep`, `spatialreg`.
+- **Referência:** Anselin (1988).
+
+### Cálculos e Intuições
+
+- **Matriz de pesos $W$:** constrói-se a partir da vizinhança (por exemplo Rainha/Queen). Cada elemento $w_{ij}$ indica influência do polígono $j$ sobre $i$. Em estilo row-standardized ("W"), cada linha é dividida pela soma da linha, de modo que $\sum_j w_{ij}=1$.
+
+- **Moran's I (teste de autocorrelação espacial):**
+$$I = \frac{n}{S_0} \frac{\sum_{i}\sum_{j} w_{ij}(y_i-\bar{y})(y_j-\bar{y})}{\sum_i (y_i-\bar{y})^2},$$ 
+onde $S_0=\sum_i\sum_j w_{ij}$ e $n$ é o número de polígonos. No R usamos `lm.morantest()` que calcula $I$ nos resíduos do OLS.
+
+- **Modelos espaciais (intuição matemática):**
+  - Spatial Lag (SAR):
+  $$Y = \rho W Y + X\beta + \varepsilon, \quad \varepsilon\sim N(0,\sigma^2 I).$$ 
+A estimação procura $\rho,\beta,\sigma^2$ maximizando a verossimilhança (ou por métodos de momentos). No R usamos `lagsarlm()` que internamente otimiza a verossimilhança do sistema $(I-\rho W)Y = X\beta + \varepsilon$.
+
+  - Spatial Error (SEM):
+  $$Y = X\beta + u, \quad u = \lambda W u + \xi, \quad \xi\sim N(0,\sigma^2 I).$$ 
+Aqui a dependência aparece no termo de erro e é estimada via `errorsarlm()`.
+
+- Passos práticos para análises:
+  1. Ajustar OLS e calcular resíduos: `res = residuals(modelo_ols)`.
+  2. Calcular Moran's I nos resíduos: `lm.morantest(modelo_ols, listw)`; se significativo, considerar modelos espaciais.
+  3. Ajustar SAR/SEM e comparar AIC/logLik para selecionar modelo.
+  4. Interpretar `beta` condicionais ao efeito espacial estimado (rho ou lambda).
+
+```{.r}
+library(spdep)
+library(spatialreg)
+
+# Carregando dados clássicos de Crime em Columbus (Anselin, 1988)
+data(columbus)
+
+# 1. Definir a Vizinhança e Matriz de Pesos (W)
+# Cria lista de vizinhos (critério Rainha/Queen)
+str(columbus)
+nb <- poly2nb(columbus)
+# Padroniza a matriz pelas linhas (W)
+listw <- nb2listw(nb, style = "W")
+
+# 2. Modelo OLS (Regressão Linear Padrão)
+# Crime ~ Renda (INC) + Valor da Casa (HOVAL)
+modelo_ols <- lm(CRIME ~ INC + HOVAL, data = columbus)
+
+# Teste de Moran nos resíduos (verifica se sobrou dependência espacial)
+lm.morantest(modelo_ols, listw)
+
+# 3. Modelos Espaciais com Covariáveis
+
+# Modelo SAR (Spatial Lag Model) - O crime vizinho influencia o crime local
+# Equação: Y = rho*W*Y + X*beta + erro
+modelo_sar <- lagsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
+
+# Modelo SEM (Spatial Error Model) - O erro vizinho influencia o erro local
+# Equação: Y = X*beta + u, onde u = lambda*W*u + erro
+modelo_sem <- errorsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
+
+# Comparação dos Resultados
+summary(modelo_sar)
+```

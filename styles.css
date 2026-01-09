@@ -1,0 +1,80 @@
+/* CSS styles - Minicurso de Estatística Espacial em R */
+
+/* ===== Sidebar Custom Section (Book + GPS Link) ===== */
+#sidebar-custom-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+#sidebar-custom-section .book-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 3px solid #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#sidebar-custom-section .book-image:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+#sidebar-custom-section .book-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+#sidebar-custom-section .gps-link {
+  display: inline-block;
+  background-color: #0b5394;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+#sidebar-custom-section .gps-link:hover {
+  background-color: #0742a6;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  #sidebar-custom-section { display: none; }
+}
+
+/* Aumenta a largura da coluna de conteúdo principal */
+.body-content {
+  max-width: 1500px !important;
+}
+
+/* Muda a cor de fundo dos itens da barra lateral */
+.sidebar-navigation .nav-link {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+/* Muda a cor ao passar o mouse */
+.sidebar-navigation .nav-link:hover {
+    background-color: #444 !important;
+}
+
+/* Muda a cor do item ativo/selecionado */
+.sidebar-navigation .nav-link.active {
+    background-color: #303030 !important;
+    font-weight: bold;
+}

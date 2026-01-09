@@ -1,0 +1,48 @@
+<a id="processos-pontuais"></a>
+
+## Processos Pontuais
+
+Aqui modelamos a intensidade (densidade de pontos) em função de covariáveis ambientais.
+
+Pacote: spatstat. Referências: Illian et al. (2008) e Diggle (2013).
+
+### Cálculos passo a passo (Processos Pontuais)
+
+- **Modelo Poisson Inhomogêneo (log-linear):**
+  $$\log \lambda(s) = \beta_0 + \sum_{k}\beta_k x_k(s).$$ 
+O ajuste por máxima verossimilhança discretiza a janela ou usa aproximações de Poisson pontual; `ppm()` resolve o problema maximizando a verossimilhança baseada na função de intensidade.
+
+- **LGCP (Cox Log-Gaussiano):**
+  $$\lambda(s) = \exp\{X(s)\beta + S(s)\},$$ 
+onde $S(s)$ é um Campo Gaussiano com variograma especificado. A inferência estima $\beta$ e os parâmetros do campo (variância e escala) via métodos aproximados (ex.: Laplace, Palm likelihood, ou métodos de mínimos quadrados dependendo do `method`). Em R usamos `kppm(..., clusters = "LGCP")`.
+
+- Passos práticos em R:
+  1. Visualizar pontos e covariáveis: `plot(bei.extra)` + `plot(bei, add=TRUE)`.
+  2. Ajustar `ppm()` para efeitos fixos; verificar resíduos (P-P plot) para falta de ajuste.
+  3. Ajustar `kppm(..., clusters = "LGCP")`; inspecionar `Trend coefficients` (betas) e `Cluster parameters` (sigma2, escala).
+
+
+```{.r}
+library(spatstat)
+
+# Carregando dados de árvores (bei) e covariáveis (bei.extra: elevação e gradiente)
+data(bei) 
+
+# Visualizando
+plot(bei.extra$grad, main = "Covariável: Gradiente do Terreno")
+plot(bei, add = TRUE, pch = ".", cols = "white")
+
+# Abordagem 1: Poisson Inhomogêneo (Illian et al., 2008)
+# A intensidade lambda depende deterministícamente do Gradiente
+# log(lambda) = beta0 + beta1 * gradiente
+modelo_poisson <- ppm(bei ~ grad, data = bei.extra)
+
+# Abordagem 2: LGCP com Covariável (Diggle, 2013)
+# A intensidade depende do Gradiente + um Cluster Estocástico (Campo Gaussiano)
+# Isso captura a agregação que a covariável não explicou.
+modelo_cox <- kppm(bei ~ grad, data = bei.extra, clusters = "LGCP")
+
+# Comparação
+print(modelo_poisson) # Coeficientes da covariável
+print(modelo_cox)     # Coeficientes + Parâmetros do cluster espacial
+```

@@ -1,0 +1,52 @@
+---
+title: "Geoestatística"
+---
+
+## Geoestatística
+
+3.1. Geoestatística com Covariáveis (Krigagem Universal)
+Aqui modelamos uma superfície contínua onde a tendência (média) não é constante, mas depende de uma covariável.
+
+Pacote: gstat.
+
+```{.r}
+#| message: false
+#| warning: false
+library(gstat)
+library(sp)
+
+# Dados de metais pesados no rio Meuse
+data(meuse)
+# Definindo que é um objeto espacial
+coordinates(meuse) = ~x+y
+
+# O variograma é calculado sobre os RESÍDUOS da regressão: log(zinco) ~ sqrt(distancia)
+# Isso remove a tendência explicada pela proximidade do rio.
+v_covariavel <- variogram(log(zinc) ~ sqrt(dist), meuse)
+
+# Ajuste do modelo teórico ao variograma residual
+modelo_v <- fit.variogram(v_covariavel, vgm(1, "Exp", 300, 1))
+
+plot(v_covariavel, modelo_v, main = "Variograma Residual (Krigagem Universal) ")
+
+# Para realizar a predição (Krigagem), usaríamos a função krige:
+#k_univ <- krige(log(zinc) ~ sqrt(dist), meuse, meuse.grid, model = modelo_v)
+
+### Cálculos detalhados (Geoestatística)
+
+- **Variograma empírico:** para lag $h$ estima-se
+  $$\hat{\gamma}(h) = \frac{1}{2N(h)}\sum_{i,j:\|s_i-s_j\|\approx h} (Z(s_i)-Z(s_j))^2,$$ 
+onde $N(h)$ é o número de pares na banda de distância $h$. Em R `variogram()` calcula isto sobre os resíduos da tendência.
+
+- **Ajuste do modelo teórico:** escolhe-se uma forma (Exponencial, Spherical, Matérn) e ajusta-se parâmetros: nugget, sill (partial sill) e range. Em `fit.variogram()` a função minimiza a soma de quadrados ponderada entre o empírico e o teórico.
+
+- **Krigagem (preditor linear ótimo):** para um ponto $s_0$ com média conhecida $m(s)$, 
+  $$\hat{Z}(s_0) = m(s_0) + c_0^T C^{-1} (Z - m),$$ 
+onde $C$ é a matriz de covariâncias entre observações, $c_0$ é vetor de covariâncias entre $s_0$ e observações, e $m$ é a tendência avaliada nas locações. `krige()` resolve esse sistema linear usando o modelo de variograma ajustado.
+
+- Passos práticos:
+  1. Ajustar uma regressão para extrair tendência; calcular resíduos.
+  2. Calcular variograma empírico sobre resíduos: `variogram(res ~ 1, data)`.
+  3. Ajustar modelo teórico: `fit.variogram()`.
+  4. Prever com `krige()` usando a fórmula e o modelo de variograma.
+```

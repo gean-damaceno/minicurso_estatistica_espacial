@@ -1,0 +1,63 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - "Livros/*.jpg"
+    - "Livros/*.png"
+    - "Livros/*.gif"
+  render: 
+    - index.qmd
+    - dados_areas.qmd
+    - processos_pontuais.qmd
+    - geoestatistica.qmd
+
+book:
+  title: "Minicurso de Estatística Espacial"
+  subtitle: "14 a 17 de junho de 2026"
+  author:
+    - name: "Gean Pereira Damaceno"
+      affiliation: "Departamento de Estatística - UFLA"
+  repo-url: https://github.com/gean-damaceno/minicurso_estatistica_espacial # Isto cria o ícone do GitHub automaticamente
+  # como fixar o navbar no topo?
+
+  navbar:
+    title: "Minicurso de Estatística Espacial com R - Congresso de estatística Lima (Peru) 2026"
+    background: primary
+    search: true
+    fixed: true
+
+  chapters:
+    - index.qmd
+    - dados_areas.qmd
+    - processos_pontuais.qmd
+    - geoestatistica.qmd
+
+  sidebar:
+    style: "docked"
+    footer: |
+      <div style="text-align: center; margin-top: 1px; padding-top: 1px; border-top: 1px solid #dee2e6;">
+        <p><strong>Apoio</strong></p>
+        <a href="https://ufla.br/" target="_blank" rel="noopener">
+          <img src="Livros/ufla.gif" alt="UFLA" style="width: 150px; margin: 0.2px;">
+        </a>
+        <a href="https://www.gov.br/gestao/pt-br" target="_blank" rel="noopener">
+          <img src="Livros/mgi.jpg" alt="MGI" style="width: 180px; margin: 5px;">
+        </a>
+        <a href="https://agenciazetta.ufla.br/" target="_blank" rel="noopener">
+          <img src="Livros/zetta.jpg" alt="Zetta" style="width: 140px; margin: 5px;">
+        </a>
+      </div>
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: superhero
+    css: styles.css
+    toc: true
+    toc-title: "índice"
+    grid:
+      body-width: 1200px
+    code-fold: true
+    number-sections: true
+    embed-resources: true

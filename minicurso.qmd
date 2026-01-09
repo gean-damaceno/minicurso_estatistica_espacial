@@ -1,0 +1,131 @@
+---
+title: "Introdução ao Minicurso de Estatística Espacial"
+author: "Gean Pereira Damaceno"
+date: "2026-06-14"
+lang: pt
+---
+
+
+**Introdução**
+
+Este minicurso apresenta métodos para análises espacial em três contextos: dados agregados por áreas, processos pontuais e geoestatística. O público-alvo são todos com conhecimentos básicos em regressão e estatística espacial.
+
+
+### Instalação e execução
+
+Instale os pacotes necessários em uma sessão R (ajuste conforme sua versão):
+
+```r
+install.packages(c(
+  "spdep", "spatialreg", "spatstat.core", "spatstat.geom", "gstat",
+  "sp", "sf", "rgdal", "raster", "geoR", "dplyr"
+))
+```
+
+Com `quarto` instalado, renderize o livro (após todas as alterações):
+
+```powershell
+quarto preview
+```
+
+### Como usar este material
+
+Cada seção deste livro está em seu próprio arquivo `.qmd`. Navegue pelos capítulos usando o menu à esquerda.
+
+---
+
+## Estrutura do Minicurso (Seções)
+
+- **Seção A — Instalação e Introdução:** pacotes, estrutura de arquivos, como renderizar.
+- **Seção B — Dados de Áreas:** teoria, matrizes de pesos, Moran's I, SAR/SEM, exemplos em R, exercícios.
+- **Seção C — Processos Pontuais:** Poisson inhomogêneo, LGCP, ajuste com `spatstat`, exercícios.
+- **Seção D — Geoestatística:** variogramas, ajuste, krigagem universal, predição, exercícios.
+- **Seção E — Espaço-Temporal (opcional):** esboço de modelagem espaço-temporal e referências.
+- **Apêndices:** soluções dos exercícios, scripts auxiliares e referência única ao livro.
+
+---
+
+## Exercícios
+
+Seção B — Dados de Áreas
+
+1. Ajuste um modelo OLS `CRIME ~ INC + HOVAL` com `columbus`. Calcule Moran's I nos resíduos e interprete. (Dica: `lm.morantest()`)
+
+2. Ajuste um SAR e um SEM para os mesmos dados. Compare os valores de AIC e interprete `rho` e `lambda`.
+
+Seção C — Processos Pontuais
+
+1. Usando `bei`, ajuste `ppm(bei ~ elev + grad, data = bei.extra)`. Quais covariáveis são significativas? Faça um P-P plot para avaliar ajuste.
+
+2. Ajuste um `kppm(..., clusters = "LGCP")` e compare os parâmetros do campo aleatório (sigma2 e escala) com o modelo Poisson.
+
+Seção D — Geoestatística
+
+1. Em `meuse`, ajuste uma tendência de `log(zinc) ~ sqrt(dist)` e calcule o variograma dos resíduos. Ajuste um modelo exponencial e reporte nugget, sill e range.
+
+2. Realize krigagem universal para predizer `log(zinc)` em uma grade e produza um mapa de predição e outro de erro padrão.
+
+Seção E — Espaço-Temporal (exercício conceitual)
+
+1. Escreva um esboço de como separaria o variograma espaço-temporal em componentes espaço, tempo e interação para um conjunto de séries de temperatura.
+
+---
+
+## Apêndice A — Soluções (respostas rápidas)
+
+Seção B — Dados de Áreas (exemplo de solução)
+
+```{.r}
+# OLS e Moran
+data(columbus)
+b <- poly2nb(columbus)
+listw <- nb2listw(nb, style = "W")
+modelo_ols <- lm(CRIME ~ INC + HOVAL, data = columbus)
+lm.morantest(modelo_ols, listw)
+
+# SAR e SEM
+modelo_sar <- lagsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
+modelo_sem <- errorsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
+AIC(modelo_ols, modelo_sar, modelo_sem)
+```
+
+Seção C — Processos Pontuais (exemplo de solução)
+
+```{.r}
+library(spatstat)
+data(bei); data(bei.extra)
+modelo_ppm <- ppm(bei ~ elev + grad, data = bei.extra)
+summary(modelo_ppm)
+
+modelo_lgcp <- kppm(bei ~ elev + grad, data = bei.extra, clusters = "LGCP")
+summary(modelo_lgcp)
+```
+
+Seção D — Geoestatística (exemplo de solução)
+
+```{.r}
+library(gstat); library(sp)
+data(meuse); coordinates(meuse)=~x+y
+v <- variogram(log(zinc) ~ sqrt(dist), meuse)
+vm <- fit.variogram(v, vgm(psill=1, model="Exp", range=300, nugget=0))
+vm
+# Krigagem (exemplo):
+# meuse.grid <- ... (defina grade)
+# kr <- krige(log(zinc) ~ sqrt(dist), meuse, meuse.grid, model = vm)
+```
+
+---
+
+## Apêndice B — Scripts e Dados
+
+- `script_com_covariaveis.R`: scripts com exemplos prontos de `spatstat` e `kppm`.
+- `Script_geo_estatistica.R`: scripts de variograma e krigagem para `meuse`.
+- `dados/`: contêm `Area_Jernimo_Contorno.kml` e outros dados de exemplo.
+
+Coloque os scripts no mesmo diretório do projeto e execute bloco-a-bloco no RStudio para reproduzir resultados. Se quiser, eu posso gerar arquivos `scripts/` com versões prontas das soluções.
+
+## Referências
+
+- Diggle, P.J. & Ribeiro, P.J. (2007). Model-based Geostatistics. Springer.  
+- Illian, J., Penttinen, A., Stoyan, H., Stoyan, D. (2008). Statistical Analysis and Modelling of Spatial Point Patterns. Wiley.  
+- Anselin, L. (1988). Spatial Econometrics: Methods and Models. Kluwer.

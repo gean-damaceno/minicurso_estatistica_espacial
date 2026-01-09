@@ -1,0 +1,5 @@
+/.quarto/
+/.Rproj.user/
+*.Rproj
+*.RData
+Livros/*.pdf
