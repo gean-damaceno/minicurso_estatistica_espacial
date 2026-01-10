@@ -1,5 +1,7 @@
 /.quarto/
 /.Rproj.user/
+_site/
+_freeze/
 *.Rproj
 *.RData
 Livros/*.pdf

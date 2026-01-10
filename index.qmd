@@ -7,27 +7,53 @@ author:
 lang: pt
 ---
 
-
-**Introdução**
-
-Este minicurso apresenta métodos para análises espacial em três contextos: dados agregados por áreas, processos pontuais e geoestatística. O público-alvo são todos com conhecimentos básicos em regressão e estatística espacial.
-
 ::: {.column-margin style="text-align: center;"}
 **Livro Base**
 
 [![Análise de Dados Espaciais em R](Livros/livros.jpg){width=150px}](https://www.editoraufla.com.br/product-page/an%C3%A1lise-de-dados-espaciais-com-aplica%C3%A7%C3%B5es-em-r)
 :::
 
+
+
+
+**Introdução**
+
+
+::: {.callout-note title="Sobre o minicurso"}
+📍 Este minicurso apresenta métodos de **análise espacial** em três contextos principais:
+
+- 🗺️ **Dados agregados por áreas**  
+- 📌 **Processos pontuais**  
+- 🌐 **Geoestatística**
+
+🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em **regressão** e **estatística espacial**.
+
+📘 O material é baseado no livro *Análise de Dados Espaciais com Aplicações em R* (Scalon, 2024) e conta com **exemplos práticos** e **exercícios** ao final de cada seção.
+:::
+
+
+
+
+
+
+Este minicurso apresenta métodos para análises espacial em três contextos: dados agregados por áreas, processos pontuais e geoestatística. O público-alvo são todos com conhecimentos básicos em regressão e estatística espacial. O material é baseado no livro “Análise de Dados Espaciais com Aplicações em R” (Scalon, 2024) e inclui exemplos práticos e exercícios para cada seção.
+
+
+
 ### Instalação e execução
 
 Instale os pacotes necessários em uma sessão R (ajuste conforme sua versão):
 
-```r
+```{r}
+#| eval: false
+#| code-fold: true
+#| code-summary: "Instalação dos pacotes"
 install.packages(c(
   "spdep", "spatialreg", "spatstat.core", "spatstat.geom", "gstat",
   "sp", "sf", "rgdal", "raster", "geoR", "dplyr"
 ))
 ```
+Além disso, instale o [Quarto](https://quarto.org/docs/get-started/) para renderizar este material.
 
 Com `quarto` instalado, renderize o livro (após todas as alterações):
 

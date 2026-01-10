@@ -11,6 +11,8 @@ project:
     - processos_pontuais.qmd
     - geoestatistica.qmd
 
+lang: pt
+
 book:
   title: "Minicurso de Estatística Espacial"
   subtitle: "14 a 17 de junho de 2026"
@@ -18,13 +20,11 @@ book:
     - name: "Gean Pereira Damaceno"
       affiliation: "Departamento de Estatística - UFLA"
   repo-url: https://github.com/gean-damaceno/minicurso_estatistica_espacial # Isto cria o ícone do GitHub automaticamente
-  # como fixar o navbar no topo?
 
   navbar:
     title: "Minicurso de Estatística Espacial com R - Congresso de estatística Lima (Peru) 2026"
     background: primary
     search: true
-    fixed: true
 
   chapters:
     - index.qmd
@@ -38,13 +38,13 @@ book:
       <div style="text-align: center; margin-top: 1px; padding-top: 1px; border-top: 1px solid #dee2e6;">
         <p><strong>Apoio</strong></p>
         <a href="https://ufla.br/" target="_blank" rel="noopener">
-          <img src="Livros/ufla.gif" alt="UFLA" style="width: 150px; margin: 0.2px;">
+          <img src="Livros/ufla.gif" alt="UFLA" style="width: 180px; margin: 0.4px;">
         </a>
         <a href="https://www.gov.br/gestao/pt-br" target="_blank" rel="noopener">
-          <img src="Livros/mgi.jpg" alt="MGI" style="width: 180px; margin: 5px;">
+          <img src="Livros/MGI.png" alt="MGI" style="width: 180px; margin: 10px;">
         </a>
         <a href="https://agenciazetta.ufla.br/" target="_blank" rel="noopener">
-          <img src="Livros/zetta.jpg" alt="Zetta" style="width: 140px; margin: 5px;">
+          <img src="Livros/logo_zetta.png" alt="Zetta" style="width: 170px; margin: 10px;">
         </a>
       </div>
 
@@ -55,7 +55,11 @@ format:
       dark: superhero
     css: styles.css
     toc: true
-    toc-title: "índice"
+    toc-expand: true
+    toc-depth: 3
+    toc-title: "Índice"
+    toc-location: right
+    toc-float: false
     grid:
       body-width: 1200px
     code-fold: true
