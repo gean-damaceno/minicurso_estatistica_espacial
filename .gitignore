@@ -5,3 +5,6 @@ _freeze/
 *.Rproj
 *.RData
 Livros/*.pdf
+.Rhistory
+*.zip
+julia-workshop-main/
