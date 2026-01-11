@@ -8,3 +8,7 @@ Livros/*.pdf
 .Rhistory
 *.zip
 julia-workshop-main/
+# Dados locais (não versionar)
+dados/
+*.xlsx
+*.kml
