@@ -1,25 +1,16 @@
 ---
-title: "Introdução ao Minicurso de Estatística Espacial"
+title: "Introdução"
 author:
   - name: "Gean Pereira Damaceno"
     affiliation: "Departamento de Estatística - UFLA"
 #date: 2026-06-14
 lang: pt
+bibliography: referencia.bib
 ---
-
-::: {.column-margin style="text-align: center;"}
-**Livro Base**
-
-[![Análise de Dados Espaciais em R](Livros/livros.jpg){width=150px}](https://www.editoraufla.com.br/product-page/an%C3%A1lise-de-dados-espaciais-com-aplica%C3%A7%C3%B5es-em-r)
-:::
-
-
-
 
 **Introdução**
 
-
-::: {.callout-note title="Sobre o minicurso"}
+::: {.callout-important title="Sobre o minicurso"}
 📍 Este minicurso apresenta métodos de **análise espacial** em três contextos principais:
 
 - 🗺️ **Dados agregados por áreas**  
@@ -28,17 +19,16 @@ lang: pt
 
 🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em **regressão** e **estatística espacial**.
 
-📘 O material é baseado no livro *Análise de Dados Espaciais com Aplicações em R* (Scalon, 2024) e conta com **exemplos práticos** e **exercícios** ao final de cada seção.
+📘 O material é baseado no livro *Análise de Dados Espaciais com Aplicações em R*  [@scalon2024] e conta com exemplos práticos em cada seção.
+
+✍️ **Como citar este minicurso:**  
+
+Damaceno, G. P. (2026). *Minicurso de Estatística Espacial em R*. Recuperado de [https://gean-damaceno.github.io/minicurso_estatistica_espacial/](https://gean-damaceno.github.io/minicurso_estatistica_espacial/).
+
+📥 **Baixar citação BibTeX:**  
+[Download do .bib](./minicurso_estatistica_espacial.bib){download="minicurso_estatistica_espacial.bib"}
+
 :::
-
-
-
-
-
-
-Este minicurso apresenta métodos para análises espacial em três contextos: dados agregados por áreas, processos pontuais e geoestatística. O público-alvo são todos com conhecimentos básicos em regressão e estatística espacial. O material é baseado no livro “Análise de Dados Espaciais com Aplicações em R” (Scalon, 2024) e inclui exemplos práticos e exercícios para cada seção.
-
-
 
 ### Instalação e execução
 

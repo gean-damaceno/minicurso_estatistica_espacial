@@ -1,0 +1,7 @@
+---
+title: "Sistema Quarto"
+---
+
+# O Sistema Quarto
+O Quarto é uma plataforma de código aberto para criação de documentos dinâmicos, apresentações e sites. Ele suporta múltiplas linguagens de programação, incluindo R, Python e Julia, permitindo a integração de código e texto em um único documento.
+Conteúdo sobre o Sistema Quarto.

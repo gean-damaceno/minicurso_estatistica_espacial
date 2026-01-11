@@ -1,4 +1,29 @@
 /*-- scss:defaults --*/
 
 // Defina sua cor primária aqui
-$primary: #006400 !default;
+$primary: #1054e6 !default;
+
+/*-- scss:rules --*/
+
+// Estilo da caixa do menu que abre (onde ficam "Software R", "Dados de Áreas", etc.)
+.dropdown-menu {
+  background-color: #208bd2; // <--- Mude esta cor para alterar o fundo da lista
+  .dropdown-item {
+    color: #0d0303; // Cor do texto dos itens
+    &:hover, &:focus {
+      background-color: #efe5e5; // Cor de fundo ao passar o mouse sobre um item
+    }
+  }
+}
+
+// Estilo do botão "Tópicos" na barra principal
+.navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle {
+  background-color: #35d4dc; // Cor de fundo do botão "Tópicos"
+  color: #0a0c0c !important; // Cor do texto do botão "Tópicos"
+  border-radius: 4px;
+}
+
+// Fazer o menu aparecer ao passar o mouse (hover)
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}

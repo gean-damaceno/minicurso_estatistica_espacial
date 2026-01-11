@@ -1,0 +1,10 @@
+---
+title: "Software R"
+---
+
+# O Software R 
+R é um software livre amplamente utilizado para análise estatística e visualização de dados. Ele oferece uma vasta gama de pacotes e funções que facilitam a manipulação, análise e modelagem de dados espaciais.
+2. second
+3. third
+
+Conteúdo sobre o Software R.

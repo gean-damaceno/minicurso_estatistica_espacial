@@ -1,58 +1,66 @@
 project:
-  type: book
+  type: website
   output-dir: docs
   resources:
     - "Livros/*.jpg"
     - "Livros/*.png"
     - "Livros/*.gif"
-  render: 
-    - index.qmd
-    - dados_areas.qmd
-    - processos_pontuais.qmd
-    - geoestatistica.qmd
 
 lang: pt
 
-book:
+website:
   title: "Minicurso de Estatística Espacial"
-  subtitle: "14 a 17 de junho de 2026"
-  author:
-    - name: "Gean Pereira Damaceno"
-      affiliation: "Departamento de Estatística - UFLA"
+  favicon: logo_book.ico
   repo-url: https://github.com/gean-damaceno/minicurso_estatistica_espacial # Isto cria o ícone do GitHub automaticamente
 
   navbar:
+    logo: logo_book.png
     title: "Minicurso de Estatística Espacial com R - Congresso de estatística Lima (Peru) 2026"
     background: primary
     search: true
-
-  chapters:
-    - index.qmd
-    - dados_areas.qmd
-    - processos_pontuais.qmd
-    - geoestatistica.qmd
+    left:
+      - text: "Tópicos"
+        menu:
+          - text: "Introdução"
+            href: index.qmd
+          - text: "Software R"
+            href: software_R.qmd
+          - text: "Sistema Quarto"
+            href: sistema_quarto.qmd
+          - text: "Dados de Áreas"
+            href: dados_areas.qmd
+          - text: "Processos Pontuais"
+            href: processos_pontuais.qmd
+          - text: "Geoestatística"
+            href: geoestatistica.qmd
 
   sidebar:
     style: "docked"
     footer: |
       <div style="text-align: center; margin-top: 1px; padding-top: 1px; border-top: 1px solid #dee2e6;">
-        <p><strong>Apoio</strong></p>
+        <p style="margin: 0; font-weight: bold; color: #1e90ff;"><strong>APOIO</strong></p>
         <a href="https://ufla.br/" target="_blank" rel="noopener">
-          <img src="Livros/ufla.gif" alt="UFLA" style="width: 180px; margin: 0.4px;">
+          <img src="Livros/ufla.gif" alt="UFLA" style="width: 180px; margin: -5px;">
         </a>
         <a href="https://www.gov.br/gestao/pt-br" target="_blank" rel="noopener">
-          <img src="Livros/MGI.png" alt="MGI" style="width: 180px; margin: 10px;">
+          <img src="Livros/MGI.png" alt="MGI" style="width: 180px; margin: 5px;">
         </a>
         <a href="https://agenciazetta.ufla.br/" target="_blank" rel="noopener">
-          <img src="Livros/logo_zetta.png" alt="Zetta" style="width: 170px; margin: 10px;">
+          <img src="Livros/logo_zetta.png" alt="Zetta" style="width: 170px; margin: 5px;">
+        </a>
+        <p><strong>Livro base</strong></p>
+        <a href="https://www.editoraufla.com.br/product-page/an%C3%A1lise-de-dados-espaciais-com-aplica%C3%A7%C3%B5es-em-r" target="_blank" rel="noopener">
+          <img src="Livros/livros.jpg" alt="EDUFLA" style="width: 120px; margin: 5px;">
+        <p style="color: #1e90ff;"><strong>Análise espaciais em R</strong></p>
+
         </a>
       </div>
 
 format:
   html:
     theme:
-      light: cosmo
-      dark: superhero
+      light: [cosmo, custom-theme.scss]
+      dark: [superhero, custom-theme.scss]
     css: styles.css
     toc: true
     toc-expand: true
