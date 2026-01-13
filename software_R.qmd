@@ -1,10 +1,232 @@
 ---
-title: "Software R"
+title: "Software R e IDE Rstudio"
+bibliography: referencia.bib
+number-sections: true
 ---
 
-# O Software R 
-R é um software livre amplamente utilizado para análise estatística e visualização de dados. Ele oferece uma vasta gama de pacotes e funções que facilitam a manipulação, análise e modelagem de dados espaciais.
-2. second
-3. third
 
-Conteúdo sobre o Software R.
+
+::: {.callout-important title="📌 Lembrete importante" style="background-color: #e3f2fd;"}
+
+Para a utilização dos códigos apresentados neste minicurso, é necessário instalar o software R e a IDE RStudio. É fundamental seguir a ordem correta: primeiro instale o **software R** e, em seguida, a **IDE RStudio**.
+:::
+
+# Definições
+
+## O que é o SOFTWARE R?
+R é uma linguagem e ambiente para computação estatística e gráficos. É um projeto GNU que é similar à linguagem e ambiente *S* que foi desenvolvido na Bell Laboratories (antigamente AT&T, agora Lucent Technologies) por John Chambers e colegas. R pode ser considerado como uma implementação diferente de S. Existem algumas diferenças importantes, mas muito código escrito para *S* roda inalterado sob R [@R].
+
+::: {.callout-tip}
+### Verificar a versão do R
+
+Para conferir a versão do R instalada no seu computador e citar, utilize o comando:
+
+```r
+version
+citation()
+```
+:::
+
+
+## O que é a IDE RSTUDIO? 
+
+O RStudio é um ambiente de desenvolvimento integrado (IDE) para R e Python. Ele inclui um console, um editor de realce de sintaxe que suporta execução direta de código e ferramentas para plotagem, histórico, depuração e gerenciamento de espaço de trabalho. O RStudio está disponível em edições comerciais e de código aberto e roda no desktop (Windows, Mac e Linux) [@Rstudio].
+
+::: {.callout-tip}
+### Verificar a versão do RStudio
+
+Para verificar a versão do RStudio instalada e citar, execute:
+
+```r
+RStudio.Version()
+```
+:::
+
+# Downloads do R e Rstudio
+
+## Passo - Pesquisando o software R para download {.smaller transition="slide"}
+
+Digite no navegador o nome do **software R** ou acesse: 👉 [CRAN – Site oficial do R](https://cran.r-project.org/)
+
+::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](images/Captura%20de%20tela%202025-03-15%20182250.png)
+:::
+::::
+
+## Passo - Download do software R {.smaller transition="slide"}
+
+- Clique no link do **R do CRAN** correspondente ao seu sistema operacional (Windows, Mac ou Linux).
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/r_rtudio.png)
+:::
+::::
+
+## Passo - Download do software R {.smaller transition="slide"}
+
+- Clique no número **1 – Download and install R** para iniciar o download do R e, em seguida, realizar a instalação.
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](images/Captura%20de%20tela%202025-03-15%20184353-01.png)
+:::
+::::
+
+## Passo - Download do software R {.smaller transition="slide"}
+
+:::: {style="position: relative; display: inline-block;"}
+<img src="imagens/IMG-20250315-WA0146.jpg" alt="Imagem de fundo" width="700" height="400"/>
+
+<!-- Círculo sobreposto -->
+::: {style="position: absolute; top: 35%; left: 40%; transform: translate(-50%, -50%); border: 5px solid red; border-radius: 50%; width: 400px; height: 120px; animation: bounce 2s infinite;"}
+:::
+::::
+
+```{=html}
+<style>
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, -50%);
+  }
+  40% {
+    transform: translate(-50%, -80%);
+  }
+  60% {
+    transform: translate(-50%, -65%);
+  }
+}
+</style>
+```
+
+## Passo - Download do software R {.smaller transition="slide"}
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0147.jpg)
+:::
+::::
+
+
+## Passo - Download do software R {.smaller transition="slide"}
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0148.jpg)
+:::
+::::
+
+
+
+# Passo - Clique na barra de "Downloads :arrow_down:"
+
+:::: {.absolute top="70%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](images/Captura%20de%20tela%202025-03-16%20160259.png)
+:::
+::::
+
+
+## Passo - Instalando o software R
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0149.jpg)
+:::
+::::
+
+
+## Passo - Instalando o software R
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0150.jpg)
+:::
+::::
+
+
+## Passo - Instalando o software R
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0151.jpg)
+:::
+::::
+
+
+## Passo - Instalando o software R
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0152.jpg)
+:::
+::::
+
+## Passo - Instalando o software R
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0153.jpg)
+:::
+::::
+
+## Passo - Instalando o software R
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0154.jpg)
+:::
+::::
+
+## Passo - Instalando o software R
+
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0155.jpg)
+:::
+::::
+
+## Passo - Instalando o software R
+
+![](imagens/IMG-20250315-WA0156.jpg){width="600"}
+
+## Passo - Instalando o software R
+:::: {.absolute top="35%" left="0" width="800" height="400"}
+::: {style="text-align: center"}
+![](imagens/IMG-20250315-WA0157.jpg)
+:::
+::::
+
+# Após a instalação do R, agora vamos instalar a IDE Rstudio.
+
+# Passo - Download da IDE Rstudio
+
+![](imagens/q1.jpg){width="600"}
+
+## Passo - Instalação da IDE Rstudio
+
+![](imagens/rs01.png){width="600"}
+
+## Passo - Instalação da IDE Rstudio
+
+![](imagens/rs1.png){width="600"}
+
+## Passo - Instalação da IDE Rstudio
+![](imagens/rs2.png){width="600"}
+
+## Passo - Instalação da IDE Rstudio
+
+![](imagens/rs3.png){width="600"}
+
+## Passo - Instalação da IDE Rstudio
+
+![](imagens/rs4.png){width="600"}
+
+::: {.callout-important title="✅ Avisos importantes" style="background-color: #e3f2fd;"}
+
+- Certifique-se de que o R está instalado corretamente antes de instalar o RStudio.
+- Após a instalação do R, instale o RStudio
+  
+  
+:::

@@ -5,13 +5,12 @@ project:
     - "Livros/*.jpg"
     - "Livros/*.png"
     - "Livros/*.gif"
-
 lang: pt
 
 website:
   title: "Minicurso de Estatística Espacial"
-  favicon: logo_book.ico
   repo-url: https://github.com/gean-damaceno/minicurso_estatistica_espacial # Isto cria o ícone do GitHub automaticamente
+  favicon: logo_book.ico
 
   navbar:
     logo: logo_book.png
@@ -23,7 +22,7 @@ website:
         menu:
           - text: "Introdução"
             href: index.qmd
-          - text: "Software R"
+          - text: "Software R e IDE Rstudio"
             href: software_R.qmd
           - text: "Sistema Quarto"
             href: sistema_quarto.qmd
@@ -33,6 +32,9 @@ website:
             href: processos_pontuais.qmd
           - text: "Geoestatística"
             href: geoestatistica.qmd
+    right:
+    - icon: github
+      href: https://github.com/gean-damaceno/minicurso_estatistica_espacial
 
   sidebar:
     style: "docked"

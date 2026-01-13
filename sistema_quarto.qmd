@@ -1,7 +1,69 @@
 ---
 title: "Sistema Quarto"
+bibliography: referencia.bib
+number-sections: true
 ---
 
+::: {.callout-important title="📌 Lembrete importante" style="background-color: #e3f2fd;"}
+Com o **software R** e a **IDE RStudio** já instalados, o próximo passo é a instalação do **sistema Quarto**. Esta plataforma permite a criação de documentos dinâmicos, apresentações e sites, integrando códigos de linguagens como R, Python e Julia em um único documento.
+
+:::
+
 # O Sistema Quarto
-O Quarto é uma plataforma de código aberto para criação de documentos dinâmicos, apresentações e sites. Ele suporta múltiplas linguagens de programação, incluindo R, Python e Julia, permitindo a integração de código e texto em um único documento.
+O Quarto é uma plataforma de código aberto para criação de documentos dinâmicos, apresentações e sites. Ele suporta múltiplas linguagens de programação, incluindo R, Python e Julia, permitindo a integração de código e texto em um único documento [@Allaire_Quarto_2024].
 Conteúdo sobre o Sistema Quarto.
+
+## Passo - Download do Quarto
+
+![](images/Captura%20de%20tela%202025-03-15%20185009.png){width="800" height="400"}
+
+## Passo - Download do Quarto
+
+![](imagens/quarto_nav.png){width="800" height="400"}
+
+## Passo - Download do Quarto
+
+![](imagens/qua_nave.png){width="800" height="400"}
+
+## Passo - Instalação do Quarto
+
+![](imagens/q00.png){width="800" height="400"}
+
+## Passo - Instalação do Quarto
+
+![](imagens/q01.png){width="800" height="400"}
+
+## Passo - Instalação do Quarto
+
+![](imagens/q2.jpg){width="800" height="400"}
+
+## Passo - Instalação do Quarto
+
+![](imagens/q3.jpg){width="800" height="400"}
+
+## Passo - Instalação do Quarto
+
+![](imagens/q4.jpg){width="800" height="400"}
+
+## Passo - Instalação do Quarto
+
+![](imagens/q5.jpg){width="800" height="400"}
+
+## Passo - Verificando a instalação no RStudio
+
+![](imagens/r.png){width="800" height="400"}
+
+## Passo - Criando um documento Quarto
+
+![](imagens/arq.png){width="800" height="400"}
+
+## Passo - Renderizando o documento
+
+![](imagens/pro.png){width="800" height="400"}
+
+::: {.callout-success title="Instalação Concluída!"}
+- Com o **R**, **RStudio** e **Quarto** instalados, seu ambiente está pronto. Agora você pode criar documentos dinâmicos, apresentações e sites integrando código e texto de forma eficiente.
+- Após as instalações, reinicie seu computador para garantir que todas as mudanças sejam aplicadas corretamente.
+
+
+:::

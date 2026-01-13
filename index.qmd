@@ -6,11 +6,13 @@ author:
 #date: 2026-06-14
 lang: pt
 bibliography: referencia.bib
+resources:
+  - minicurso_estatistica_espacial.bib
 ---
 
-**Introdução**
+**Sobre o minicurso**
 
-::: {.callout-important title="Sobre o minicurso"}
+::: {.callout-important title="Sobre o minicurso" style="background-color: #e3f2fd;"}
 📍 Este minicurso apresenta métodos de **análise espacial** em três contextos principais:
 
 - 🗺️ **Dados agregados por áreas**  
@@ -23,16 +25,34 @@ bibliography: referencia.bib
 
 ✍️ **Como citar este minicurso:**  
 
-Damaceno, G. P. (2026). *Minicurso de Estatística Espacial em R*. Recuperado de [https://gean-damaceno.github.io/minicurso_estatistica_espacial/](https://gean-damaceno.github.io/minicurso_estatistica_espacial/).
+Damaceno, G. P. (2026). *Minicurso de Estatística Espacial em R*.
 
 📥 **Baixar citação BibTeX:**  
 [Download do .bib](./minicurso_estatistica_espacial.bib){download="minicurso_estatistica_espacial.bib"}
 
 :::
 
+::: {.callout-important title="🎯 Objetivos do minicurso" style="background-color: #e3f2fd;"}
+Os principais objetivos deste minicurso são:
+
+- Introduzir os conceitos fundamentais da estatística espacial.
+- Apresentar métodos e técnicas para analisar dados espaciais.
+- Demonstrar como implementar esses métodos usando a linguagem de programação R.
+- Fornecer exemplos práticos e exercícios para consolidar o aprendizado.
+:::
+
+::: {.callout-note title="📚 Estrutura do Minicurso (Seções)" style="background-color: #e3f2fd;"}
+
+- **Seção A — Instalação e Introdução:** pacotes, estrutura de arquivos, como renderizar.
+- **Seção B — Dados de Áreas:** teoria, matrizes de pesos, Moran's I, SAR/SEM, exemplos em R, exercícios.
+- **Seção C — Processos Pontuais:** Poisson inhomogêneo, LGCP, ajuste com `spatstat`, exercícios.
+- **Seção D — Geoestatística:** variogramas, ajuste, krigagem universal, predição, exercícios.
+- **Seção E — Projeto de Pesquisa:** sugestões para desenvolver um projeto em estatística espacial.
+:::
+
 ### Instalação e execução
 
-Instale os pacotes necessários em uma sessão R (ajuste conforme sua versão):
+Instale os pacotes necessários para uma análise espacial em R
 
 ```{r}
 #| eval: false
@@ -43,113 +63,82 @@ install.packages(c(
   "sp", "sf", "rgdal", "raster", "geoR", "dplyr"
 ))
 ```
-Além disso, instale o [Quarto](https://quarto.org/docs/get-started/) para renderizar este material.
-
-Com `quarto` instalado, renderize o livro (após todas as alterações):
-
-```powershell
-quarto preview
-```
-
-### Como usar este material
-
-Cada seção deste livro está em seu próprio arquivo `.qmd`. Navegue pelos capítulos usando o menu à esquerda.
 
 ---
 
-## Estrutura do Minicurso (Seções)
+# Introdução à Estatística Espacial
 
-- **Seção A — Instalação e Introdução:** pacotes, estrutura de arquivos, como renderizar.
-- **Seção B — Dados de Áreas:** teoria, matrizes de pesos, Moran's I, SAR/SEM, exemplos em R, exercícios.
-- **Seção C — Processos Pontuais:** Poisson inhomogêneo, LGCP, ajuste com `spatstat`, exercícios.
-- **Seção D — Geoestatística:** variogramas, ajuste, krigagem universal, predição, exercícios.
-- **Seção E — Espaço-Temporal (opcional):** esboço de modelagem espaço-temporal e referências.
-- **Apêndices:** soluções dos exercícios, scripts auxiliares e referência única ao livro.
+::::: {.columns style="display: flex; align-items: center; background-color: #f0f4f8; border: 2px solid #d1d9e6; border-radius: 15px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"}
+::: {.column width="50%"}
+
+![](images/scalon.jpg){alt="" width="300"}
+:::
+
+::: {.column width="50%"}
+::: {.callout-note title="O que é Estatística Espacial?" style="background-color: #e3f2fd;"}
+-   De acordo com @scalon2024, a estatística espacial é um ramo da estatística que se concentra na análise de dados que possuem uma localização, representada por coordenadas geográficas e/ou regiões.
+
+-   Conforme descrito por @scalon2024 o que distingue a estatística espacial da clássica é a necessidade de que os dados possuam localizações geográficas, característica ausente na estatística clássica.
+:::
+:::
+:::::
+
+## Tipos de Dados Espaciais
+
+@cressie1991statistics , @cressie1993statistics , @gatrell1996 e @waller2004 classificam os dados espaciais em diferentes tipos, conforme a natureza da distribuição espacial, em três principais categorias:
+
+::: {.callout-note title="Tipos de Dados Espaciais"}
+-   Dados de Áreas
+-   Dados Pontuais
+-   Dados Geoestatísticos
+:::
+
+### Definições
+
+::::: {.columns style="display: flex; align-items: center; background-color: #f0f4f8; border: 2px solid #d1d9e6; border-radius: 15px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"}
+
+::: {.column width="50%"}
+![](images/ge.png){fig-alt="Mapa ilustrando diferentes tipos de dados espaciais: dados de áreas, dados pontuais e dados geoestatísticos." width="422"}
+:::
+
+::: {.column width="50%"}
+
+::: {.callout-note title="Definições dos Tipos de Dados Espaciais [@scalon2024]" style="background-color: #e3f2fd;"}
+-   Dados de áreas, também conhecidos como dados de lattice ou dados de superfice discreta, são dados espaciais indexados a sub-regiões que constituem uma partição de um dominio contínuo.
+
+-   Dados pontuais surgem quando as próprias localizações do evento é o objeto de interesse.
+
+-   Dados geoestatísticos, também conhecidos como dados de superfícies contínuas.
+:::
+
+:::
+:::::
 
 
----
+## Onde aplicar a estatística espacial?
+A estatística espacial é amplamente aplicada em diversas áreas, incluindo:
 
-## Exercícios
-
-Seção B — Dados de Áreas
-
-1. Ajuste um modelo OLS `CRIME ~ INC + HOVAL` com `columbus`. Calcule Moran's I nos resíduos e interprete. (Dica: `lm.morantest()`)
-
-2. Ajuste um SAR e um SEM para os mesmos dados. Compare os valores de AIC e interprete `rho` e `lambda`.
-
-Seção C — Processos Pontuais
-
-1. Usando `bei`, ajuste `ppm(bei ~ elev + grad, data = bei.extra)`. Quais covariáveis são significativas? Faça um P-P plot para avaliar ajuste.
-
-2. Ajuste um `kppm(..., clusters = "LGCP")` e compare os parâmetros do campo aleatório (sigma2 e escala) com o modelo Poisson.
-
-Seção D — Geoestatística
-
-1. Em `meuse`, ajuste uma tendência de `log(zinc) ~ sqrt(dist)` e calcule o variograma dos resíduos. Ajuste um modelo exponencial e reporte nugget, sill e range.
-
-2. Realize krigagem universal para predizer `log(zinc)` em uma grade e produza um mapa de predição e outro de erro padrão.
-
-Seção E — Espaço-Temporal (exercício conceitual)
-
-1. Escreva um esboço de como separaria o variograma espaço-temporal em componentes espaço, tempo e interação para um conjunto de séries de temperatura.
-
----
-
-## Apêndice A — Soluções (respostas rápidas)
-
-Seção B — Dados de Áreas (exemplo de solução)
-
-```{.r}
-# OLS e Moran
-data(columbus)
-b <- poly2nb(columbus)
-listw <- nb2listw(nb, style = "W")
-modelo_ols <- lm(CRIME ~ INC + HOVAL, data = columbus)
-lm.morantest(modelo_ols, listw)
-
-# SAR e SEM
-modelo_sar <- lagsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
-modelo_sem <- errorsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
-AIC(modelo_ols, modelo_sar, modelo_sem)
-```
-
-Seção C — Processos Pontuais (exemplo de solução)
-
-```{.r}
-library(spatstat)
-data(bei); data(bei.extra)
-modelo_ppm <- ppm(bei ~ elev + grad, data = bei.extra)
-summary(modelo_ppm)
-
-modelo_lgcp <- kppm(bei ~ elev + grad, data = bei.extra, clusters = "LGCP")
-summary(modelo_lgcp)
-```
-
-Seção D — Geoestatística (exemplo de solução)
-
-```{.r}
-library(gstat); library(sp)
-data(meuse); coordinates(meuse)=~x+y
-v <- variogram(log(zinc) ~ sqrt(dist), meuse)
-vm <- fit.variogram(v, vgm(psill=1, model="Exp", range=300, nugget=0))
-vm
-# Krigagem (exemplo):
-# meuse.grid <- ... (defina grade)
-# kr <- krige(log(zinc) ~ sqrt(dist), meuse, meuse.grid, model = vm)
-```
+- **Epidemiologia:** Análise da distribuição espacial de doenças.
+- **Ecologia:** Estudo da distribuição de espécies e habitats.
+- **Geografia:** Análise de padrões espaciais em fenômenos geográficos.
+- **Ciências ambientais:** Monitoramento da qualidade do ar e da água.
+- **Planejamento urbano:** Análise de uso do solo e desenvolvimento urbano.
+- **Agricultura:** Mapeamento de produtividade e gestão de recursos.
+- **Economia:** Análise de mercados imobiliários e padrões econômicos regionais.
+- **Ciências sociais:** Estudo de padrões demográficos e sociais.
+- **Saúde pública:** Análise de acesso a serviços de saúde e distribuição de recursos.
+- **Transportes:** Planejamento de redes de transporte e análise de tráfego.
+- **Climatologia:** Estudo de padrões climáticos e mudanças ambientais.
+- **Recursos naturais:** Gestão e monitoramento de recursos naturais, como florestas e corpos d'água.
+  
+e muito mais áreas que envolvem dados geograficamente referenciados.
 
 ---
 
-## Apêndice B — Scripts e Dados
-
-- `script_com_covariaveis.R`: scripts com exemplos prontos de `spatstat` e `kppm`.
-- `Script_geo_estatistica.R`: scripts de variograma e krigagem para `meuse`.
-- `dados/`: contêm `Area_Jernimo_Contorno.kml` e outros dados de exemplo.
-
-Coloque os scripts no mesmo diretório do projeto e execute bloco-a-bloco no RStudio para reproduzir resultados. Se quiser, eu posso gerar arquivos `scripts/` com versões prontas das soluções.
-
-## Referências
-
-- Diggle, P.J. & Ribeiro, P.J. (2007). Model-based Geostatistics. Springer.  
-- Illian, J., Penttinen, A., Stoyan, H., Stoyan, D. (2008). Statistical Analysis and Modelling of Spatial Point Patterns. Wiley.  
-- Anselin, L. (1988). Spatial Econometrics: Methods and Models. Kluwer.
+::: {.callout-tip title="Agradecimentos e Apoio"}
+- **Ministerio do desenvolvimento e inovação (MGI):** apoio financeiro e na qual faço parte do projeto como colaborador.
+- **Zetta** agência de Tecnologia: apoio na divulgação e infraestrutura.
+- **Zetta Lab:** suporte técnico e infraestrutura computacional.
+- **UFLA:** Universidade Federal de Lavras, instituição de ensino e pesquisa.
+  
+:::

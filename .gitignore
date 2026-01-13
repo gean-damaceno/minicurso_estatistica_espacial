@@ -12,3 +12,12 @@ julia-workshop-main/
 dados/
 *.xlsx
 *.kml
+
+# Pastas de imagens (não versionar)
+images/
+imagens/
+
+# Imagens geradas dentro do site
+docs/images/
+docs/imagens/
+

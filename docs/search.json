@@ -2,9 +2,163 @@
   {
     "objectID": "software_R.html",
     "href": "software_R.html",
-    "title": "Software R",
+    "title": "Software R e IDE Rstudio",
     "section": "",
-    "text": "1 O Software R\nR é um software livre amplamente utilizado para análise estatística e visualização de dados. Ele oferece uma vasta gama de pacotes e funções que facilitam a manipulação, análise e modelagem de dados espaciais. 2. second 3. third\nConteúdo sobre o Software R."
+    "text": "📌 Lembrete importante\n\n\n\nPara a utilização dos códigos apresentados neste minicurso, é necessário instalar o software R e a IDE RStudio. É fundamental seguir a ordem correta: primeiro instale o software R e, em seguida, a IDE RStudio."
+  },
+  {
+    "objectID": "software_R.html#o-que-é-o-software-r",
+    "href": "software_R.html#o-que-é-o-software-r",
+    "title": "Software R e IDE Rstudio",
+    "section": "1.1 O que é o SOFTWARE R?",
+    "text": "1.1 O que é o SOFTWARE R?\nR é uma linguagem e ambiente para computação estatística e gráficos. É um projeto GNU que é similar à linguagem e ambiente S que foi desenvolvido na Bell Laboratories (antigamente AT&T, agora Lucent Technologies) por John Chambers e colegas. R pode ser considerado como uma implementação diferente de S. Existem algumas diferenças importantes, mas muito código escrito para S roda inalterado sob R (R Core Team 2025).\n\n\n\n\n\n\nVerificar a versão do R\n\n\n\nPara conferir a versão do R instalada no seu computador e citar, utilize o comando:\nversion\ncitation()"
+  },
+  {
+    "objectID": "software_R.html#o-que-é-a-ide-rstudio",
+    "href": "software_R.html#o-que-é-a-ide-rstudio",
+    "title": "Software R e IDE Rstudio",
+    "section": "1.2 O que é a IDE RSTUDIO?",
+    "text": "1.2 O que é a IDE RSTUDIO?\nO RStudio é um ambiente de desenvolvimento integrado (IDE) para R e Python. Ele inclui um console, um editor de realce de sintaxe que suporta execução direta de código e ferramentas para plotagem, histórico, depuração e gerenciamento de espaço de trabalho. O RStudio está disponível em edições comerciais e de código aberto e roda no desktop (Windows, Mac e Linux) (Equipe RStudio 2020).\n\n\n\n\n\n\nVerificar a versão do RStudio\n\n\n\nPara verificar a versão do RStudio instalada e citar, execute:\nRStudio.Version()"
+  },
+  {
+    "objectID": "software_R.html#passo---pesquisando-o-software-r-para-download",
+    "href": "software_R.html#passo---pesquisando-o-software-r-para-download",
+    "title": "Software R e IDE Rstudio",
+    "section": "2.1 Passo - Pesquisando o software R para download",
+    "text": "2.1 Passo - Pesquisando o software R para download\nDigite no navegador o nome do software R ou acesse: 👉 CRAN – Site oficial do R"
+  },
+  {
+    "objectID": "software_R.html#passo---download-do-software-r",
+    "href": "software_R.html#passo---download-do-software-r",
+    "title": "Software R e IDE Rstudio",
+    "section": "2.2 Passo - Download do software R",
+    "text": "2.2 Passo - Download do software R\n\nClique no link do R do CRAN correspondente ao seu sistema operacional (Windows, Mac ou Linux)."
+  },
+  {
+    "objectID": "software_R.html#passo---download-do-software-r-1",
+    "href": "software_R.html#passo---download-do-software-r-1",
+    "title": "Software R e IDE Rstudio",
+    "section": "2.3 Passo - Download do software R",
+    "text": "2.3 Passo - Download do software R\n\nClique no número 1 – Download and install R para iniciar o download do R e, em seguida, realizar a instalação."
+  },
+  {
+    "objectID": "software_R.html#passo---download-do-software-r-2",
+    "href": "software_R.html#passo---download-do-software-r-2",
+    "title": "Software R e IDE Rstudio",
+    "section": "2.4 Passo - Download do software R",
+    "text": "2.4 Passo - Download do software R"
+  },
+  {
+    "objectID": "software_R.html#passo---download-do-software-r-3",
+    "href": "software_R.html#passo---download-do-software-r-3",
+    "title": "Software R e IDE Rstudio",
+    "section": "2.5 Passo - Download do software R",
+    "text": "2.5 Passo - Download do software R"
+  },
+  {
+    "objectID": "software_R.html#passo---download-do-software-r-4",
+    "href": "software_R.html#passo---download-do-software-r-4",
+    "title": "Software R e IDE Rstudio",
+    "section": "2.6 Passo - Download do software R",
+    "text": "2.6 Passo - Download do software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r",
+    "href": "software_R.html#passo---instalando-o-software-r",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.1 Passo - Instalando o software R",
+    "text": "3.1 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-1",
+    "href": "software_R.html#passo---instalando-o-software-r-1",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.2 Passo - Instalando o software R",
+    "text": "3.2 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-2",
+    "href": "software_R.html#passo---instalando-o-software-r-2",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.3 Passo - Instalando o software R",
+    "text": "3.3 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-3",
+    "href": "software_R.html#passo---instalando-o-software-r-3",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.4 Passo - Instalando o software R",
+    "text": "3.4 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-4",
+    "href": "software_R.html#passo---instalando-o-software-r-4",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.5 Passo - Instalando o software R",
+    "text": "3.5 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-5",
+    "href": "software_R.html#passo---instalando-o-software-r-5",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.6 Passo - Instalando o software R",
+    "text": "3.6 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-6",
+    "href": "software_R.html#passo---instalando-o-software-r-6",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.7 Passo - Instalando o software R",
+    "text": "3.7 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-7",
+    "href": "software_R.html#passo---instalando-o-software-r-7",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.8 Passo - Instalando o software R",
+    "text": "3.8 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalando-o-software-r-8",
+    "href": "software_R.html#passo---instalando-o-software-r-8",
+    "title": "Software R e IDE Rstudio",
+    "section": "3.9 Passo - Instalando o software R",
+    "text": "3.9 Passo - Instalando o software R"
+  },
+  {
+    "objectID": "software_R.html#passo---instalação-da-ide-rstudio",
+    "href": "software_R.html#passo---instalação-da-ide-rstudio",
+    "title": "Software R e IDE Rstudio",
+    "section": "5.1 Passo - Instalação da IDE Rstudio",
+    "text": "5.1 Passo - Instalação da IDE Rstudio"
+  },
+  {
+    "objectID": "software_R.html#passo---instalação-da-ide-rstudio-1",
+    "href": "software_R.html#passo---instalação-da-ide-rstudio-1",
+    "title": "Software R e IDE Rstudio",
+    "section": "5.2 Passo - Instalação da IDE Rstudio",
+    "text": "5.2 Passo - Instalação da IDE Rstudio"
+  },
+  {
+    "objectID": "software_R.html#passo---instalação-da-ide-rstudio-2",
+    "href": "software_R.html#passo---instalação-da-ide-rstudio-2",
+    "title": "Software R e IDE Rstudio",
+    "section": "5.3 Passo - Instalação da IDE Rstudio",
+    "text": "5.3 Passo - Instalação da IDE Rstudio"
+  },
+  {
+    "objectID": "software_R.html#passo---instalação-da-ide-rstudio-3",
+    "href": "software_R.html#passo---instalação-da-ide-rstudio-3",
+    "title": "Software R e IDE Rstudio",
+    "section": "5.4 Passo - Instalação da IDE Rstudio",
+    "text": "5.4 Passo - Instalação da IDE Rstudio"
+  },
+  {
+    "objectID": "software_R.html#passo---instalação-da-ide-rstudio-4",
+    "href": "software_R.html#passo---instalação-da-ide-rstudio-4",
+    "title": "Software R e IDE Rstudio",
+    "section": "5.5 Passo - Instalação da IDE Rstudio",
+    "text": "5.5 Passo - Instalação da IDE Rstudio\n\n\n\n\n\n\n\n✅ Avisos importantes\n\n\n\n\nCertifique-se de que o R está instalado corretamente antes de instalar o RStudio.\nApós a instalação do R, instale o RStudio"
   },
   {
     "objectID": "processos_pontuais.html#processos-pontuais",
@@ -88,42 +242,21 @@
     "href": "index.html",
     "title": "Introdução",
     "section": "",
-    "text": "Introdução"
+    "text": "Sobre o minicurso"
   },
   {
-    "objectID": "index.html#estrutura-do-minicurso-seções",
-    "href": "index.html#estrutura-do-minicurso-seções",
+    "objectID": "index.html#tipos-de-dados-espaciais",
+    "href": "index.html#tipos-de-dados-espaciais",
     "title": "Introdução",
-    "section": "1 Estrutura do Minicurso (Seções)",
-    "text": "1 Estrutura do Minicurso (Seções)\n\nSeção A — Instalação e Introdução: pacotes, estrutura de arquivos, como renderizar.\nSeção B — Dados de Áreas: teoria, matrizes de pesos, Moran’s I, SAR/SEM, exemplos em R, exercícios.\nSeção C — Processos Pontuais: Poisson inhomogêneo, LGCP, ajuste com spatstat, exercícios.\nSeção D — Geoestatística: variogramas, ajuste, krigagem universal, predição, exercícios.\nSeção E — Espaço-Temporal (opcional): esboço de modelagem espaço-temporal e referências.\nApêndices: soluções dos exercícios, scripts auxiliares e referência única ao livro."
+    "section": "1.1 Tipos de Dados Espaciais",
+    "text": "1.1 Tipos de Dados Espaciais\nN. Cressie (1991) , N. A. C. Cressie (1993) , Gatrell et al. (1996) e Waller e Gotway (2004) classificam os dados espaciais em diferentes tipos, conforme a natureza da distribuição espacial, em três principais categorias:\n\n\n\n\n\n\nTipos de Dados Espaciais\n\n\n\n\nDados de Áreas\nDados Pontuais\nDados Geoestatísticos\n\n\n\n\n1.1.1 Definições\n\n\n\n\n\n\n\n\n\n\nDefinições dos Tipos de Dados Espaciais (Scalon 2024)\n\n\n\n\nDados de áreas, também conhecidos como dados de lattice ou dados de superfice discreta, são dados espaciais indexados a sub-regiões que constituem uma partição de um dominio contínuo.\nDados pontuais surgem quando as próprias localizações do evento é o objeto de interesse.\nDados geoestatísticos, também conhecidos como dados de superfícies contínuas."
   },
   {
-    "objectID": "index.html#exercícios",
-    "href": "index.html#exercícios",
+    "objectID": "index.html#onde-aplicar-a-estatística-espacial",
+    "href": "index.html#onde-aplicar-a-estatística-espacial",
     "title": "Introdução",
-    "section": "2 Exercícios",
-    "text": "2 Exercícios\nSeção B — Dados de Áreas\n\nAjuste um modelo OLS CRIME ~ INC + HOVAL com columbus. Calcule Moran’s I nos resíduos e interprete. (Dica: lm.morantest())\nAjuste um SAR e um SEM para os mesmos dados. Compare os valores de AIC e interprete rho e lambda.\n\nSeção C — Processos Pontuais\n\nUsando bei, ajuste ppm(bei ~ elev + grad, data = bei.extra). Quais covariáveis são significativas? Faça um P-P plot para avaliar ajuste.\nAjuste um kppm(..., clusters = \"LGCP\") e compare os parâmetros do campo aleatório (sigma2 e escala) com o modelo Poisson.\n\nSeção D — Geoestatística\n\nEm meuse, ajuste uma tendência de log(zinc) ~ sqrt(dist) e calcule o variograma dos resíduos. Ajuste um modelo exponencial e reporte nugget, sill e range.\nRealize krigagem universal para predizer log(zinc) em uma grade e produza um mapa de predição e outro de erro padrão.\n\nSeção E — Espaço-Temporal (exercício conceitual)\n\nEscreva um esboço de como separaria o variograma espaço-temporal em componentes espaço, tempo e interação para um conjunto de séries de temperatura."
-  },
-  {
-    "objectID": "index.html#apêndice-a-soluções-respostas-rápidas",
-    "href": "index.html#apêndice-a-soluções-respostas-rápidas",
-    "title": "Introdução",
-    "section": "3 Apêndice A — Soluções (respostas rápidas)",
-    "text": "3 Apêndice A — Soluções (respostas rápidas)\nSeção B — Dados de Áreas (exemplo de solução)\n# OLS e Moran\ndata(columbus)\nb &lt;- poly2nb(columbus)\nlistw &lt;- nb2listw(nb, style = \"W\")\nmodelo_ols &lt;- lm(CRIME ~ INC + HOVAL, data = columbus)\nlm.morantest(modelo_ols, listw)\n\n# SAR e SEM\nmodelo_sar &lt;- lagsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)\nmodelo_sem &lt;- errorsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)\nAIC(modelo_ols, modelo_sar, modelo_sem)\nSeção C — Processos Pontuais (exemplo de solução)\nlibrary(spatstat)\ndata(bei); data(bei.extra)\nmodelo_ppm &lt;- ppm(bei ~ elev + grad, data = bei.extra)\nsummary(modelo_ppm)\n\nmodelo_lgcp &lt;- kppm(bei ~ elev + grad, data = bei.extra, clusters = \"LGCP\")\nsummary(modelo_lgcp)\nSeção D — Geoestatística (exemplo de solução)\nlibrary(gstat); library(sp)\ndata(meuse); coordinates(meuse)=~x+y\nv &lt;- variogram(log(zinc) ~ sqrt(dist), meuse)\nvm &lt;- fit.variogram(v, vgm(psill=1, model=\"Exp\", range=300, nugget=0))\nvm\n# Krigagem (exemplo):\n# meuse.grid &lt;- ... (defina grade)\n# kr &lt;- krige(log(zinc) ~ sqrt(dist), meuse, meuse.grid, model = vm)"
-  },
-  {
-    "objectID": "index.html#apêndice-b-scripts-e-dados",
-    "href": "index.html#apêndice-b-scripts-e-dados",
-    "title": "Introdução",
-    "section": "4 Apêndice B — Scripts e Dados",
-    "text": "4 Apêndice B — Scripts e Dados\n\nscript_com_covariaveis.R: scripts com exemplos prontos de spatstat e kppm.\nScript_geo_estatistica.R: scripts de variograma e krigagem para meuse.\ndados/: contêm Area_Jernimo_Contorno.kml e outros dados de exemplo.\n\nColoque os scripts no mesmo diretório do projeto e execute bloco-a-bloco no RStudio para reproduzir resultados. Se quiser, eu posso gerar arquivos scripts/ com versões prontas das soluções."
-  },
-  {
-    "objectID": "index.html#referências",
-    "href": "index.html#referências",
-    "title": "Introdução",
-    "section": "5 Referências",
-    "text": "5 Referências\n\nDiggle, P.J. & Ribeiro, P.J. (2007). Model-based Geostatistics. Springer.\n\nIllian, J., Penttinen, A., Stoyan, H., Stoyan, D. (2008). Statistical Analysis and Modelling of Spatial Point Patterns. Wiley.\n\nAnselin, L. (1988). Spatial Econometrics: Methods and Models. Kluwer."
+    "section": "1.2 Onde aplicar a estatística espacial?",
+    "text": "1.2 Onde aplicar a estatística espacial?\nA estatística espacial é amplamente aplicada em diversas áreas, incluindo:\n\nEpidemiologia: Análise da distribuição espacial de doenças.\nEcologia: Estudo da distribuição de espécies e habitats.\nGeografia: Análise de padrões espaciais em fenômenos geográficos.\nCiências ambientais: Monitoramento da qualidade do ar e da água.\nPlanejamento urbano: Análise de uso do solo e desenvolvimento urbano.\nAgricultura: Mapeamento de produtividade e gestão de recursos.\nEconomia: Análise de mercados imobiliários e padrões econômicos regionais.\nCiências sociais: Estudo de padrões demográficos e sociais.\nSaúde pública: Análise de acesso a serviços de saúde e distribuição de recursos.\nTransportes: Planejamento de redes de transporte e análise de tráfego.\nClimatologia: Estudo de padrões climáticos e mudanças ambientais.\nRecursos naturais: Gestão e monitoramento de recursos naturais, como florestas e corpos d’água.\n\ne muito mais áreas que envolvem dados geograficamente referenciados.\n\n\n\n\n\n\n\nAgradecimentos e Apoio\n\n\n\n\nMinisterio do desenvolvimento e inovação (MGI): apoio financeiro e na qual faço parte do projeto como colaborador.\nZetta agência de Tecnologia: apoio na divulgação e infraestrutura.\nZetta Lab: suporte técnico e infraestrutura computacional.\nUFLA: Universidade Federal de Lavras, instituição de ensino e pesquisa."
   },
   {
     "objectID": "pontuais.html",
@@ -137,6 +270,90 @@
     "href": "sistema_quarto.html",
     "title": "Sistema Quarto",
     "section": "",
-    "text": "1 O Sistema Quarto\nO Quarto é uma plataforma de código aberto para criação de documentos dinâmicos, apresentações e sites. Ele suporta múltiplas linguagens de programação, incluindo R, Python e Julia, permitindo a integração de código e texto em um único documento. Conteúdo sobre o Sistema Quarto."
+    "text": "📌 Lembrete importante\n\n\n\nCom o software R e a IDE RStudio já instalados, o próximo passo é a instalação do sistema Quarto. Esta plataforma permite a criação de documentos dinâmicos, apresentações e sites, integrando códigos de linguagens como R, Python e Julia em um único documento."
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---download-do-quarto",
+    "href": "sistema_quarto.html#passo---download-do-quarto",
+    "title": "Sistema Quarto",
+    "section": "1.1 Passo - Download do Quarto",
+    "text": "1.1 Passo - Download do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---download-do-quarto-1",
+    "href": "sistema_quarto.html#passo---download-do-quarto-1",
+    "title": "Sistema Quarto",
+    "section": "1.2 Passo - Download do Quarto",
+    "text": "1.2 Passo - Download do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---download-do-quarto-2",
+    "href": "sistema_quarto.html#passo---download-do-quarto-2",
+    "title": "Sistema Quarto",
+    "section": "1.3 Passo - Download do Quarto",
+    "text": "1.3 Passo - Download do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---instalação-do-quarto",
+    "href": "sistema_quarto.html#passo---instalação-do-quarto",
+    "title": "Sistema Quarto",
+    "section": "1.4 Passo - Instalação do Quarto",
+    "text": "1.4 Passo - Instalação do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---instalação-do-quarto-1",
+    "href": "sistema_quarto.html#passo---instalação-do-quarto-1",
+    "title": "Sistema Quarto",
+    "section": "1.5 Passo - Instalação do Quarto",
+    "text": "1.5 Passo - Instalação do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---instalação-do-quarto-2",
+    "href": "sistema_quarto.html#passo---instalação-do-quarto-2",
+    "title": "Sistema Quarto",
+    "section": "1.6 Passo - Instalação do Quarto",
+    "text": "1.6 Passo - Instalação do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---instalação-do-quarto-3",
+    "href": "sistema_quarto.html#passo---instalação-do-quarto-3",
+    "title": "Sistema Quarto",
+    "section": "1.7 Passo - Instalação do Quarto",
+    "text": "1.7 Passo - Instalação do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---instalação-do-quarto-4",
+    "href": "sistema_quarto.html#passo---instalação-do-quarto-4",
+    "title": "Sistema Quarto",
+    "section": "1.8 Passo - Instalação do Quarto",
+    "text": "1.8 Passo - Instalação do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---instalação-do-quarto-5",
+    "href": "sistema_quarto.html#passo---instalação-do-quarto-5",
+    "title": "Sistema Quarto",
+    "section": "1.9 Passo - Instalação do Quarto",
+    "text": "1.9 Passo - Instalação do Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---verificando-a-instalação-no-rstudio",
+    "href": "sistema_quarto.html#passo---verificando-a-instalação-no-rstudio",
+    "title": "Sistema Quarto",
+    "section": "1.10 Passo - Verificando a instalação no RStudio",
+    "text": "1.10 Passo - Verificando a instalação no RStudio"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---criando-um-documento-quarto",
+    "href": "sistema_quarto.html#passo---criando-um-documento-quarto",
+    "title": "Sistema Quarto",
+    "section": "1.11 Passo - Criando um documento Quarto",
+    "text": "1.11 Passo - Criando um documento Quarto"
+  },
+  {
+    "objectID": "sistema_quarto.html#passo---renderizando-o-documento",
+    "href": "sistema_quarto.html#passo---renderizando-o-documento",
+    "title": "Sistema Quarto",
+    "section": "1.12 Passo - Renderizando o documento",
+    "text": "1.12 Passo - Renderizando o documento\n\n\n\nCom o R, RStudio e Quarto instalados, seu ambiente está pronto. Agora você pode criar documentos dinâmicos, apresentações e sites integrando código e texto de forma eficiente.\nApós as instalações, reinicie seu computador para garantir que todas as mudanças sejam aplicadas corretamente."
   }
 ]
