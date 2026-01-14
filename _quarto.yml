@@ -35,6 +35,8 @@ website:
     right:
     - icon: github
       href: https://github.com/gean-damaceno/minicurso_estatistica_espacial
+    - icon: linkedin
+      href: https://www.linkedin.com/in/gean-damaceno-559569231
 
   sidebar:
     style: "docked"

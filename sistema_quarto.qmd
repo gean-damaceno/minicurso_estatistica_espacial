@@ -2,6 +2,7 @@
 title: "Sistema Quarto"
 bibliography: referencia.bib
 number-sections: true
+lightbox: true
 ---
 
 ::: {.callout-important title="📌 Lembrete importante" style="background-color: #e3f2fd;"}
@@ -15,51 +16,51 @@ Conteúdo sobre o Sistema Quarto.
 
 ## Passo - Download do Quarto
 
-![](images/Captura%20de%20tela%202025-03-15%20185009.png){width="800" height="400"}
+![](images/Captura%20de%20tela%202025-03-15%20185009.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Download do Quarto
 
-![](imagens/quarto_nav.png){width="800" height="400"}
+![](imagens/quarto_nav.png){width="800" height="400" .lightbox fig-align="center"}
 
 ## Passo - Download do Quarto
 
-![](imagens/qua_nave.png){width="800" height="400"}
+![](imagens/qua_nave.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação do Quarto
 
-![](imagens/q00.png){width="800" height="400"}
+![](imagens/q00.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação do Quarto
 
-![](imagens/q01.png){width="800" height="400"}
+![](imagens/q01.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação do Quarto
 
-![](imagens/q2.jpg){width="800" height="400"}
+![](imagens/q2.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação do Quarto
 
-![](imagens/q3.jpg){width="800" height="400"}
+![](imagens/q3.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação do Quarto
 
-![](imagens/q4.jpg){width="800" height="400"}
+![](imagens/q4.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação do Quarto
 
-![](imagens/q5.jpg){width="800" height="400"}
+![](imagens/q5.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Verificando a instalação no RStudio
 
-![](imagens/r.png){width="800" height="400"}
+![](imagens/r.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Criando um documento Quarto
 
-![](imagens/arq.png){width="800" height="400"}
+![](imagens/arq.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Renderizando o documento
 
-![](imagens/pro.png){width="800" height="400"}
+![](imagens/pro.png){width="800" height="400" fig-align="center"}
 
 ::: {.callout-success title="Instalação Concluída!"}
 - Com o **R**, **RStudio** e **Quarto** instalados, seu ambiente está pronto. Agora você pode criar documentos dinâmicos, apresentações e sites integrando código e texto de forma eficiente.

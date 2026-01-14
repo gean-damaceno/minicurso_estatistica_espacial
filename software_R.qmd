@@ -2,6 +2,7 @@
 title: "Software R e IDE Rstudio"
 bibliography: referencia.bib
 number-sections: true
+lightbox: true
 ---
 
 
@@ -48,41 +49,34 @@ RStudio.Version()
 
 Digite no navegador o nome do **software R** ou acesse: 👉 [CRAN – Site oficial do R](https://cran.r-project.org/)
 
-::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](images/Captura%20de%20tela%202025-03-15%20182250.png)
-:::
-::::
+
+![](images/Captura%20de%20tela%202025-03-15%20182250.png){width="800" height="400" fig-align="center"}
+
 
 ## Passo - Download do software R {.smaller transition="slide"}
 
 - Clique no link do **R do CRAN** correspondente ao seu sistema operacional (Windows, Mac ou Linux).
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/r_rtudio.png)
-:::
-::::
+
+![](imagens/r_rtudio.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Download do software R {.smaller transition="slide"}
 
 - Clique no número **1 – Download and install R** para iniciar o download do R e, em seguida, realizar a instalação.
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](images/Captura%20de%20tela%202025-03-15%20184353-01.png)
-:::
-::::
+![](images/Captura%20de%20tela%202025-03-15%20184353-01.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Download do software R {.smaller transition="slide"}
 
+::: {style="text-align: center"}
 :::: {style="position: relative; display: inline-block;"}
-<img src="imagens/IMG-20250315-WA0146.jpg" alt="Imagem de fundo" width="700" height="400"/>
+![](imagens/IMG-20250315-WA0146.jpg){width="800" height="400" fig-alt="Imagem de fundo"}
 
 <!-- Círculo sobreposto -->
 ::: {style="position: absolute; top: 35%; left: 40%; transform: translate(-50%, -50%); border: 5px solid red; border-radius: 50%; width: 400px; height: 120px; animation: bounce 2s infinite;"}
 :::
 ::::
+:::
 
 ```{=html}
 <style>
@@ -102,126 +96,84 @@ Digite no navegador o nome do **software R** ou acesse: 👉 [CRAN – Site ofic
 
 ## Passo - Download do software R {.smaller transition="slide"}
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0147.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0147.jpg){width="800" height="400" fig-align="center"}
 
 
 ## Passo - Download do software R {.smaller transition="slide"}
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0148.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0148.jpg){width="800" height="400" fig-align="center"}
 
 
 
 # Passo - Clique na barra de "Downloads :arrow_down:"
 
-:::: {.absolute top="70%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](images/Captura%20de%20tela%202025-03-16%20160259.png)
-:::
-::::
+![](images/Captura%20de%20tela%202025-03-16%20160259.png){width="800" height="400" fig-align="center"}
 
 
 ## Passo - Instalando o software R
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0149.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0149.jpg){width="800" height="400" fig-align="center"}
 
 
 ## Passo - Instalando o software R
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0150.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0150.jpg){width="800" height="400" fig-align="center"}
 
 
 ## Passo - Instalando o software R
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0151.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0151.jpg){width="800" height="400" fig-align="center"}
 
 
 ## Passo - Instalando o software R
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0152.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0152.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalando o software R
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0153.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0153.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalando o software R
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0154.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0154.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalando o software R
 
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0155.jpg)
-:::
-::::
+![](imagens/IMG-20250315-WA0155.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalando o software R
 
-![](imagens/IMG-20250315-WA0156.jpg){width="600"}
+![](imagens/IMG-20250315-WA0156.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalando o software R
-:::: {.absolute top="35%" left="0" width="800" height="400"}
-::: {style="text-align: center"}
-![](imagens/IMG-20250315-WA0157.jpg)
-:::
-::::
+
+![](imagens/IMG-20250315-WA0157.jpg){width="800" height="400" fig-align="center"}
 
 # Após a instalação do R, agora vamos instalar a IDE Rstudio.
 
 # Passo - Download da IDE Rstudio
 
-![](imagens/q1.jpg){width="600"}
+![](imagens/q1.jpg){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação da IDE Rstudio
 
-![](imagens/rs01.png){width="600"}
+![](imagens/rs01.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação da IDE Rstudio
 
-![](imagens/rs1.png){width="600"}
-
-## Passo - Instalação da IDE Rstudio
-![](imagens/rs2.png){width="600"}
+![](imagens/rs1.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação da IDE Rstudio
 
-![](imagens/rs3.png){width="600"}
+![](imagens/rs2.png){width="800" height="400" fig-align="center"}
 
 ## Passo - Instalação da IDE Rstudio
 
-![](imagens/rs4.png){width="600"}
+![](imagens/rs3.png){width="800" height="400" fig-align="center"}
+
+## Passo - Instalação da IDE Rstudio
+
+![](imagens/rs4.png){width="800" height="400" fig-align="center"}
 
 ::: {.callout-important title="✅ Avisos importantes" style="background-color: #e3f2fd;"}
 

@@ -9,6 +9,26 @@ bibliography: referencia.bib
 resources:
   - minicurso_estatistica_espacial.bib
 ---
+## Quem sou eu!
+
+::::: {.columns style="display: flex; align-items: center; gap: 20px;"}
+::: {.column width="30%"}
+![](imagens/eu.jpg){width="200" style="border-radius: 50%; border: 2px solid #e3f2fd;" fig-alt="Foto de Gean Pereira Damaceno"}
+:::
+
+::: {.column width="70%"}
+- 👤 Sou **Gean Pereira Damaceno**
+- 🎓 Técnico em Administração pelo **IFPI** (2019).
+- 🎓 Graduado em Licenciatura em Matemática pelo **IFPI** (2023).
+- 🎓 Mestre em Estatística e experimentação agropecuária pela **UFLA** (2025).
+- 📚 Estudante de estatística **Departamento de Estatística da UFLA**.
+- 💼 Bolsista na **Zetta** no projeto do Ministério da Gestão e da Inovação em Serviços Públicos
+ **MGI**.
+
+📧 **Email:** [gedamaceno030@gmail.com](mailto:gedamaceno030@gmail.com)
+🌐 **Website:** [Site](https://gean-damaceno.github.io/site-gean/)
+:::
+:::::
 
 **Sobre o minicurso**
 

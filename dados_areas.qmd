@@ -1,12 +1,25 @@
 ---
 title: "Dados de Áreas"
+bibliography: referencia.bib
 ---
 
 <a id="dados-de-areas"></a>
 
 Dados de áreas (areal data) são observações agregadas em unidades espaciais discretas, como bairros, municípios ou regiões administrativas. Essas unidades são representadas por polígonos em um sistema de informação geográfica (SIG). Exemplos comuns incluem taxas de criminalidade por bairro, incidência de doenças por município e dados socioeconômicos por região.
 
+As áreas podem ser regulares ou irregulares. Em geral, áreas representadas por regiões geográficas como estados e municípios são denominadas de espacialmente irregulares, enquanto áreas representadas por pixels, como imagens de sensoriamento remoto, são denominadas de espacialmente regulares (formado por uma grade de espaços iguais) [@scalon2024].
+
 Nesta abordagem, modelamos uma variável resposta agregada em polígonos (ex: taxas de crime por bairro) usando variáveis independentes, corrigindo a autocorrelação espacial via matriz de pesos $W$.
+
+Os dados das variáveis aleatórias podem ser de qualquer tipo (contínuas, discretas, etc) e tipicamente, representam toda a área, ou seja, não se dispõe da localização exata dos eventos dentro da área, mas sim de um valor que foi agregado para aquela área. Embora esses dados estejam associados com toda a área, em geral, eles são atribuídos a um ponto específico dentro da área, esse ponto pode ser o centroide da área [@scalon2024].
+
+O objetivo da análise de dados de áreas, é o mesmo da análise dos outros tipos de dados espaciais, ou seja, caracterizar o processo estocástico que gerou os dados [@scalon2024].
+
+Na análise de dados de áreas, como existe apenas um valor $z_i$ para a área $W_i$, deve-se assumir algum tipo de estacionariedade e para alguns casos será necessário assumir a normalidade multivariada [@scalon2024]. 
+
+Para esse tipo de análise de dados espaciais, dados de áreas, pode estar interessado em um ou mais dos seguintes objetivos.
+
+
 
 - **Pacotes:** `spdep`, `spatialreg`.
 - **Referência:** Anselin (1988).
@@ -34,37 +47,25 @@ Aqui a dependência aparece no termo de erro e é estimada via `errorsarlm()`.
   3. Ajustar SAR/SEM e comparar AIC/logLik para selecionar modelo.
   4. Interpretar `beta` condicionais ao efeito espacial estimado (rho ou lambda).
 
-```{.r}
-library(spdep)
-library(spatialreg)
+## Modelo espacial autoregressivo - SAR
 
-# Carregando dados clássicos de Crime em Columbus (Anselin, 1988)
-data(columbus)
+-   O modelo espacial autoregressivo (SAR) é descrito conforme @Anselin1988
 
-# 1. Definir a Vizinhança e Matriz de Pesos (W)
-# Cria lista de vizinhos (critério Rainha/Queen)
-str(columbus)
-nb <- poly2nb(columbus)
-# Padroniza a matriz pelas linhas (W)
-listw <- nb2listw(nb, style = "W")
+    \begin{equation}
+        Y = \delta WY + X\beta + \epsilon
+        \label{eq:sar}
+    \end{equation}
 
-# 2. Modelo OLS (Regressão Linear Padrão)
-# Crime ~ Renda (INC) + Valor da Casa (HOVAL)
-modelo_ols <- lm(CRIME ~ INC + HOVAL, data = columbus)
+-   Onde
 
-# Teste de Moran nos resíduos (verifica se sobrou dependência espacial)
-lm.morantest(modelo_ols, listw)
+-   $Y$ é um vetor de observações ( n $\times$ 1 ) nas n áreas
 
-# 3. Modelos Espaciais com Covariáveis
+-   $X$ é a matriz das variáveis independentes, de tamanho ( n $\times$ i ),
 
-# Modelo SAR (Spatial Lag Model) - O crime vizinho influencia o crime local
-# Equação: Y = rho*W*Y + X*beta + erro
-modelo_sar <- lagsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
+-   $\delta$ é o coeficiente de defasagem da variável dependente espacial,
 
-# Modelo SEM (Spatial Error Model) - O erro vizinho influencia o erro local
-# Equação: Y = X*beta + u, onde u = lambda*W*u + erro
-modelo_sem <- errorsarlm(CRIME ~ INC + HOVAL, data = columbus, listw = listw)
+-   $\beta$ é o vetor de parâmetros da regressão, de tamanho ( i $\times$ 1 ),
 
-# Comparação dos Resultados
-summary(modelo_sar)
-```
+-   $W$ é a matriz de ponderação, de tamanho ( n $\times$ n ),
+
+-   $\epsilon$ é o vetor de erros, de tamanho ( n $\times$ 1 ) não correlacionados que seguem uma distribuição normal com média zero e variância constante, isto é, $\epsilon \sim N(0, I\sigma^2$)
