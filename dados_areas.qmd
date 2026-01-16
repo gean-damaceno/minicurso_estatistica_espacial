@@ -17,35 +17,68 @@ O objetivo da análise de dados de áreas, é o mesmo da análise dos outros tip
 
 Na análise de dados de áreas, como existe apenas um valor $z_i$ para a área $W_i$, deve-se assumir algum tipo de estacionariedade e para alguns casos será necessário assumir a normalidade multivariada [@scalon2024]. 
 
-Para esse tipo de análise de dados espaciais, dados de áreas, pode estar interessado em um ou mais dos seguintes objetivos.
+Para esse tipo de análise de dados espaciais, dados de áreas, pode estar interessado em um ou mais objetivos.
+Por exemplo, @scalon2024 cita alguns dos objetivos, que podem ser:  
+-   Explorar o comportamento das variáveis aleatórias na região de estudo;
+-   Obter mapas mais suaves do que o mapa dos dados observados;
+-   etc...
+
+Para a realização de estatística espacial, é necessário que os dados em análise possuam o termo de autocorrelação espacial entre a variável aleatória.
+
+- Software
+
+O software para este minicurso, será o R, usando a IDE Rstudio.
+
+- Estrutura dos arquivos de dados de áreas
+
+Formato vetorial poligonal, como shapefiles (.shp) ou arquivos GeoPackage (.gpkg), que armazenam as geometrias dos polígonos e seus atributos associados.
+
+### Pacotes Utilizados
+
+Para realizar a análise de dados de áreas, utilizaremos os seguintes pacotes:
+
+::: {.callout-note title="📦 Pacotes R Necessários" style="background-color: #e3f2fd;"}
+Execute o código abaixo para instalar as bibliotecas:
+
+```{r}
+#| eval: false
+#| code-fold: true
+install.packages(c(
+  "sf", "spdata", "RColorBrewer", "spdep", "spatialreg", 
+  "readxl", "dplyr", "ggplot2", "geobr", "ggspatial", "ggthemes", 
+  "ggrepel", "viridis", "tmap", "car", "janitor"
+))
 
 
+```
 
-- **Pacotes:** `spdep`, `spatialreg`.
-- **Referência:** Anselin (1988).
+-   **`sf`**: Para manipulação de dados espaciais (Simple Features).
+-   **`spdata`**: Contém conjuntos de dados espaciais para exemplos.
+-   **`RColorBrewer`**: Para criação de paletas de cores em mapas.
+-   **`spdep`**: Para criar matrizes de pesos e testes de autocorrelação.
+-   **`spatialreg`**: Para ajustar modelos espaciais autoregressivos.
+-   **`readxl`**: Para leitura de arquivos Excel (.xls, .xlsx).
+-   **`dplyr`**: Para manipulação de dados.
+-   **`ggplot2`**: Para criação de gráficos e visualização de dados.
+-   **`geobr`**: Para baixar shapefiles oficiais do Brasil (IBGE).
+-   **`ggspatial`**: Adiciona elementos espaciais (norte, escala) ao `ggplot2`.
+-   **`ggthemes`**: Temas adicionais para gráficos.
+-   **`ggrepel`**: Para rótulos de texto que não se sobrepõem.
+-   **`viridis`**: Paletas de cores acessíveis para visualização de dados.
+-   **`tmap`**: Para criação de mapas temáticos flexíveis.
+-   **`car`**: Para diagnósticos de regressão (ex: VIF, QQ-plots).
+-   **`janitor`**: Para limpeza de dados (ex: nomes de colunas).
 
-### Cálculos e Intuições
+**Obtendo ajuda:** Para consultar a documentação de um pacote ou função, utilize os comandos `help()` ou `?`.
 
-- **Matriz de pesos $W$:** constrói-se a partir da vizinhança (por exemplo Rainha/Queen). Cada elemento $w_{ij}$ indica influência do polígono $j$ sobre $i$. Em estilo row-standardized ("W"), cada linha é dividida pela soma da linha, de modo que $\sum_j w_{ij}=1$.
+```{r}
+#| eval: false
+help(sf)
+?sf
+```
 
-- **Moran's I (teste de autocorrelação espacial):**
-$$I = \frac{n}{S_0} \frac{\sum_{i}\sum_{j} w_{ij}(y_i-\bar{y})(y_j-\bar{y})}{\sum_i (y_i-\bar{y})^2},$$ 
-onde $S_0=\sum_i\sum_j w_{ij}$ e $n$ é o número de polígonos. No R usamos `lm.morantest()` que calcula $I$ nos resíduos do OLS.
+:::
 
-- **Modelos espaciais (intuição matemática):**
-  - Spatial Lag (SAR):
-  $$Y = \rho W Y + X\beta + \varepsilon, \quad \varepsilon\sim N(0,\sigma^2 I).$$ 
-A estimação procura $\rho,\beta,\sigma^2$ maximizando a verossimilhança (ou por métodos de momentos). No R usamos `lagsarlm()` que internamente otimiza a verossimilhança do sistema $(I-\rho W)Y = X\beta + \varepsilon$.
-
-  - Spatial Error (SEM):
-  $$Y = X\beta + u, \quad u = \lambda W u + \xi, \quad \xi\sim N(0,\sigma^2 I).$$ 
-Aqui a dependência aparece no termo de erro e é estimada via `errorsarlm()`.
-
-- Passos práticos para análises:
-  1. Ajustar OLS e calcular resíduos: `res = residuals(modelo_ols)`.
-  2. Calcular Moran's I nos resíduos: `lm.morantest(modelo_ols, listw)`; se significativo, considerar modelos espaciais.
-  3. Ajustar SAR/SEM e comparar AIC/logLik para selecionar modelo.
-  4. Interpretar `beta` condicionais ao efeito espacial estimado (rho ou lambda).
 
 ## Modelo espacial autoregressivo - SAR
 
@@ -69,3 +102,161 @@ Aqui a dependência aparece no termo de erro e é estimada via `errorsarlm()`.
 -   $W$ é a matriz de ponderação, de tamanho ( n $\times$ n ),
 
 -   $\epsilon$ é o vetor de erros, de tamanho ( n $\times$ 1 ) não correlacionados que seguem uma distribuição normal com média zero e variância constante, isto é, $\epsilon \sim N(0, I\sigma^2$)
+
+## Exemplo Prático: Análise de Chikungunya
+
+Abaixo apresentamos o passo a passo da análise, utilizando dados reais de incidência.
+
+### 1. Carregamento de Pacotes
+
+Primeiramente, carregamos todas as bibliotecas que serão utilizadas na análise.
+
+```{r}
+#| message: false
+#| warning: false
+#| eval: false
+library(readxl)
+library(dplyr)
+library(stringr)
+library(geobr)
+library(sf)
+library(spdep)
+library(spatialreg)
+library(ggplot2)
+library(ggspatial)
+library(ggthemes)
+library(ggrepel)
+library(viridis)
+library(tmap)
+library(car)
+library(janitor)
+```
+
+### Carregamento e Tratamento dos Dados
+
+```{r}
+#| eval: false
+# Carregando dados de incidência
+dados <- read_excel("C:/Meus_documentos/Congresso_MGEST_2025/Chikugunha/dados/chiku.xlsx")
+dados <- janitor::clean_names(dados)
+dados <- dados |> 
+  select(cod, muni, x2023_0) |> 
+  mutate(x2023_0 = as.numeric(replace(x2023_0, x2023_0 == "-", 0))) 
+
+# Carregando dados de densidade/população
+dados1 <- read_excel("C:/Meus_documentos/Congresso_MGEST_2025/Chikugunha/dados/densidad.xlsx", sheet = 3)
+dados1 <- dados1 |>
+  separate(muni, into = c("Municipio", "Estado"), sep = " \\(") %>%
+  mutate(Estado = gsub("\\)", "", Estado))
+dados1 <- dados1[-c(1, 219:222),-2 ] # Limpeza de linhas
+```
+
+### Obtenção da Malha e Unificação
+
+```{r}
+#| eval: false
+# Baixar malha municipal (MA)
+todos <- read_municipality(code_muni = "all", year = 2022, showProgress = FALSE)
+ma <- filter(todos, abbrev_state == "MA")
+ma <- ma |> 
+  mutate(code_muni = str_sub(code_muni, 1, -2), 
+         code_muni = as.numeric(code_muni))
+
+# Unificação (Join)
+dados_juntos <- ma |> 
+  left_join(dados, by = c("code_muni" = "cod"))
+dados_juntos <- dados_juntos[, -c(4,5,7,8)]
+
+dad <- cbind(dados_juntos, dados1) |> 
+  mutate(across(everything(), ~replace_na(., 0))) |>
+  mutate(popu = as.numeric(popu))
+dad <- dad[, -c(3,4,6)]
+
+# Cálculo da taxa de incidência
+dad <- dad |> 
+  mutate(inc_100 =  (x2023_0 / popu)*10000, .after =x2023_0,
+         log_inc_100 =  log((x2023_0 / popu)*10000))
+```
+
+### Análise Exploratória e OLS
+
+```{r}
+#| eval: false
+# Gráficos exploratórios
+par(mfrow = c(1,2))
+boxplot(dad$inc_100, main = "Incidência")
+hist(dad$inc_100, main = "Histograma")
+
+# Regressão Linear (OLS)
+modelo_lm_2 <- lm(inc_100 ~ area_da_unidade + densidade_demográfica, data = dad)
+summary(modelo_lm_2)
+
+# Diagnóstico
+vif(modelo_lm_2)
+qqPlot(modelo_lm_2$residuals, main = "QQ Plot OLS")
+```
+
+### Autocorrelação Espacial
+
+```{r}
+#| eval: false
+# Matriz de vizinhança e pesos
+nb <- poly2nb(dad$geom, queen=TRUE)
+lw <- nb2listw(nb, style="W", zero.policy=TRUE)
+
+# Teste de Moran Global
+moran.test(dad$inc_100, lw, randomisation = TRUE)
+
+# Diagrama de Dispersão de Moran
+moran.plot(modelo_lm_2$residual, lw, main = "Diagrama de Dispersão de Moran (OLS)")
+```
+
+### Modelagem Espacial (SAR e SEM)
+
+```{r}
+#| eval: false
+# Modelo SAR (Spatial Lag)
+modelo_sar1 <- lagsarlm(inc_100 ~ area_da_unidade + densidade_demográfica, 
+                        data = dad, listw = lw, zero.policy = TRUE)
+summary(modelo_sar1)
+
+# Modelo SEM (Spatial Error) - Referido como CAR no código original
+modelo_car1 <- errorsarlm(inc_100 ~ area_da_unidade + densidade_demográfica, 
+                          data = dad, listw = lw, zero.policy = TRUE)
+summary(modelo_car1)
+```
+
+### Visualização e Mapas
+
+```{r}
+#| eval: false
+# Adicionando resultados ao mapa
+dad$pred_sar <- modelo_sar1$fitted.values
+dad$resid_sar <- residuals(modelo_sar1)
+
+# Mapa de Predição
+ggplot(dad) +
+  geom_sf(aes(fill = pred_sar), color = NA) +
+  scale_fill_viridis_c(option = "magma", name = "Predição SAR") +
+  annotation_scale(location = "bl", width_hint = 0.4) +
+  annotation_north_arrow(location = "tl", which_north = "true") +
+  theme_minimal()
+
+# Clusters LISA
+dad_sf <- st_as_sf(dad)
+lisa <- localmoran(dad_sf$inc_100, lw)
+dad_sf$lisa_i <- lisa[,1]
+dad_sf$pval <- lisa[,5]
+
+dad_sf <- dad_sf %>%
+  mutate(cluster = case_when(
+    lisa_i > 0 & pval <= 0.05 & inc_100 > mean(inc_100) ~ "Alto-Alto",
+    lisa_i > 0 & pval <= 0.05 & inc_100 < mean(inc_100) ~ "Baixo-Baixo",
+    lisa_i < 0 & pval <= 0.05 & inc_100 > mean(inc_100) ~ "Alto-Baixo",
+    lisa_i < 0 & pval <= 0.05 & inc_100 < mean(inc_100) ~ "Baixo-Alto",
+    TRUE ~ "Não significativo"
+  ))
+
+tm_shape(dad_sf) +
+  tm_polygons("cluster", palette = c("red", "blue", "white", "lightblue", "gray80"))
+```

@@ -14,7 +14,7 @@ website:
 
   navbar:
     logo: logo_book.png
-    title: "Minicurso de Estatística Espacial com R - Congresso de estatística Lima (Peru) 2026"
+    title: "Minicurso de Estatística Espacial com R - Congresso de estatística Lima (Peru) de 15 a 18 de junho de 2026"
     background: primary
     search: true
     left:
