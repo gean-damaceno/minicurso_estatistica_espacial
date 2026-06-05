@@ -23,4 +23,4 @@ Livros/*.pdf
 **/*.quarto_ipynb
 
 # Backup do dia 2 (não enviar ao GitHub antes do tempo)
-pratica_real.qmd
+_pratica_real.qmd
