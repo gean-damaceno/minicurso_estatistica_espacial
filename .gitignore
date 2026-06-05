@@ -9,13 +9,13 @@ _freeze/
 julia-workshop-main/
 
 # Dados locais (não versionar)
-dados/
-*.xlsx
-*.kml
+/dados/
+/*.xlsx
+/*.kml
 
 # Imagens FONTE (não versionar)
-images/
-imagens/
+/images/
+/imagens/
 
 # PDFs fonte
 Livros/*.pdf
