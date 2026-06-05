@@ -9,7 +9,15 @@ lightbox: true
 
 ::: {.callout-important title="📌 Lembrete importante" style="background-color: #e3f2fd;"}
 
-Para a utilização dos códigos apresentados neste minicurso, é necessário instalar o software R e a IDE RStudio. É fundamental seguir a ordem correta: primeiro instale o **software R** e, em seguida, a **IDE RStudio**.
+Para a utilização dos códigos apresentados neste minicurso, é necessário instalar o **software R** e a **IDE RStudio**. 
+É fundamental seguir a ordem correta: 
+
+- 1º instale o **software R** 
+- 2º instale a **IDE RStudio**
+- 3º instale o **Sistema Quarto**
+
+Não esqueça, é muito importante seguir essa ordem para garantir o funcionamento adequado do ambiente de desenvolvimento.
+
 :::
 
 # Definições
@@ -17,7 +25,7 @@ Para a utilização dos códigos apresentados neste minicurso, é necessário in
 ## O que é o SOFTWARE R?
 R é uma linguagem e ambiente para computação estatística e gráficos. É um projeto GNU que é similar à linguagem e ambiente *S* que foi desenvolvido na Bell Laboratories (antigamente AT&T, agora Lucent Technologies) por John Chambers e colegas. R pode ser considerado como uma implementação diferente de S. Existem algumas diferenças importantes, mas muito código escrito para *S* roda inalterado sob R [@R].
 
-::: {.callout-tip}
+::: {.callout-tip style ="background-color: #bedef5;"}
 ### Verificar a versão do R
 
 Para conferir a versão do R instalada no seu computador e citar, utilize o comando:
@@ -31,9 +39,9 @@ citation()
 
 ## O que é a IDE RSTUDIO? 
 
-O RStudio é um ambiente de desenvolvimento integrado (IDE) para R e Python. Ele inclui um console, um editor de realce de sintaxe que suporta execução direta de código e ferramentas para plotagem, histórico, depuração e gerenciamento de espaço de trabalho. O RStudio está disponível em edições comerciais e de código aberto e roda no desktop (Windows, Mac e Linux) [@Rstudio].
+O RStudio é um ambiente de desenvolvimento integrado (IDE) para diferentes linguagens de programação, incluindo R, Python e entre outras. Ele inclui um console, um editor de realce de sintaxe que suporta execução direta de código e ferramentas para plotagem, histórico, depuração e gerenciamento de espaço de trabalho. O RStudio está disponível em edições comerciais e de código aberto e roda no desktop (Windows, Mac e Linux) [@Rstudio].
 
-::: {.callout-tip}
+::: {.callout-tip style ="background-color: #6c95b3;"}
 ### Verificar a versão do RStudio
 
 Para verificar a versão do RStudio instalada e citar, execute:
@@ -47,7 +55,7 @@ RStudio.Version()
 
 ## Passo - Pesquisando o software R para download {.smaller transition="slide"}
 
-Digite no navegador o nome do **software R** ou acesse: 👉 [CRAN – Site oficial do R](https://cran.r-project.org/)
+Digite no navegador o nome do **software R** ou acesse: 👉 <a href="https://cran.r-project.org/" target="_blank" rel="noopener noreferrer">**CRAN**</a>
 
 
 ![](images/Captura%20de%20tela%202025-03-15%20182250.png){width="800" height="400" fig-align="center"}
@@ -149,36 +157,41 @@ Digite no navegador o nome do **software R** ou acesse: 👉 [CRAN – Site ofic
 
 ![](imagens/IMG-20250315-WA0157.jpg){width="800" height="400" fig-align="center"}
 
-# Após a instalação do R, agora vamos instalar a IDE Rstudio.
+# Após a instalação do R, agora vamos instalar a IDE RStudio.
 
-# Passo - Download da IDE Rstudio
+::: {.callout-important title="📌 Lembrete antes de continuar" style="background-color: #e3f2fd;"}
+
+- Certifique-se de que o **R** está instalado corretamente antes de instalar o RStudio.
+- O RStudio precisa do R para funcionar. Sem o R instalado, o RStudio não funcionará.
+
+:::
+
+# Passo - Download da IDE RStudio
 
 ![](imagens/q1.jpg){width="800" height="400" fig-align="center"}
 
-## Passo - Instalação da IDE Rstudio
+## Passo - Instalação da IDE RStudio
 
 ![](imagens/rs01.png){width="800" height="400" fig-align="center"}
 
-## Passo - Instalação da IDE Rstudio
+## Passo - Instalação da IDE RStudio
 
 ![](imagens/rs1.png){width="800" height="400" fig-align="center"}
 
-## Passo - Instalação da IDE Rstudio
+## Passo - Instalação da IDE RStudio
 
 ![](imagens/rs2.png){width="800" height="400" fig-align="center"}
 
-## Passo - Instalação da IDE Rstudio
+## Passo - Instalação da IDE RStudio
 
 ![](imagens/rs3.png){width="800" height="400" fig-align="center"}
 
-## Passo - Instalação da IDE Rstudio
+## Passo - Instalação da IDE RStudio
 
 ![](imagens/rs4.png){width="800" height="400" fig-align="center"}
 
-::: {.callout-important title="✅ Avisos importantes" style="background-color: #e3f2fd;"}
+::: {.callout-tip title="✅ Instalação concluída!" style="background-color: #e8f5e9;"}
 
-- Certifique-se de que o R está instalado corretamente antes de instalar o RStudio.
-- Após a instalação do R, instale o RStudio
-  
-  
+Parabéns! O **R** e o **RStudio** estão instalados. Agora você está pronto para começar a programar!
+
 :::

@@ -27,3 +27,115 @@ $primary: #1054e6 !default;
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
+
+/* ===========================
+   THEME TOGGLE ICON (🔆 / 🌙)
+   =========================== */
+
+.navbar .quarto-color-scheme-toggle {
+  position: relative;
+  font-size: 1.3rem;
+}
+
+/* Esconde o ícone padrão do Bootstrap */
+.navbar .quarto-color-scheme-toggle .bi {
+  display: none;
+}
+
+/* Ícone padrão (tema claro) */
+.navbar .quarto-color-scheme-toggle::before {
+  content: "🔆";
+  display: inline-block;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+/* Quando estiver em modo escuro */
+body.quarto-dark .navbar .quarto-color-scheme-toggle::before {
+  content: "☾⋆";
+  color: gold;
+  display: inline-block;
+  transform: scaleX(1) rotate(-30deg); // inclinação suave
+  transition: transform 0.25s ease;
+}
+
+/* Hover */
+.navbar .quarto-color-scheme-toggle:hover::before {
+  transform: scale(1.25);
+}
+/* ===========================
+   PERFIL – COLUNAS
+   =========================== */
+
+.perfil {
+  color: var(--bs-body-color);
+}
+
+.perfil p,
+.perfil li {
+  color: var(--bs-body-color);
+}
+
+.perfil a {
+  color: var(--bs-link-color);
+}
+
+/* Imagem */
+.perfil img {
+  border-radius: 50%;
+  border: 2px solid var(--bs-border-color);
+}
+
+/* Tema claro */
+body[data-bs-theme="light"] .callout,
+body[data-bs-theme="light"] .callout-content,
+body[data-bs-theme="light"] .callout-body {
+  color: #0a0c0c;
+}
+
+/* Tema escuro */
+body[data-bs-theme="dark"] .callout,
+body[data-bs-theme="dark"] .callout-content,
+body[data-bs-theme="dark"] .callout-body {
+  color: #f1f1f1;
+}
+
+/* ===========================
+   COR DO TEXTO EM CALLOUTS
+   =========================== */
+
+/* Corpo do callout */
+.callout,
+.callout-content,
+.callout-body {
+  color: #0a0c0c; // texto escuro
+}
+
+/* Parágrafos, listas e links dentro do callout */
+.callout p,
+.callout li,
+.callout span {
+  color: #0a0c0c;
+}
+
+/* Links */
+.callout a {
+  color: #1054e6;
+  font-weight: 500;
+}
+
+.callout-note .callout-body {
+  color: #0a0c0c;
+}
+
+/* Tema claro */
+body[data-bs-theme="light"] .callout-note .callout-title {
+  color: #1054e6;
+}
+
+/* Tema escuro */
+body[data-bs-theme="dark"] .callout-note .callout-title {
+  color: #8ab4ff;
+}
+.callout-tip .callout-body {
+  color: #0a0c0c;
+}

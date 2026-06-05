@@ -1,0 +1,27 @@
+---
+title: "Prática: Análise de Dados de Áreas com R"
+---
+
+::: {.text-center style="text-align: center; margin-top: 80px; margin-bottom: 80px;"}
+
+::: {style="font-size: 80px; margin-bottom: 20px; animation: pulse 2s infinite;"}
+⏳🧑‍💻🚧
+:::
+
+## [Aguarde para mais!]{style="color: #1e90ff; font-weight: bold;"}
+
+[Esta atividade prática será realizada no **2º Dia do Minicurso (16 de Junho)**.]{style="font-size: 1.2em; max-width: 600px; margin: 20px auto; color: #555; display: block;"}
+
+::: {.callout-important title="Importante" style="max-width: 500px; margin: 20px auto; text-align: left;"}
+Traga seu computador com o **R** e o **RStudio** instalados. Os dados e scripts para esta prática serão liberados no momento da aula! 😉
+:::
+
+:::
+
+<style>
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+</style>

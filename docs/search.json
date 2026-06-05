@@ -4,168 +4,240 @@
     "href": "software_R.html",
     "title": "Software R e IDE Rstudio",
     "section": "",
-    "text": "📌 Lembrete importante\n\n\n\nPara a utilização dos códigos apresentados neste minicurso, é necessário instalar o software R e a IDE RStudio. É fundamental seguir a ordem correta: primeiro instale o software R e, em seguida, a IDE RStudio."
+    "text": "Importante📌 Lembrete importante\n\n\n\nPara a utilização dos códigos apresentados neste minicurso, é necessário instalar o software R e a IDE RStudio. É fundamental seguir a ordem correta:\n\n1º instale o software R\n2º instale a IDE RStudio\n3º instale o Sistema Quarto\n\nNão esqueça, é muito importante seguir essa ordem para garantir o funcionamento adequado do ambiente de desenvolvimento.",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#o-que-é-o-software-r",
     "href": "software_R.html#o-que-é-o-software-r",
     "title": "Software R e IDE Rstudio",
     "section": "1.1 O que é o SOFTWARE R?",
-    "text": "1.1 O que é o SOFTWARE R?\nR é uma linguagem e ambiente para computação estatística e gráficos. É um projeto GNU que é similar à linguagem e ambiente S que foi desenvolvido na Bell Laboratories (antigamente AT&T, agora Lucent Technologies) por John Chambers e colegas. R pode ser considerado como uma implementação diferente de S. Existem algumas diferenças importantes, mas muito código escrito para S roda inalterado sob R (R Core Team 2025).\n\n\n\n\n\n\nVerificar a versão do R\n\n\n\nPara conferir a versão do R instalada no seu computador e citar, utilize o comando:\nversion\ncitation()"
+    "text": "1.1 O que é o SOFTWARE R?\nR é uma linguagem e ambiente para computação estatística e gráficos. É um projeto GNU que é similar à linguagem e ambiente S que foi desenvolvido na Bell Laboratories (antigamente AT&T, agora Lucent Technologies) por John Chambers e colegas. R pode ser considerado como uma implementação diferente de S. Existem algumas diferenças importantes, mas muito código escrito para S roda inalterado sob R (R Core Team 2025).\n\n\n\n\n\n\nDicaVerificar a versão do R\n\n\n\nPara conferir a versão do R instalada no seu computador e citar, utilize o comando:\nversion\ncitation()",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#o-que-é-a-ide-rstudio",
     "href": "software_R.html#o-que-é-a-ide-rstudio",
     "title": "Software R e IDE Rstudio",
     "section": "1.2 O que é a IDE RSTUDIO?",
-    "text": "1.2 O que é a IDE RSTUDIO?\nO RStudio é um ambiente de desenvolvimento integrado (IDE) para R e Python. Ele inclui um console, um editor de realce de sintaxe que suporta execução direta de código e ferramentas para plotagem, histórico, depuração e gerenciamento de espaço de trabalho. O RStudio está disponível em edições comerciais e de código aberto e roda no desktop (Windows, Mac e Linux) (Equipe RStudio 2020).\n\n\n\n\n\n\nVerificar a versão do RStudio\n\n\n\nPara verificar a versão do RStudio instalada e citar, execute:\nRStudio.Version()"
+    "text": "1.2 O que é a IDE RSTUDIO?\nO RStudio é um ambiente de desenvolvimento integrado (IDE) para diferentes linguagens de programação, incluindo R, Python e entre outras. Ele inclui um console, um editor de realce de sintaxe que suporta execução direta de código e ferramentas para plotagem, histórico, depuração e gerenciamento de espaço de trabalho. O RStudio está disponível em edições comerciais e de código aberto e roda no desktop (Windows, Mac e Linux) (Equipe RStudio 2020).\n\n\n\n\n\n\nDicaVerificar a versão do RStudio\n\n\n\nPara verificar a versão do RStudio instalada e citar, execute:\nRStudio.Version()",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---pesquisando-o-software-r-para-download",
     "href": "software_R.html#passo---pesquisando-o-software-r-para-download",
     "title": "Software R e IDE Rstudio",
     "section": "2.1 Passo - Pesquisando o software R para download",
-    "text": "2.1 Passo - Pesquisando o software R para download\nDigite no navegador o nome do software R ou acesse: 👉 CRAN – Site oficial do R"
+    "text": "2.1 Passo - Pesquisando o software R para download\nDigite no navegador o nome do software R ou acesse: 👉 CRAN",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---download-do-software-r",
     "href": "software_R.html#passo---download-do-software-r",
     "title": "Software R e IDE Rstudio",
     "section": "2.2 Passo - Download do software R",
-    "text": "2.2 Passo - Download do software R\n\nClique no link do R do CRAN correspondente ao seu sistema operacional (Windows, Mac ou Linux)."
+    "text": "2.2 Passo - Download do software R\n\nClique no link do R do CRAN correspondente ao seu sistema operacional (Windows, Mac ou Linux).",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---download-do-software-r-1",
     "href": "software_R.html#passo---download-do-software-r-1",
     "title": "Software R e IDE Rstudio",
     "section": "2.3 Passo - Download do software R",
-    "text": "2.3 Passo - Download do software R\n\nClique no número 1 – Download and install R para iniciar o download do R e, em seguida, realizar a instalação."
+    "text": "2.3 Passo - Download do software R\n\nClique no número 1 – Download and install R para iniciar o download do R e, em seguida, realizar a instalação.",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---download-do-software-r-2",
     "href": "software_R.html#passo---download-do-software-r-2",
     "title": "Software R e IDE Rstudio",
     "section": "2.4 Passo - Download do software R",
-    "text": "2.4 Passo - Download do software R"
+    "text": "2.4 Passo - Download do software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---download-do-software-r-3",
     "href": "software_R.html#passo---download-do-software-r-3",
     "title": "Software R e IDE Rstudio",
     "section": "2.5 Passo - Download do software R",
-    "text": "2.5 Passo - Download do software R"
+    "text": "2.5 Passo - Download do software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---download-do-software-r-4",
     "href": "software_R.html#passo---download-do-software-r-4",
     "title": "Software R e IDE Rstudio",
     "section": "2.6 Passo - Download do software R",
-    "text": "2.6 Passo - Download do software R"
+    "text": "2.6 Passo - Download do software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r",
     "href": "software_R.html#passo---instalando-o-software-r",
     "title": "Software R e IDE Rstudio",
     "section": "3.1 Passo - Instalando o software R",
-    "text": "3.1 Passo - Instalando o software R"
+    "text": "3.1 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-1",
     "href": "software_R.html#passo---instalando-o-software-r-1",
     "title": "Software R e IDE Rstudio",
     "section": "3.2 Passo - Instalando o software R",
-    "text": "3.2 Passo - Instalando o software R"
+    "text": "3.2 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-2",
     "href": "software_R.html#passo---instalando-o-software-r-2",
     "title": "Software R e IDE Rstudio",
     "section": "3.3 Passo - Instalando o software R",
-    "text": "3.3 Passo - Instalando o software R"
+    "text": "3.3 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-3",
     "href": "software_R.html#passo---instalando-o-software-r-3",
     "title": "Software R e IDE Rstudio",
     "section": "3.4 Passo - Instalando o software R",
-    "text": "3.4 Passo - Instalando o software R"
+    "text": "3.4 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-4",
     "href": "software_R.html#passo---instalando-o-software-r-4",
     "title": "Software R e IDE Rstudio",
     "section": "3.5 Passo - Instalando o software R",
-    "text": "3.5 Passo - Instalando o software R"
+    "text": "3.5 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-5",
     "href": "software_R.html#passo---instalando-o-software-r-5",
     "title": "Software R e IDE Rstudio",
     "section": "3.6 Passo - Instalando o software R",
-    "text": "3.6 Passo - Instalando o software R"
+    "text": "3.6 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-6",
     "href": "software_R.html#passo---instalando-o-software-r-6",
     "title": "Software R e IDE Rstudio",
     "section": "3.7 Passo - Instalando o software R",
-    "text": "3.7 Passo - Instalando o software R"
+    "text": "3.7 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-7",
     "href": "software_R.html#passo---instalando-o-software-r-7",
     "title": "Software R e IDE Rstudio",
     "section": "3.8 Passo - Instalando o software R",
-    "text": "3.8 Passo - Instalando o software R"
+    "text": "3.8 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalando-o-software-r-8",
     "href": "software_R.html#passo---instalando-o-software-r-8",
     "title": "Software R e IDE Rstudio",
     "section": "3.9 Passo - Instalando o software R",
-    "text": "3.9 Passo - Instalando o software R"
+    "text": "3.9 Passo - Instalando o software R",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalação-da-ide-rstudio",
     "href": "software_R.html#passo---instalação-da-ide-rstudio",
     "title": "Software R e IDE Rstudio",
-    "section": "5.1 Passo - Instalação da IDE Rstudio",
-    "text": "5.1 Passo - Instalação da IDE Rstudio"
+    "section": "5.1 Passo - Instalação da IDE RStudio",
+    "text": "5.1 Passo - Instalação da IDE RStudio",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalação-da-ide-rstudio-1",
     "href": "software_R.html#passo---instalação-da-ide-rstudio-1",
     "title": "Software R e IDE Rstudio",
-    "section": "5.2 Passo - Instalação da IDE Rstudio",
-    "text": "5.2 Passo - Instalação da IDE Rstudio"
+    "section": "5.2 Passo - Instalação da IDE RStudio",
+    "text": "5.2 Passo - Instalação da IDE RStudio",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalação-da-ide-rstudio-2",
     "href": "software_R.html#passo---instalação-da-ide-rstudio-2",
     "title": "Software R e IDE Rstudio",
-    "section": "5.3 Passo - Instalação da IDE Rstudio",
-    "text": "5.3 Passo - Instalação da IDE Rstudio"
+    "section": "5.3 Passo - Instalação da IDE RStudio",
+    "text": "5.3 Passo - Instalação da IDE RStudio",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalação-da-ide-rstudio-3",
     "href": "software_R.html#passo---instalação-da-ide-rstudio-3",
     "title": "Software R e IDE Rstudio",
-    "section": "5.4 Passo - Instalação da IDE Rstudio",
-    "text": "5.4 Passo - Instalação da IDE Rstudio"
+    "section": "5.4 Passo - Instalação da IDE RStudio",
+    "text": "5.4 Passo - Instalação da IDE RStudio",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "software_R.html#passo---instalação-da-ide-rstudio-4",
     "href": "software_R.html#passo---instalação-da-ide-rstudio-4",
     "title": "Software R e IDE Rstudio",
-    "section": "5.5 Passo - Instalação da IDE Rstudio",
-    "text": "5.5 Passo - Instalação da IDE Rstudio\n\n\n\n\n\n\n\n\n\n\n\n✅ Avisos importantes\n\n\n\n\nCertifique-se de que o R está instalado corretamente antes de instalar o RStudio.\nApós a instalação do R, instale o RStudio"
+    "section": "5.5 Passo - Instalação da IDE RStudio",
+    "text": "5.5 Passo - Instalação da IDE RStudio\n\n\n\n\n\n\n\n\n\n\n\nDica✅ Instalação concluída!\n\n\n\nParabéns! O R e o RStudio estão instalados. Agora você está pronto para começar a programar!",
+    "crumbs": [
+      "Software R e IDE Rstudio"
+    ]
   },
   {
     "objectID": "processos_pontuais.html#processos-pontuais",
     "href": "processos_pontuais.html#processos-pontuais",
     "title": "Processos Pontuais",
     "section": "1 Processos Pontuais",
-    "text": "1 Processos Pontuais\nPara Scalon (2024), um processo pontual espacial Z é um mecanismo estocástico que gera um conjunto finito de eventos z(\\(s_i\\)), i = 1, …, n de maneira irregular em um espaço euclidiano bidimensional, porém, observados para dentro de uma determinada regição fechada W."
+    "text": "1 Processos Pontuais\nPara Scalon (2024), um processo pontual espacial Z é um mecanismo estocástico que gera um conjunto finito de eventos z(\\(s_i\\)), i = 1, …, n de maneira irregular em um espaço euclidiano bidimensional, porém, observados para dentro de uma determinada regição fechada W.\n\n\n\n\n\n\nDicaEm construção",
+    "crumbs": [
+      "Processos Pontuais"
+    ]
   },
   {
     "objectID": "minicurso.html",
@@ -214,14 +286,63 @@
     "href": "geoestatistica.html",
     "title": "Geoestatística",
     "section": "",
-    "text": "De acordo com Scalon (2024), uma variável geoestatística Z é uma variável distribuída em uma superfície contínua cujos valores z (dados geoestatísticos) são considerados realizações de processos estocásticos (função aleatória) indexados no espaço s."
+    "text": "Dica📌 Mapas de krigagem\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a) Mapa de krigagem de Minas Gerais\n\n\n\n\n\n\n\n\n\n\n\n(b) Mapa de krigagem de resistividade do solo\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Mapa de krigagem do risco fogo ceará\n\n\n\n\n\n\n\n\n\n\n\n(d) Mapa de krigagem de Animais em extinção Mozambique\n\n\n\n\n\n\n\nFigura 1: Exemplos de mapas gerados por krigagem\n\n\n\n\n\n\n\n\n\n\n\nNota📸 Coleta de dados no campo\n\n\n\n\n\n\n\n\n\n\nFigura 2"
   },
   {
     "objectID": "geoestatistica.html#geoestatística",
     "href": "geoestatistica.html#geoestatística",
     "title": "Geoestatística",
     "section": "",
-    "text": "De acordo com Scalon (2024), uma variável geoestatística Z é uma variável distribuída em uma superfície contínua cujos valores z (dados geoestatísticos) são considerados realizações de processos estocásticos (função aleatória) indexados no espaço s."
+    "text": "Dica📌 Mapas de krigagem\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a) Mapa de krigagem de Minas Gerais\n\n\n\n\n\n\n\n\n\n\n\n(b) Mapa de krigagem de resistividade do solo\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c) Mapa de krigagem do risco fogo ceará\n\n\n\n\n\n\n\n\n\n\n\n(d) Mapa de krigagem de Animais em extinção Mozambique\n\n\n\n\n\n\n\nFigura 1: Exemplos de mapas gerados por krigagem\n\n\n\n\n\n\n\n\n\n\n\nNota📸 Coleta de dados no campo\n\n\n\n\n\n\n\n\n\n\nFigura 2"
+  },
+  {
+    "objectID": "geoestatistica.html#introdução-teórica",
+    "href": "geoestatistica.html#introdução-teórica",
+    "title": "Geoestatística",
+    "section": "2 Introdução Teórica",
+    "text": "2 Introdução Teórica\nA Geoestatística é a ferramenta que nos permite estudar fenômenos naturais que variam no espaço, como a fertilidade do solo, teores de minérios ou distribuição de chuvas e entre outros.\nDe acordo com Scalon (2024), uma variável geoestatística Z é uma variável distribuída em uma superfície contínua cujos valores \\(z\\) (dados geoestatísticos) são considerados realizações de processos estocásticos (função aleatória) indexados no espaço \\(s\\).\nO grande diferencial da geoestatística é considerar a dependência espacial: observações vizinhas tendem a ser mais parecidas entre si do que observações distantes.\n\n2.1 Etapas de um Estudo Geoestatístico\nNeste minicurso, seguiremos os 4 passos essenciais de um estudo geoestatístico:\n\nAnálise Exploratória: Conhecer os dados e visualizar a distribuição espacial.\nVariografia: Medir a continuidade espacial através do Semivariograma.\nAjuste de Modelo: Encontrar uma equação matemática que descreva essa continuidade.\nKrigagem: Estimar valores em locais não amostrados (geração de mapas)."
+  },
+  {
+    "objectID": "geoestatistica.html#prática-dados-e-análise-exploratória",
+    "href": "geoestatistica.html#prática-dados-e-análise-exploratória",
+    "title": "Geoestatística",
+    "section": "3 Prática: Dados e Análise Exploratória",
+    "text": "3 Prática: Dados e Análise Exploratória\nVamos utilizar o pacote geoR, uma referência na área. Usaremos o conjunto de dados ca20 (teor de cálcio no solo), que já vem incluído no pacote.\n\n\nCódigo\n# Instalando e carregando o pacote necessário\nif(!require(geoR)) install.packages(\"geoR\")\n\n\nLoading required package: geoR\n\n\n--------------------------------------------------------------\n Analysis of Geostatistical Data\n For an Introduction to geoR go to http://www.leg.ufpr.br/geoR\n geoR version 1.9-6 (built on 2025-08-29) is now loaded\n--------------------------------------------------------------\n\n\nCódigo\nlibrary(geoR)\n\n# Carregando dados de exemplo\ndata(ca20) \n\n# Visualização inicial dos pontos e seus valores\n# O tamanho do ponto (cex) é proporcional ao valor do Cálcio\npoints(ca20, main = \"Distribuição Espacial das Amostras (Cálcio)\", \n       col = \"blue\", cex.min = 1, cex.max = 3, \n       xlab = \"Coord X\", ylab = \"Coord Y\")"
+  },
+  {
+    "objectID": "geoestatistica.html#direções-para-verificar-a-anisotropia-espacial",
+    "href": "geoestatistica.html#direções-para-verificar-a-anisotropia-espacial",
+    "title": "Geoestatística",
+    "section": "4 Direções para verificar a anisotropia espacial",
+    "text": "4 Direções para verificar a anisotropia espacial"
+  },
+  {
+    "objectID": "geoestatistica.html#forma-e-pararâmetros-do-semivariograma-típico-de-dados-geoestatísticos-com-dependência-espacial",
+    "href": "geoestatistica.html#forma-e-pararâmetros-do-semivariograma-típico-de-dados-geoestatísticos-com-dependência-espacial",
+    "title": "Geoestatística",
+    "section": "5 Forma e pararâmetros do Semivariograma típico de dados geoestatísticos com dependência espacial",
+    "text": "5 Forma e pararâmetros do Semivariograma típico de dados geoestatísticos com dependência espacial\nO Semivariograma\nO Semivariograma é o gráfico que quantifica a dependência espacial. Ele relaciona a semivariância (\\(\\gamma\\)) com a distância (\\(h\\)) entre os pontos.\nParâmetros do Semivariograma\nA interpretação visual do variograma depende de três parâmetros teóricos:\nEfeito Pepita (\\(C_0\\)): É a descontinuidade na origem. Representa a variabilidade em distâncias muito curtas ou erros de medição.\nPatamar (\\(C\\)): É o valor onde o gráfico estabiliza. Representa a variância total dos dados (\\(C_0 + C_1\\)).\nAlcance (\\(a\\)): A distância onde o gráfico atinge o patamar. Amostras separadas por uma distância maior que \\(a\\) não têm mais correlação espacial.\nEstimadores: Clássico vs. Robusto Estimador Clássico de Matheron\nÉ a média dos quadrados das diferenças. É o mais comum, mas sensível a outliers.\n\\[\n2\\hat{\\gamma}_{M}(h) = \\frac{1}{N(h)} \\sum_{i=1}^{N(h)} (Z(x_{i}+h) - Z(x_{i}))^{2}\n\\]\nEstimador Robusto de Cressie-Hawkins\nUtiliza a raiz quadrada das diferenças para suavizar o impacto de valores extremos.\n\\[\n2\\hat{\\gamma}_{CH}(h) = \\frac{\\left[ \\frac{1}{N(h)} \\sum_{i=1}^{N(h)} |Z(x_{i}+h) - Z(x_{i})|^{1/2} \\right]^4}{0.457 + \\frac{0.494}{N(h)}}\n\\]"
+  },
+  {
+    "objectID": "geoestatistica.html#direções-para-verificar-a-anisotropia-espacial-1",
+    "href": "geoestatistica.html#direções-para-verificar-a-anisotropia-espacial-1",
+    "title": "Geoestatística",
+    "section": "6 Direções para verificar a anisotropia espacial",
+    "text": "6 Direções para verificar a anisotropia espacial\n\n\n\n\n\n\n\n\nFigura 3: Direções básicas utilizadas na construção de semivariogramas direcionais para verificação de anisotropia."
+  },
+  {
+    "objectID": "geoestatistica.html#forma-e-parâmetros-do-semivariograma-típico-de-dados-geoestatísticos-com-dependência-espacial",
+    "href": "geoestatistica.html#forma-e-parâmetros-do-semivariograma-típico-de-dados-geoestatísticos-com-dependência-espacial",
+    "title": "Geoestatística",
+    "section": "7 Forma e parâmetros do Semivariograma típico de dados geoestatísticos com dependência espacial",
+    "text": "7 Forma e parâmetros do Semivariograma típico de dados geoestatísticos com dependência espacial\n\n\n\n\n\n\n\n\nFigura 4: Forma e parâmetros de um semivariograma típico (modelo esférico) com dependência espacial."
+  },
+  {
+    "objectID": "geoestatistica.html#modelos-teóricos-de-semivariogramas",
+    "href": "geoestatistica.html#modelos-teóricos-de-semivariogramas",
+    "title": "Geoestatística",
+    "section": "8 Modelos teóricos de Semivariogramas",
+    "text": "8 Modelos teóricos de Semivariogramas\nEm geoestatística, os modelos teóricos de semivariograma são utilizados para descrever a estrutura de dependência espacial de uma variável regionalizada (teixeira2013?). Esses modelos são ajustados aos semivariogramas experimentais e permitem a aplicação de métodos de interpolação espacial, como a krigagem (Diggle e Ribeiro 2007).\nAbaixo estão os principais modelos isotrópicos utilizados na literatura.\n\n8.1 Modelo Esférico\nO modelo esférico é amplamente utilizado em aplicações geoestatísticas, especialmente em estudos de solos e ciências agrárias (teixeira2013?). Caracteriza-se por apresentar um comportamento linear na origem e atingir o patamar em uma distância finita, denominada alcance (\\(a\\)) (journel1978?).\n\\[\n\\gamma(h) =\n\\begin{cases}\nC_0 + C \\left[ \\frac{3}{2}\\left(\\frac{h}{a}\\right) -\n\\frac{1}{2}\\left(\\frac{h}{a}\\right)^3 \\right], & 0 &lt; h \\leq a, \\\\\nC_0 + C, & h &gt; a\n\\end{cases}\n\\]\n\n\n8.2 Modelo Exponencial\nO modelo exponencial apresenta crescimento assintótico em relação ao patamar, ou seja, teoricamente não atinge o patamar em uma distância finita. É indicado para fenômenos contínuos, mas com variações abruptas em curtas distâncias. Na prática, considera-se o alcance efetivo (\\(a_{ef}\\)) como aproximadamente três vezes o parâmetro de escala (\\(a_{ef} \\approx 3a\\)) (Diggle e Ribeiro 2007).\n\\[\n\\gamma(h) = C_0 + C \\left[ 1 - \\exp\\left(-\\frac{h}{a}\\right) \\right]\n\\]\n\n\n8.3 Modelo Gaussiano\nO modelo gaussiano é indicado para variáveis que apresentam elevada continuidade espacial nas pequenas distâncias, resultando em uma curva suave (parabólica) próxima à origem. Assim como o modelo exponencial, o patamar é atingido de forma assintótica, e o alcance efetivo é aproximadamente \\(\\sqrt{3}\\) vezes o parâmetro de escala (\\(a_{ef} \\approx \\sqrt{3}a\\)) (Diggle e Ribeiro 2007; journel1978?).\n\\[\n\\gamma(h) = C_0 + C \\left[ 1 - \\exp\\left(-\\frac{h^2}{a^2}\\right) \\right]\n\\]\n\n\n8.4 Modelo Matérn\nO modelo Matérn é uma generalização flexível dos modelos exponencial e gaussiano, permitindo controlar a suavidade do processo espacial por meio do parâmetro \\(\\nu\\) (muitas vezes denotado como \\(\\kappa\\)). Valores menores de \\(\\nu\\) (ex: 0.5) indicam processos menos suaves (equivalente ao Exponencial), enquanto valores maiores (ex: \\(\\nu \\to \\infty\\)) representam maior continuidade espacial (tendendo ao Gaussiano) (Diggle e Ribeiro 2007).\n\\[\n\\gamma(h) =\nC_0 + C \\left[\n1 - \\frac{1}{2^{\\nu-1}\\Gamma(\\nu)}\n\\left(\\frac{h}{a}\\right)^{\\nu}\nK_{\\nu}\\left(\\frac{h}{a}\\right)\n\\right]\n\\]\nonde \\(K_{\\nu}(\\cdot)\\) é a função de Bessel modificada de segunda espécie, \\(\\Gamma(\\cdot)\\) é a função Gama e \\(\\nu &gt; 0\\) é o parâmetro de suavidade do modelo."
   },
   {
     "objectID": "areas.html",
@@ -233,51 +354,202 @@
   {
     "objectID": "dados_areas.html",
     "href": "dados_areas.html",
-    "title": "Dados de Áreas",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
     "section": "",
-    "text": "Dados de áreas (areal data) são observações agregadas em unidades espaciais discretas, como bairros, municípios ou regiões administrativas. Essas unidades são representadas por polígonos em um sistema de informação geográfica (SIG). Exemplos comuns incluem taxas de criminalidade por bairro, incidência de doenças por município e dados socioeconômicos por região.\nAs áreas podem ser regulares ou irregulares. Em geral, áreas representadas por regiões geográficas como estados e municípios são denominadas de espacialmente irregulares, enquanto áreas representadas por pixels, como imagens de sensoriamento remoto, são denominadas de espacialmente regulares (formado por uma grade de espaços iguais) (Scalon 2024).\nNesta abordagem, modelamos uma variável resposta agregada em polígonos (ex: taxas de crime por bairro) usando variáveis independentes, corrigindo a autocorrelação espacial via matriz de pesos \\(W\\).\nOs dados das variáveis aleatórias podem ser de qualquer tipo (contínuas, discretas, etc) e tipicamente, representam toda a área, ou seja, não se dispõe da localização exata dos eventos dentro da área, mas sim de um valor que foi agregado para aquela área. Embora esses dados estejam associados com toda a área, em geral, eles são atribuídos a um ponto específico dentro da área, esse ponto pode ser o centroide da área (Scalon 2024).\nO objetivo da análise de dados de áreas, é o mesmo da análise dos outros tipos de dados espaciais, ou seja, caracterizar o processo estocástico que gerou os dados (Scalon 2024).\nNa análise de dados de áreas, como existe apenas um valor \\(z_i\\) para a área \\(W_i\\), deve-se assumir algum tipo de estacionariedade e para alguns casos será necessário assumir a normalidade multivariada (Scalon 2024).\nPara esse tipo de análise de dados espaciais, dados de áreas, pode estar interessado em um ou mais objetivos. Por exemplo, Scalon (2024) cita alguns dos objetivos, que podem ser:\n- Explorar o comportamento das variáveis aleatórias na região de estudo; - Obter mapas mais suaves do que o mapa dos dados observados; - etc…\nPara a realização de estatística espacial, é necessário que os dados em análise possuam o termo de autocorrelação espacial entre a variável aleatória.\nO software para este minicurso, será o R, usando a IDE Rstudio.\nFormato vetorial poligonal, como shapefiles (.shp) ou arquivos GeoPackage (.gpkg), que armazenam as geometrias dos polígonos e seus atributos associados."
+    "text": "NotaO que é Estatística Espacial?\n\n\n\n\nDe acordo com Scalon (2024), a estatística espacial é um ramo da estatística que se concentra na análise de dados que possuem uma localização, representada por coordenadas geográficas e/ou regiões.\nConforme descrito por Scalon (2024) o que distingue a estatística espacial da clássica é a necessidade de que os dados possuam localizações geográficas, característica ausente na estatística clássica.\n\n\n\n\n\n\n\nN. Cressie (1991) , N. A. C. Cressie (1993) , Gatrell et al. (1996) e Waller e Gotway (2004) classificam os dados espaciais em diferentes tipos, conforme a natureza da distribuição espacial, em três principais categorias:\n\n\n\n\n\n\nNotaTipos de Dados Espaciais\n\n\n\n\nDados de Áreas\nDados Pontuais\nDados Geoestatísticos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotaDefinições dos Tipos de Dados Espaciais (Scalon 2024)\n\n\n\n\nDados de áreas, também conhecidos como dados de lattice ou dados de superfície discreta, são dados espaciais indexados a sub-regiões que constituem uma partição de um domínio contínuo.\nDados pontuais surgem quando as próprias localizações dos eventos são o objeto de interesse.\nDados geoestatísticos, também conhecidos como dados de superfícies contínuas.\n\n\n\n\n\n\n\n\n\nA estatística espacial é amplamente aplicada em diversas áreas, incluindo:\n\nEpidemiologia: Análise da distribuição espacial de doenças.\nEcologia: Estudo da distribuição de espécies e habitats.\nGeografia: Análise de padrões espaciais em fenômenos geográficos.\nCiências ambientais: Monitoramento da qualidade do ar e da água.\nPlanejamento urbano: Análise de uso do solo e desenvolvimento urbano.\nAgricultura: Mapeamento de produtividade e gestão de recursos.\nEconomia: Análise de mercados imobiliários e padrões econômicos regionais.\nCiências sociais: Estudo de padrões demográficos e sociais.\nSaúde pública: Análise de acesso a serviços de saúde e distribuição de recursos.\nTransportes: Planejamento de redes de transporte e análise de tráfego.\nClimatologia: Estudo de padrões climáticos e mudanças ambientais.\nRecursos naturais: Gestão e monitoramento de recursos naturais, como florestas e corpos d’água.\n\ne muito mais áreas que envolvem dados geograficamente referenciados.\n\n\n\n\n\n\n\nNota📌 Introdução\n\n\n\nNeste minicurso, vamos explorar as análises de dados de áreas, desde os conceitos fundamentais até a aplicação prática de modelos de regressão espacial, utilizando o software R.\nA estrutura foi pensada para construir o conhecimento de forma gradual, didática e aplicada.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
   },
   {
-    "objectID": "dados_areas.html#modelo-espacial-autoregressivo---sar",
-    "href": "dados_areas.html#modelo-espacial-autoregressivo---sar",
-    "title": "Dados de Áreas",
-    "section": "1 Modelo espacial autoregressivo - SAR",
-    "text": "1 Modelo espacial autoregressivo - SAR\n\nO modelo espacial autoregressivo (SAR) é descrito conforme (Anselin1988?)\n\\[\\begin{equation}\n    Y = \\delta WY + X\\beta + \\epsilon\n    \\label{eq:sar}\n\\end{equation}\\]\nOnde\n\\(Y\\) é um vetor de observações ( n \\(\\times\\) 1 ) nas n áreas\n\\(X\\) é a matriz das variáveis independentes, de tamanho ( n \\(\\times\\) i ),\n\\(\\delta\\) é o coeficiente de defasagem da variável dependente espacial,\n\\(\\beta\\) é o vetor de parâmetros da regressão, de tamanho ( i \\(\\times\\) 1 ),\n\\(W\\) é a matriz de ponderação, de tamanho ( n \\(\\times\\) n ),\n\\(\\epsilon\\) é o vetor de erros, de tamanho ( n \\(\\times\\) 1 ) não correlacionados que seguem uma distribuição normal com média zero e variância constante, isto é, \\(\\epsilon \\sim N(0, I\\sigma^2\\))"
+    "objectID": "dados_areas.html#o-que-são-dados-de-área",
+    "href": "dados_areas.html#o-que-são-dados-de-área",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "2.1 O que são Dados de Área?",
+    "text": "2.1 O que são Dados de Área?\nDados de áreas, também conhecidos como dados de lattice ou de superfície discreta, referem-se a variáveis aleatórias associadas a áreas contíguas e disjuntas de uma superfície (Scalon 2024). Essas observações são agregadas em unidades espaciais discretas, como bairros, municípios ou regiões administrativas, que são representadas por polígonos em sistemas de informação geográfica (SIG).\n\n\n\n\n\n\n📌 Estado de Minas Gerais\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Mapa de Minas Gerais com Divisão Municipal\n\n\n\n\n\n\n\n\n\n\n\nFigura 2: Mapa dos bairros de Belo Horizonte - MG\n\n\n\n\n\n\n\n\nAs áreas podem ser regulares ou irregulares.\nEm geral, áreas representadas por regiões geográficas como estados e municípios são denominadas de espacialmente irregulares, enquanto áreas representadas por pixels, como imagens de sensoriamento remoto, são denominadas espacialmente regulares formadas por uma grade de espaços iguais(Scalon 2024).",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
   },
   {
-    "objectID": "dados_areas.html#exemplo-prático-análise-de-chikungunya",
-    "href": "dados_areas.html#exemplo-prático-análise-de-chikungunya",
-    "title": "Dados de Áreas",
-    "section": "2 Exemplo Prático: Análise de Chikungunya",
-    "text": "2 Exemplo Prático: Análise de Chikungunya\nAbaixo apresentamos o passo a passo da análise, utilizando dados reais de incidência.\n\n2.1 1. Carregamento de Pacotes\nPrimeiramente, carregamos todas as bibliotecas que serão utilizadas na análise.\n\n\nCódigo\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(stringr)\nlibrary(geobr)\nlibrary(sf)\nlibrary(spdep)\nlibrary(spatialreg)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(ggthemes)\nlibrary(ggrepel)\nlibrary(viridis)\nlibrary(tmap)\nlibrary(car)\nlibrary(janitor)\n\n\n\n\n2.2 Carregamento e Tratamento dos Dados\n\n\nCódigo\n# Carregando dados de incidência\ndados &lt;- read_excel(\"C:/Meus_documentos/Congresso_MGEST_2025/Chikugunha/dados/chiku.xlsx\")\ndados &lt;- janitor::clean_names(dados)\ndados &lt;- dados |&gt; \n  select(cod, muni, x2023_0) |&gt; \n  mutate(x2023_0 = as.numeric(replace(x2023_0, x2023_0 == \"-\", 0))) \n\n# Carregando dados de densidade/população\ndados1 &lt;- read_excel(\"C:/Meus_documentos/Congresso_MGEST_2025/Chikugunha/dados/densidad.xlsx\", sheet = 3)\ndados1 &lt;- dados1 |&gt;\n  separate(muni, into = c(\"Municipio\", \"Estado\"), sep = \" \\\\(\") %&gt;%\n  mutate(Estado = gsub(\"\\\\)\", \"\", Estado))\ndados1 &lt;- dados1[-c(1, 219:222),-2 ] # Limpeza de linhas\n\n\n\n\n2.3 Obtenção da Malha e Unificação\n\n\nCódigo\n# Baixar malha municipal (MA)\ntodos &lt;- read_municipality(code_muni = \"all\", year = 2022, showProgress = FALSE)\nma &lt;- filter(todos, abbrev_state == \"MA\")\nma &lt;- ma |&gt; \n  mutate(code_muni = str_sub(code_muni, 1, -2), \n         code_muni = as.numeric(code_muni))\n\n# Unificação (Join)\ndados_juntos &lt;- ma |&gt; \n  left_join(dados, by = c(\"code_muni\" = \"cod\"))\ndados_juntos &lt;- dados_juntos[, -c(4,5,7,8)]\n\ndad &lt;- cbind(dados_juntos, dados1) |&gt; \n  mutate(across(everything(), ~replace_na(., 0))) |&gt;\n  mutate(popu = as.numeric(popu))\ndad &lt;- dad[, -c(3,4,6)]\n\n# Cálculo da taxa de incidência\ndad &lt;- dad |&gt; \n  mutate(inc_100 =  (x2023_0 / popu)*10000, .after =x2023_0,\n         log_inc_100 =  log((x2023_0 / popu)*10000))\n\n\n\n\n2.4 Análise Exploratória e OLS\n\n\nCódigo\n# Gráficos exploratórios\npar(mfrow = c(1,2))\nboxplot(dad$inc_100, main = \"Incidência\")\nhist(dad$inc_100, main = \"Histograma\")\n\n# Regressão Linear (OLS)\nmodelo_lm_2 &lt;- lm(inc_100 ~ area_da_unidade + densidade_demográfica, data = dad)\nsummary(modelo_lm_2)\n\n# Diagnóstico\nvif(modelo_lm_2)\nqqPlot(modelo_lm_2$residuals, main = \"QQ Plot OLS\")\n\n\n\n\n2.5 Autocorrelação Espacial\n\n\nCódigo\n# Matriz de vizinhança e pesos\nnb &lt;- poly2nb(dad$geom, queen=TRUE)\nlw &lt;- nb2listw(nb, style=\"W\", zero.policy=TRUE)\n\n# Teste de Moran Global\nmoran.test(dad$inc_100, lw, randomisation = TRUE)\n\n# Diagrama de Dispersão de Moran\nmoran.plot(modelo_lm_2$residual, lw, main = \"Diagrama de Dispersão de Moran (OLS)\")\n\n\n\n\n2.6 Modelagem Espacial (SAR e SEM)\n\n\nCódigo\n# Modelo SAR (Spatial Lag)\nmodelo_sar1 &lt;- lagsarlm(inc_100 ~ area_da_unidade + densidade_demográfica, \n                        data = dad, listw = lw, zero.policy = TRUE)\nsummary(modelo_sar1)\n\n# Modelo SEM (Spatial Error) - Referido como CAR no código original\nmodelo_car1 &lt;- errorsarlm(inc_100 ~ area_da_unidade + densidade_demográfica, \n                          data = dad, listw = lw, zero.policy = TRUE)\nsummary(modelo_car1)\n\n\n\n\n2.7 Visualização e Mapas\n\n\nCódigo\n# Adicionando resultados ao mapa\ndad$pred_sar &lt;- modelo_sar1$fitted.values\ndad$resid_sar &lt;- residuals(modelo_sar1)\n\n# Mapa de Predição\nggplot(dad) +\n  geom_sf(aes(fill = pred_sar), color = NA) +\n  scale_fill_viridis_c(option = \"magma\", name = \"Predição SAR\") +\n  annotation_scale(location = \"bl\", width_hint = 0.4) +\n  annotation_north_arrow(location = \"tl\", which_north = \"true\") +\n  theme_minimal()\n\n# Clusters LISA\ndad_sf &lt;- st_as_sf(dad)\nlisa &lt;- localmoran(dad_sf$inc_100, lw)\ndad_sf$lisa_i &lt;- lisa[,1]\ndad_sf$pval &lt;- lisa[,5]\n\ndad_sf &lt;- dad_sf %&gt;%\n  mutate(cluster = case_when(\n    lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Alto\",\n    lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Baixo\",\n    lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Baixo\",\n    lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Alto\",\n    TRUE ~ \"Não significativo\"\n  ))\n\ntm_shape(dad_sf) +\n  tm_polygons(\"cluster\", palette = c(\"red\", \"blue\", \"white\", \"lightblue\", \"gray80\"))"
+    "objectID": "dados_areas.html#o-conceito-de-centroide",
+    "href": "dados_areas.html#o-conceito-de-centroide",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "3.2 O Conceito de centroide",
+    "text": "3.2 O Conceito de centroide\nNesta abordagem, modelamos uma variável resposta agregada em polígonos (exemplo: taxas de criminalidade por bairro, incidência de doenças por município e dados socioeconômicos e etc.). Os dados das variáveis aleatórias podem ser de qualquer tipo (contínuas, discretas, etc) e tipicamente, representam toda a área, ou seja, não se dispõe da localização exata dos eventos dentro da área, mas sim de um valor que foi agregado para aquela área. Embora esses dados estejam associados com toda a área, em geral, eles são atribuídos a um ponto específico dentro da área, que geralmente é o centroide da área (Scalon 2024).\nO centroide geométrico é o ponto que representa o centro de massa de uma região plana, assumindo densidade uniforme. Ele corresponde ao ponto de equilíbrio da figura e é amplamente utilizado em análises geométricas e em sistemas de informação geográfica (Weisstein n.d.; Bourke 1988).\n\\[\nM = \\iint \\sigma(x,y)\\, dA\n\\]\n\\[\n\\bar{x} = \\frac{1}{M}\\iint x\\,\\sigma(x,y)\\, dA,\n\\qquad\n\\bar{y} = \\frac{1}{M}\\iint y\\,\\sigma(x,y)\\, dA\n\\]\nPara um polígono com vértices \\((x_1,y_1), (x_2,y_2), \\ldots, (x_n,y_n)\\)), o centroide pode ser calculado por (Bourke 1988):\n\\[\nA =\n\\frac{1}{2}\n\\sum_{i=1}^{n}\n(x_i y_{i+1} - x_{i+1} y_i)\n\\]\n\\[\n\\bar{x} =\n\\frac{1}{6A}\n\\sum_{i=1}^{n}\n(x_i + x_{i+1})\n(x_i y_{i+1} - x_{i+1} y_i),\n\\qquad\n\\bar{y} =\n\\frac{1}{6A}\n\\sum_{i=1}^{n}\n(y_i + y_{i+1})\n(x_i y_{i+1} - x_{i+1} y_i)\n\\]\n\\[\nx_{n+1} = x_1,\n\\qquad\ny_{n+1} = y_1\n\\]\nNo R, o pacote sf nos oferece uma função pronta para este cálculo:\n\n\nCódigo R para calcular centroides\n# Carrega o pacote\nlibrary(sf)\n\n# Calcula o centroide de um objeto sf\nst_centroid(objeto_sf)\n\n\nA Figura 3 ilustra o conceito, mostrando os polígonos dos municípios de Lavras e Carrancas (MG) e seus respectivos centroides calculados.\n\n\n\n\n\n\nDica📌 Centroide de dois municípios em Minas Gerais - MG\n\n\n\n\n\n\n\n\n\nFigura 3: Fonte: Autor (2025).\n\n\n\n\n\n\n\n\n\n\n\nImportante🎯 Objetivo da análise de dados de áreas\n\n\n\nO objetivo da análise de dados de áreas é o mesmo da análise dos outros tipos de dados espaciais, ou seja, caracterizar o processo estocástico que gerou os dados (Scalon 2024).\n\n\nNa análise de dados de áreas, como existe apenas um valor \\(z_i\\) para a área \\(W_i\\), deve-se assumir algum tipo de estacionariedade e para alguns casos será necessário assumir a normalidade multivariada (Scalon 2024).\nPara esse tipo de análise de dados espaciais, pode-se estar interessado em um ou mais objetivos. Por exemplo, Scalon (2024) cita alguns dos objetivos, que podem ser:\n\nExplorar o comportamento das variáveis aleatórias na região de estudo;\n\no principal objetivo é entender a distribuição espacial da variavel de estudo se comportam, verificar se precisa de transformação, identificar possíveis outliers espaciais, entre outros.\n\n\nObter mapas mais suaves do que o mapa dos dados observados;\n\no objetivo aqui é caracterizar os efeitos de primeira ordem do processo estocástico espacial que gerou os dados, ou seja, estimar a média global (ou local) do processo estocastico.\n\netc…\nNa p.176 do livro de Scalon (2024), são listados outros objetivos e mais referências para consulta.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#visualização-de-dados-espaciais",
+    "href": "dados_areas.html#visualização-de-dados-espaciais",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "3.3 Visualização de Dados Espaciais",
+    "text": "3.3 Visualização de Dados Espaciais\n\n\n\n\n\n\nDica📌 Estado de Minas Gerais\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 4: Casos absolutos de Dengue (2023)\n\n\n\n\n\n\n\n\n\n\n\nFigura 5: Incidência de Dengue (2023)",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#visualização-de-dados-espaciais-1",
+    "href": "dados_areas.html#visualização-de-dados-espaciais-1",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "3.2 Visualização de dados espaciais",
+    "text": "3.2 Visualização de dados espaciais\n\n\n\n\n\n\n📌 Estado de Minas Gerais\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 6: Casos absolutos de Dengue (2023)\n\n\n\n\n\n\n\n\n\n\n\nFigura 7: Incidência de Dengue (2023)",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#a-matriz-de-pesos-espaciais-w",
+    "href": "dados_areas.html#a-matriz-de-pesos-espaciais-w",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "4.1 A Matriz de Pesos Espaciais (W)",
+    "text": "4.1 A Matriz de Pesos Espaciais (W)\nPara analisar dados de áreas, é necessário definir uma matriz de vizinhança espacial \\(W = [W_{ij}]\\), que descreve a relação espacial entre as áreas. A matriz \\(W\\) é uma matriz quadrada de ordem \\(n \\times n\\), onde \\(n\\) é o número de áreas na região de estudo. Cada elemento \\(W_{ij}\\) da matriz representa a proximidade ou peso entre as áreas \\(i\\) e \\(j\\). A definição dos pesos pode variar dependendo do contexto e do objetivo da análise. A escolha da matriz é arbitrária, mas deve refletir a estrutura espacial dos dados e o fenômeno em estudo (Scalon 2024). Uma das escolhas mais comuns para definir a matriz de pesos é a matriz binária de contiguidade, onde \\(W_{ij} = 1\\) se as áreas \\(i\\) e \\(j\\) são vizinhas (compartilham uma fronteira comum) e \\(W_{ij} = 0\\) caso contrário.\n\n4.1.1 Matriz de contiguidade espacial\nA matriz de contiguidade expressa formalmente a estrutura espacial resultante, onde cada unidade espacial é representada tanto como uma linha quanto como uma coluna. Em cada linha, os elementos de coluna não nulos correspondem às unidades espaciais contíguas, refletindo as interações espaciais entre elas. Por convenção, uma célula não é contígua a si mesma, resultando em elementos diagonais zero (Anselin 1988).\nEssa matriz é uma ferramenta fundamental para caracterizar a dependência espacial e é amplamente utilizada na análise de dados espaciais de área, ajudando a identificar padrões de vizinhança e autocorrelação espacial, elementos essenciais para compreender as dinâmicas espaciais e aprimorar a interpretação dos dados, como detalhado por Anselin (1988).\nMatrizes de contiguidade, como apresentadas na Figura Figura 6, ilustram como a estrutura espacial é representada nas unidades de uma rede regular, evidenciando as interações espaciais entre as áreas. A Figura Figura 6 exibe a matriz de contiguidade detalhada por Anselin (1988), permitindo visualizar as relações de vizinhança entre as unidades espaciais.\n\n\n\n\n\n\n\n\nFigura 6: Tipos de vizinhança espacial.\n\n\n\n\n\nFonte: Anselin (1988)\nComo mostrado na Figura 6, a matriz de contiguidade ilustra a estrutura espacial das unidades geográficas, sendo um dos elementos-chave para a análise de dados espaciais (Anselin 1988). A escolha dessa matriz é fundamental, pois ela determina o tipo de vizinhança a ser considerada, influenciando diretamente os resultados da análise espacial. Dependendo da configuração da matriz de contiguidade, diferentes padrões de interação espacial entre as unidades de análise são destacados, o que pode alterar a interpretação dos dados e os resultados modelados.\nDe acordo com Anselin (1988), a matriz de contiguidade para áreas irregulares pode ser representada a seguir:\n\\[\nw_{ij} =\n\\begin{cases}\n1 & \\text{se a área } i \\text{ e a área } j \\text{ são vizinhas}, \\\\\n0 & \\text{caso contrário},\n\\end{cases}\n\\]\nem que convenciona-se que \\(c_{ii} = 0\\) para todo \\(i\\) (N. Cressie 1991).\nA Figura Figura 7 apresenta a estrutura da matriz binária utilizada para representar áreas irregulares.\n\n\n\n\n\n\n\n\nFigura 7: Representação genérica de uma matriz de pesos espaciais \\(C\\) de ordem \\(n \\times n\\).\n\n\n\n\n\nFonte: Autor (2025).\nDe acordo com Anselin (1988), o uso de uma matriz de pesos espaciais tem como objetivo principal relacionar os valores de uma variável observada em um ponto específico do espaço com os valores dessa variável em outras unidades espaciais ao redor. Esse tipo de relação é essencial para a modelagem de dependência espacial, onde a proximidade geográfica entre as unidades influencia a variável de interesse, permitindo uma compreensão das interações espaciais. Esse conceito de dependência espacial está diretamente relacionado à autocorrelação espacial, que será discutida a seguir.\n\n\n4.1.2 Matriz de proximidade espacial binária\n\n\n\n\n\n\n\nMatriz de contiguidade binária\n\n\nConforme discutido por Scalon (2024), é recomendável padronizar a matriz de pesos espaciais \\(\\mathbf{W}\\) de modo que a soma dos pesos em cada linha seja igual a 1. Essa padronização permite interpretar os pesos espaciais como proporções, além de facilitar a comparação entre diferentes unidades espaciais, especialmente quando o número de vizinhos varia entre as áreas.\nA matriz de contiguidade binária \\(\\mathbf{W}\\) é definida a partir da relação de vizinhança entre as áreas, assumindo valor \\(1\\) quando as áreas \\(i\\) e \\(j\\) são vizinhas e \\(0\\) caso contrário.\n\n\n\n4.1.3 Padronização da matriz de pesos espaciais\nA padronização nas linhas da matriz de pesos espaciais segue a seguinte estrutura:\n\\[\nw_{ij}^{(W)} =\n\\begin{cases}\n\\dfrac{w_{ij}}{\\sum_{j=1}^{n} w_{ij}}, & \\text{se } \\sum_{j=1}^{n} w_{ij} &gt; 0, \\\\\n0, & \\text{caso contrário}.\n\\end{cases}\n\\]\nDe forma matricial, a padronização pode ser expressa como:\n\\[\n\\mathbf{W}^{(W)} = \\mathbf{D}^{-1}\\mathbf{W},\n\\]\nem que \\(\\mathbf{D}\\) é uma matriz diagonal cujos elementos\n\\(d_{ii} = \\sum_{j=1}^{n} w_{ij}\\) representam o número de vizinhos da área \\(i\\).\nNo pacote spdep, essa padronização corresponde à opção style = \"W\" na função nb2mat().\n\n\n\n4.1.4 Matriz de pesos espaciais padronizada nas linhas\n\n\n\n\n\n\n\nMatriz de pesos espaciais padronizada nas linhas\n\n\nA figura acima apresenta a matriz de pesos espaciais padronizada nas linhas, obtida a partir da matriz de contiguidade binária. Nessa representação, cada elemento indica a influência relativa de uma área vizinha sobre a área de referência, respeitando a condição de soma unitária em cada linha.\n\n\n\n4.1.5 Matriz de vizinhança do tipo Queen\n\n\n\n\n\n\n\nMatriz de vizinhança do tipo Queen\n\n\nNa vizinhança do tipo Queen, duas áreas são consideradas vizinhas quando compartilham qualquer ponto de fronteira, seja um lado ou um vértice, resultando em uma estrutura de dependência espacial mais abrangente quando comparada à vizinhança do tipo Rook.\n\n\n4.1.6 Autocorrelação espacial\nA autocorrelação espacial é uma medida que indica o grau de similaridade ou dissimilaridade de uma mesma variável no espaço. A ideia básica da autocorrelação espacial é determinar um indicador que mede a relação de uma determinada variável no espaço, ou seja, como essa variável se comporta numa determinada região geográfica (Manuel 2011).\nOs primeiros passos para a autocorrelação espacial (spatial autocorrelation) foram abordados por Moran (1948) e Geary (1954) que desenvolveram suas medidas de autocorrelação espacial (Anselin 1988).\nPara Anselin (1988), o problema da unidade de área modificável está relacionado à influência da definição das unidades espaciais sobre os resultados estatísticos em análises de dados geográficos. Esse problema pode impactar a interpretação da autocorrelação espacial, uma vez que medidas como o índice global e local de Moran, o índice de Geary e o variograma são sensíveis à maneira como as unidades espaciais são organizadas.\nConforme Druck et al. (2004), a autocorrelação espacial pode ser medida por meio de diversos índices, como o Índice global e local de Moran, o índice de Geary e o variograma. Dentre esses indicadores, o Índice de Moran é o mais amplamente utilizado em análises de dados de áreas, pois oferece uma maneira robusta de quantificar a dependência espacial global, ou seja, a relação entre os valores observados em diferentes unidades espaciais. Esse índice é fundamental para a detecção de padrões espaciais e é apresentado a seguir.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#índice-de-moran-global-i",
+    "href": "dados_areas.html#índice-de-moran-global-i",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "4.2 Índice de Moran global (\\(I\\))",
+    "text": "4.2 Índice de Moran global (\\(I\\))\nConforme Waller e Gotway (2004), os índices globais de autocorrelação espacial, como o Índice de Moran (\\(I\\)) , calculam a similaridade entre as regiões \\(i\\) e \\(j\\) com base no produto das diferenças entre os valores \\(Y_i\\) e \\(Y_j\\), em relação à média global da variável aleatória \\(Y\\). Este índice é amplamente utilizado para medir a autocorrelação espacial global, permitindo identificar padrões de agrupamento ou dispersão em dados de área. O Índice de Moran é essencial para entender como os valores observados em uma área estão relacionados com os valores em áreas vizinhas, fornecendo uma visão sobre a estrutura espacial dos dados.\nA estatística do índice de Moran, conforme apresentada por Bivand, Pebesma, e Rubio (2008), é estimada da seguinte forma:\n\\[\n\\hat{I} =\n\\dfrac{n}{\\displaystyle \\sum_{i=1}^{n} \\sum_{j=1}^{n} W_{ij}} \\,\n\\dfrac{\\displaystyle \\sum_{i=1}^{n} \\sum_{j=1}^{n} W_{ij} (Y_i - \\bar{Y})(Y_j - \\bar{Y})}\n{\\displaystyle \\sum_{i=1}^{n} (Y_i - \\bar{Y})^2}\n\\tag{1}\\]\nem que:\n\n\\(W_{ij}\\): elemento da matriz de proximidade espacial entre os locais \\(i\\) e \\(j\\),\n\\(Y_{i}\\): é a variável aleatória na área \\(i\\),\n\\(Y_{j}\\): é a variável aleatória na área \\(j\\),\n\\(\\bar{Y}\\): valor médio amostral da variável aleatória em toda a região, dado por \\(\\bar{Y} =  \\sum_{i=1}^{n}Y_i/n\\) sobre todos os \\(n\\) locais de observação,\n\\(n\\): número total de locais de observação.\n\nO Índice de Moran (\\(I\\)) é uma estatística que varia, na maioria dos casos, entre -1 e 1, sendo que valores próximos de 1 indicam forte autocorrelação espacial positiva, ou seja, unidades geográficas vizinhas tendem a apresentar valores semelhantes. Valores próximos de -1 indicam autocorrelação espacial negativa extrema, refletindo uma tendência de que áreas próximas apresentem valores contrastantes. Já valores de \\(I\\) próximos de zero sugerem ausência de autocorrelação espacial, indicando uma distribuição aleatória dos dados no espaço. Essa estatística assume valores no conjunto dos números reais \\(\\mathbb{R}\\) e é amplamente utilizada para identificar padrões espaciais em fenômenos geográficos (Scalon 2024).",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#índice-de-moran-local-lisa",
+    "href": "dados_areas.html#índice-de-moran-local-lisa",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "4.3 Índice de Moran Local (\\(LISA\\))",
+    "text": "4.3 Índice de Moran Local (\\(LISA\\))\nO Índice de Moran Local (LISA) foi desenvolvido como uma estatística para analisar a autocorrelação espacial em nível local e identificar unidades espaciais que exercem influência sobre o Índice de Moran Global (I), para cada área \\(i\\) do estudo (Luzardo, Castañeda Filho, e Rubim 2017).\nDe acordo com Scalon (2024), o estimador do índice local de autocorrelação espacial de Moran na i-ésima área (\\(\\hat{I}_i\\)) é definido como:\n\\[\n\\hat{I}_i =\n\\dfrac{(Y_i - \\bar{Y}) \\displaystyle \\sum_{j=1}^{n} W_{ij} (Y_j - \\bar{Y})}\n{\\displaystyle \\sum_{j=1}^{n} (Y_j - \\bar{Y})^2}\n\\tag{2}\\]\nem que:\n\n\\(Y_i\\) é o valor da variável aleatória na área \\(i\\);\n\\(Y_j\\) é o valor da variável aleatória na área \\(j\\);\n\\(\\bar{Y}\\) é o valor da média amostral da variável aleatória em toda a região (\\(\\bar{Y} = \\frac{1}{n} \\sum_{i=1}^{n} Y_i\\))\n\\(W_{ij}\\) são os elementos da matriz de pesos espaciais, normalizados por linha.\n\nA interpretação da equação de (Equação 2) é análoga à interpretação do índice global de Moran. Isso indica que o Índice de Moran Local (\\(I_i\\)) é útil para avaliar a homogeneidade ou a diversidade dos dados localmente conforme mencionado por Luzardo, Castañeda Filho, e Rubim (2017).\nComplementando essa análise, Manuel (2011) destaca que o “LISA” permite verificar a similaridade ou dissimilaridade dos valores de algumas observações em relação às suas observações vizinhas. Essa medida local oferece uma visão detalhada dos padrões espaciais, revelando como as características das áreas analisadas se relacionam com as regiões ao seu redor.\n\n4.3.1 Diagrama de Espalhamento de Moran\nO Diagrama de Espalhamento de Moran, conforme descrito por Marques (2009), é uma ferramenta gráfica útil para visualizar o comportamento dos dados. Nesse diagrama, os valores dos desvios dos atributos em relação à média (Z) são representados no eixo X (abcissas), enquanto o valor da média dos vizinhos (WZ) está associado ao eixo Y (ordenadas), proporcionando uma representação clara das relações espaciais entre as unidades de análise, conforme mostra a Figura Figura 8.\n\n\n\n\n\n\nFigura 8: Exemplo de diagrama de espalhamento de Moran\n\n\n\nFonte: Marques (2009)\nConforme Marques (2009), a interpretação do diagrama da Figura Figura 8 pode ser feita da seguinte forma:\n\nQ1 (valores [+], médias [+]) e Q2 (valores [-], médias [-]) indicam pontos de associação espacial positiva, no sentido que uma localização possui vizinhos com valores similares.\nQ3 (val. [+], médias [-]) e Q4 (val. [-], médias [+]) indicam pontos de associação espacial negativa, no sentido que uma localização possui vizinhos com valores dissimilares.\n\nCabe aqui salientar que os pontos localizados em Q3 e Q4 podem ser vistos como extremos, tanto por estar afastados da reta de regressão linear, como por indicar regiões que não seguem o mesmo processo de dependência espacial das demais observações. Estes pontos marcam regiões de transição entre regimes espaciais distintos (Marques 2009).",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#indice-global-de-geary",
+    "href": "dados_areas.html#indice-global-de-geary",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "4.4 Indice global de Geary",
+    "text": "4.4 Indice global de Geary\nO índice de Geary é uma medida de autocorrelação espacial que avalia a similaridade entre valores observados em áreas vizinhas, enfatizando as diferenças locais. Diferentemente do Índice de Moran, que foca na covariância global, o índice de Geary concentra-se nas variações entre unidades espaciais adjacentes, tornando-o sensível a mudanças abruptas nos dados espaciais (Scalon 2024).\nO estimador do índice de Geary é definido por: \\[\n\\hat{G} = \\dfrac{(n-1)}{2 \\sum_{i=1}^{n} \\sum_{j=1}^{n} W_{ij}} \\dfrac{\\sum_{i=1}^{n} \\sum_{j=1}^{n} W_{ij}(Y_i - Y_j)^2}{\\sum_{i=1}^{n}(Y_i - \\bar{Y})^2}\n\\]",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#correlogramas",
+    "href": "dados_areas.html#correlogramas",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "4.5 Correlogramas",
+    "text": "4.5 Correlogramas\nOs correlogramas espaciais são representações gráficas que ilustram a autocorrelação espacial de uma variável em diferentes distâncias ou ordens de vizinhança. Eles são úteis para identificar padrões espaciais e a extensão da dependência espacial nos dados. Conforme Scalon (2024), os correlogramas podem ser construídos utilizando índices como o Índice de Moran ou o índice de Geary, plotando esses valores em função da distância entre as unidades espaciais ou da ordem de vizinhança.\n\\[\nI^{(d)} = \\dfrac{n}{\\sum_{i=1}^{n} \\sum_{j=1}^{n} W_{ij}(d)} \\dfrac{\\sum_{i=1}^{n} \\sum_{j=1}^{n} W_{ij}(d) (Y_i - \\bar{Y})(Y_j - \\bar{Y})}{\\sum_{i=1}^{n} (Y_i - \\bar{Y})^2}\n\\]\nO correlograma espacial apresenta os valores do Índice de Moran em função da ordem de vizinhança. Observa-se autocorrelação espacial positiva nas primeiras ordens, indicando similaridade entre unidades espaciais próximas. À medida que a ordem de vizinhança aumenta, os valores do índice tendem a se aproximar de zero ou tornar-se negativos, sugerindo enfraquecimento da dependência espacial com o aumento da distância.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#modelo-de-erro-espacial-spatial-error-model---sem",
+    "href": "dados_areas.html#modelo-de-erro-espacial-spatial-error-model---sem",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "5.1 Modelo de Erro Espacial (Spatial Error Model - SEM)",
+    "text": "5.1 Modelo de Erro Espacial (Spatial Error Model - SEM)\nO modelo CAR considera que os efeitos espaciais são ruídos ou perturbações, ou seja, um termo que precisa ser removido. A especificação CAR baseia-se na distribuição condicional dos termos de erro espacial (Bivand, Pebesma, e Rubio 2008) .\nO modelo de erro espacial, conforme Anselin (1988), é representado por:\n\\[\nY = X\\beta + \\varepsilon\n\\tag{4}\\]\nem que \\(Y\\) é o vetor da variável dependente, \\(X\\) é a matriz de variáveis explicativas, \\(\\beta\\) é o vetor dos parâmetros e \\(\\varepsilon\\) representa o vetor de erros.\nO vetor de erros \\(\\varepsilon\\) é modelado da seguinte forma:\n\\[\n\\varepsilon = \\lambda \\, W \\, \\varepsilon + u\n\\]\nem que \\(\\lambda\\) é um coeficiente autorregressivo espacial, \\(W\\) é a matriz de proximidade de pesos espaciais e \\(u\\) é um termo de erro que satisfaz as suposições clássicas de distribuição independente e identicamente distribuída (i.i.d.), com variância constante \\(\\sigma^2\\).\nA hipótese nula para a não existência de autocorrelação espacial é que \\(\\lambda = 0\\), ou seja, o termo de erro não é espacialmente correlacionado. Pode-se observar que, na ausência de autocorrelação espacial (\\(\\lambda = 0\\)), o modelo espacial autorregressivo da (Equação 4) é o próprio modelo de regressão linear geral.\n\n5.1.0.1 Propriedades do Modelo SEM\nEsperança (Média Condicional)\nDiferentemente do SAR, a média condicional no SEM não é afetada pelo multiplicador espacial, dependendo apenas das variáveis exógenas:\n\\[\nE[y|X] = X\\beta\n\\]\nVariância (Matriz de Covariância Condicional)\nA estrutura de dependência espacial está inteiramente contida no termo de erro:\n\\[\n\\Sigma_{y|X} = \\sigma^2(I_n - \\lambda W)^{-1}[(I_n - \\lambda W)^{-1}]^T\n\\]\nLog-Verossimilhança (Log-Likelihood)\nPara estimar os parâmetros \\(\\theta = (\\lambda, \\beta, \\sigma^2)\\), a função de log-verossimilhança considera a estrutura do erro espacial:\n\\[\n\\ln L(\\lambda, \\beta, \\sigma^2) = -\\frac{n}{2}\\ln(2\\pi) - \\frac{n}{2}\\ln(\\sigma^2) + \\ln|I_n - \\lambda W| - \\frac{1}{2\\sigma^2} \\left\\{ (y - X\\beta)^T (I_n - \\lambda W)^T (I_n - \\lambda W) (y - X\\beta) \\right\\}\n\\]",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#pressupostos-dos-modelos",
+    "href": "dados_areas.html#pressupostos-dos-modelos",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "5.2 Pressupostos dos modelos",
+    "text": "5.2 Pressupostos dos modelos\nConforme Scalon (2024), ao ajustar os modelos de regressão e regressão espacial (SAR e CAR), considerando a autocorrelação espacial, parte-se da suposição de que as propriedades impostas pelo termo dos erros do modelo são verdadeiras. Consequentemente, essas suposições precisam ser validadas para garantir que os resultados inferenciais sejam confiáveis. Ainda segundo Scalon (2024), as suposições dos erros a serem testadas incluem independência, variância constante e normalidade nos resíduos. No entanto, quando essas pressuposições são violadas, as análises podem se tornar pouco confiáveis, uma vez que os estimadores tradicionais são sensíveis à presença de valores discrepantes. Como alternativa, métodos robustos, podem ser empregados para minimizar o impacto dos outliers e melhorar a qualidade do ajuste do modelo (Castelani et al. 2019).",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#testes-de-correlação-espacial-residual-baseados-na-estatística-de-moran",
+    "href": "dados_areas.html#testes-de-correlação-espacial-residual-baseados-na-estatística-de-moran",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "5.3 Testes de correlação espacial residual baseados na estatística de Moran",
+    "text": "5.3 Testes de correlação espacial residual baseados na estatística de Moran\nA autocorrelação espacial nos resíduos de um modelo de regressão pode indicar a presença de dependência espacial não capturada, o que compromete a validade das inferências estatísticas. Para lidar com essa questão, Anselin (1988) propôs um teste baseado no Índice de Moran I, que permite avaliar a estrutura espacial dos resíduos de um modelo estimado. Esse teste verifica se há padrões espaciais significativos nos resíduos, sugerindo possíveis omissões de variáveis espaciais relevantes ou especificações inadequadas do modelo.\nFormalmente, a estatística de Moran I para os resíduos da regressão é definida como:\n\\[\nI = \\frac{N}{S} \\cdot \\frac{\\mathbf{e}' \\mathbf{W} \\mathbf{e}}{\\mathbf{e}' \\mathbf{e}}\n\\]\nem que:\n\ne é o vetor de resíduos da regressão estimada por Mínimos Quadrados Ordinários (OLS);\nW é a matriz de pesos espaciais, que define a estrutura de vizinhança entre as observações;\nN representa o número total de observações na amostra;\nS é um fator de padronização, correspondente à soma de todos os elementos da matriz de pesos espaciais.\n\nA interpretação da estatística de Moran \\(I\\) nos resíduos segue a mesma lógica de sua aplicação em dados brutos. Valores significativamente positivos indicam a presença de autocorrelação espacial positiva, enquanto valores negativos sugerem padrões espaciais dispersos.\nA significância do índice pode ser avaliada por meio de testes de permutação, que geram uma distribuição nula da estatística a partir de reamostragens aleatórias dos valores observados (Scalon 2024). Caso a estatística seja significativa, recomenda-se revisar a especificação do modelo, incorporando efeitos espaciais por meio de modelos espaciais.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#seleção-e-diagnóstico-de-modelos",
+    "href": "dados_areas.html#seleção-e-diagnóstico-de-modelos",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "5.4 Seleção e diagnóstico de modelos",
+    "text": "5.4 Seleção e diagnóstico de modelos\nPara Scalon (2024), a seleção e o diagnóstico de modelos espaciais são etapas cruciais na análise de dados espaciais, garantindo que o modelo escolhido seja adequado para capturar as características espaciais dos dados. A seguir, são apresentados alguns métodos comuns para a seleção e diagnóstico de modelos espaciais.\n\n5.4.1 Critérios de informação de Akaike (AIC)\né um dos critérios mais utilizados para a seleção de modelos estatísticos, incluindo modelos espaciais. Conforme Scalon (2024), o AIC é baseado na teoria da informação e busca equilibrar a qualidade do ajuste do modelo com a sua complexidade. A fórmula do AIC é dada por:\n\\[\nAIC = 2k - 2\\ln(\\hat{L})\n\\]\nem que:\n\n\\(k\\) é o número de parâmetros estimados no modelo;\n\\(\\hat{L}\\) é a verossimilhança máxima estimada do modelo. O objetivo do AIC é minimizar o valor da estatística, indicando um modelo que oferece um bom ajuste aos dados com o menor número possível de parâmetros. Ao comparar diferentes modelos, aquele com o menor valor de AIC é geralmente preferido, pois sugere um equilíbrio adequado entre ajuste e simplicidade. No contexto de modelos espaciais, o AIC é amplamente utilizado para comparar modelos como SAR, CAR e OLS, auxiliando na escolha do modelo mais apropriado para os dados em análise (Scalon 2024).\n\n\n\n5.4.2 Teste da razão de verossimilhança\nConforme Scalon (2024), ele pode ser feito para comparar modelos espaciais (SAR ou CAR) com o modelo de regressão linear clássico (OLS). O teste da razão de verossimilhança avalia se a inclusão de termos espaciais (\\(\\lambda = 0\\)) melhora significativamente o ajuste do modelo em relação ao modelo sem componentes espaciais. A estatística do teste é calculada conforme N. A. C. Cressie (1993):\n\\[\nU^2 = 2 \\cdot{(n-p-r)/n } \\cdot(L_p - L_{p+r})\n\\]\nem que: n é o número de observações, p é o número de parâmetros no modelo OLS, r é o número de parâmetros adicionais no modelo espacial (1 para SAR ou CAR), \\(L_p\\) é o logaritmo da verossimilhança do modelo OLS e \\(L_{p+r}\\) é o logaritmo da verossimilhança do modelo espacial ajustado.\n\n\n5.4.3 Análise dos resíduos\nA análise dos resíduos é uma etapa fundamental na avaliação da adequação de modelos estatísticos. Conforme Scalon (2024), após ajustar um modelo de regressão, é essencial examinar os resíduos para verificar se eles atendem às suposições básicas, como independência, homocedasticidade e normalidade. Os metodos podem ser realizados análieses testes informais (graficos) ou testes formais (teste de hipotestes) Ainda de acordo com Scalon (2024), a análise gráfica dos resíduos pode incluir: histogramas ou graficos de probabiliade normal para verificar a normalidade dos dados e graficos dos residuos contra os valores ajustados para avaliar a homocedasticidade e a independência dos resíduos e a presença de outliers.\nPara a análise formal, Scalon (2024) destaca que podem ser aplicados testes estatísticos, como o teste de Shapiro-Wilk para normalidade, o teste de Breusch-Pagan para homocedasticidade e o teste de Durbin-Watson para independência dos resíduos. Esses testes fornecem uma base quantitativa para avaliar se os resíduos atendem às suposições do modelo.\nOs residuos brutos estão dentro do objeto fit, temos que extrair eles para ter os residuos padronizados, podemos extrair da seguinte maneira:\n\n\nCódigo\nres &lt;- sar.out$fit$residuals\nfit &lt;- sar.out$fit$fitted.values\n\n\nOs residios padronizados podem ser obtidos da seguinte forma:\n\n\nCódigo\nres.std &lt;- res / sd(res)\n\n\nObtendo o histograma e o grafico quantil-quantil (QQ-plot) de probabilidade normal para os residuos padronizados podem ser obtidos conforme os codigos abaixo:\n\n\nCódigo\nhist(res.std, main = \"Histograma dos resíduos padronizados do modelo SAR\", xlab = \"Resíduos Padronizados\", ylab = \"Frequência absoluta\")\n\nqqplot(res.std, main = \"QQ-Plot dos resíduos padronizados do modelo SAR\")\n\n\nPodemos obter o grafico dos residuos padronizados contra os valores ajustados conforme o codigo abaixo:\n\n\nCódigo\nplot(fit, res.std, main = \"Gráfico dos resíduos padronizados contra os valores ajustados do modelo SAR\", xlab = \"Valores Ajustados\", ylab = \"Resíduos Padronizados\")\n\n\n\n\n\n\n\n\nDica🚀 Próximo passo: Prática!\n\n\n\nAgora que você já conhece os fundamentos teóricos, é hora de colocar tudo em prática!\n👉 Acesse a seção Prática: Análise de Dados de Áreas com R para um estudo de caso completo, passo a passo, analisando dados de incidência de Chikungunya no Maranhão.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#configuração-do-ambiente",
+    "href": "dados_areas.html#configuração-do-ambiente",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "5.1 Configuração do Ambiente",
+    "text": "5.1 Configuração do Ambiente\n\n5.1.1 Software e Pacotes\nUtilizaremos o R através da IDE RStudio. Os pacotes listados abaixo são essenciais para a manipulação de dados, análise espacial e visualização.\n\n\n\n\n\n\nNota📦 Pacotes R Necessários\n\n\n\nExecute o código abaixo para instalar as bibliotecas:\n\n\nCódigo\ninstall.packages(c(\n  \"sf\", \"spdata\", \"RColorBrewer\", \"spdep\", \"spatialreg\", \n  \"readxl\", \"dplyr\", \"ggplot2\", \"geobr\", \"ggspatial\", \"ggthemes\", \n  \"ggrepel\", \"viridis\", \"tmap\", \"car\", \"janitor\"\n))\n\n\n\nsf: Para manipulação de dados espaciais (Simple Features).\nspdata: Contém conjuntos de dados espaciais para exemplos.\nRColorBrewer: Para criação de paletas de cores em mapas.\nspdep: Para criar matrizes de pesos e testes de autocorrelação.\nspatialreg: Para ajustar modelos espaciais autoregressivos.\nreadxl: Para leitura de arquivos Excel (.xls, .xlsx).\ndplyr: Para manipulação de dados.\nggplot2: Para criação de gráficos e visualização de dados.\ngeobr: Para baixar shapefiles oficiais do Brasil (IBGE).\nggspatial: Adiciona elementos espaciais (norte, escala) ao ggplot2.\nggthemes: Temas adicionais para gráficos.\nggrepel: Para rótulos de texto que não se sobrepõem.\nviridis: Paletas de cores acessíveis para visualização de dados.\ntmap: Para criação de mapas temáticos flexíveis.\ncar: Para diagnósticos de regressão (ex: VIF, QQ-plots).\njanitor: Para limpeza de dados (ex: nomes de colunas).\n\nObtendo ajuda: Para consultar a documentação de um pacote ou função, utilize os comandos help() ou ?.\n\n\nCódigo\nhelp(sf)\n?sf",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#estudo-de-caso-incidência-de-chikungunya-no-maranhão",
+    "href": "dados_areas.html#estudo-de-caso-incidência-de-chikungunya-no-maranhão",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "5.2 Estudo de Caso: Incidência de Chikungunya no Maranhão",
+    "text": "5.2 Estudo de Caso: Incidência de Chikungunya no Maranhão\n\n\n\n\n\n\nDica🛠️ Passos para Análise de Dados de Áreas\n\n\n\n\nCarregamento dos Pacotes: Inicie carregando todas as bibliotecas necessárias para a análise.\nCarregamento e Tratamento dos Dados: Importe os dados de incidência e outras variáveis relevantes, realizando a limpeza e transformação necessárias.\nObtenção da Malha e Unificação: Baixe a malha geográfica correspondente à área de estudo e una os dados de incidência com a malha.\nAnálise Exploratória e OLS: Realize uma análise exploratória dos dados e ajuste um modelo de regressão linear (OLS) para obter uma linha de base.\nAutocorrelação Espacial: Calcule a matriz de pesos espaciais e realize testes de autocorrelação espacial, como o teste de Moran.\nModelagem Espacial (SAR e SEM): Ajuste modelos espaciais, como o SAR (Spatial Lag) e SEM (Spatial Error), para capturar a autocorrelação espacial.\nVisualização e Mapas: Crie mapas temáticos para visualizar os resultados dos modelos ajustados e identificar padrões espaciais.\nInterpretação e Validação: Analise os coeficientes, compare os modelos e realize diagnósticos para validar o modelo final.\n\n\n\nAbaixo, apresentamos o passo a passo da análise. Todos os blocos de código estão configurados com eval: false, permitindo que você os execute um a um durante o minicurso.\n\n5.2.1 Passo 1: Carregamento de Pacotes\nPrimeiramente, carregamos todas as bibliotecas que serão utilizadas na análise.\n\n\nCódigo\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(stringr)\nlibrary(geobr)\nlibrary(sf)\nlibrary(spdep)\nlibrary(spatialreg)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(ggthemes)\nlibrary(ggrepel)\nlibrary(viridis)\nlibrary(tmap)\nlibrary(car)\nlibrary(janitor)\n\n\n\n\n5.2.2 Passo: Carregamento e Tratamento dos Dados\n\n\nCódigo\n# Carregando dados de incidência\ndados &lt;- read_excel(\"C:/Meus_documentos/Congresso_MGEST_2025/Chikugunha/dados/chiku.xlsx\")\ndados &lt;- janitor::clean_names(dados)\ndados &lt;- dados |&gt; \n  select(cod, muni, x2023_0) |&gt; \n  mutate(x2023_0 = as.numeric(replace(x2023_0, x2023_0 == \"-\", 0))) \n\n# Carregando dados de densidade/população\ndados1 &lt;- read_excel(\"C:/Meus_documentos/Congresso_MGEST_2025/Chikugunha/dados/densidad.xlsx\", sheet = 3)\ndados1 &lt;- dados1 |&gt;\n  separate(muni, into = c(\"Municipio\", \"Estado\"), sep = \" \\\\(\") %&gt;%\n  mutate(Estado = gsub(\"\\\\)\", \"\", Estado))\ndados1 &lt;- dados1[-c(1, 219:222),-2 ] # Limpeza de linhas\n\n\n\n\n5.2.3 Obtenção da Malha e Unificação\n\n\nCódigo\n# Baixar malha municipal (MA)\ntodos &lt;- read_municipality(code_muni = \"all\", year = 2022, showProgress = FALSE)\nma &lt;- filter(todos, abbrev_state == \"MA\")\nma &lt;- ma |&gt; \n  mutate(code_muni = str_sub(code_muni, 1, -2), \n         code_muni = as.numeric(code_muni))\n\n# Unificação (Join)\ndados_juntos &lt;- ma |&gt; \n  left_join(dados, by = c(\"code_muni\" = \"cod\"))\ndados_juntos &lt;- dados_juntos[, -c(4,5,7,8)]\n\ndad &lt;- cbind(dados_juntos, dados1) |&gt; \n  mutate(across(everything(), ~replace_na(., 0))) |&gt;\n  mutate(popu = as.numeric(popu))\ndad &lt;- dad[, -c(3,4,6)]\n\n# Cálculo da taxa de incidência\ndad &lt;- dad |&gt; \n  mutate(inc_100 =  (x2023_0 / popu)*10000, .after =x2023_0,\n         log_inc_100 =  log((x2023_0 / popu)*10000))\n\n\n\n\n5.2.4 Análise Exploratória e OLS\n\n\nCódigo\n# Gráficos exploratórios\npar(mfrow = c(1,2))\nboxplot(dad$inc_100, main = \"Incidência\")\nhist(dad$inc_100, main = \"Histograma\")\n\n# Regressão Linear (OLS)\nmodelo_lm_2 &lt;- lm(inc_100 ~ area_da_unidade + densidade_demográfica, data = dad)\nsummary(modelo_lm_2)\n\n# Diagnóstico\nvif(modelo_lm_2)\nqqPlot(modelo_lm_2$residuals, main = \"QQ Plot OLS\")\n\n\n\n\n5.2.5 Autocorrelação Espacial\n\n\nCódigo\n# Matriz de vizinhança e pesos\nnb &lt;- poly2nb(dad$geom, queen=TRUE)\nlw &lt;- nb2listw(nb, style=\"W\", zero.policy=TRUE)\n\n# Teste de Moran Global\nmoran.test(dad$inc_100, lw, randomisation = TRUE)\n\n# Diagrama de Dispersão de Moran\nmoran.plot(modelo_lm_2$residual, lw, main = \"Diagrama de Dispersão de Moran (OLS)\")\n\n\n\n\n5.2.6 Modelagem Espacial (SAR e SEM)\n\n\nCódigo\n# Modelo SAR (Spatial Lag)\nmodelo_sar1 &lt;- lagsarlm(inc_100 ~ area_da_unidade + densidade_demográfica, \n                        data = dad, listw = lw, zero.policy = TRUE)\nsummary(modelo_sar1)\n\n# Modelo SEM (Spatial Error) - Referido como CAR no código original\nmodelo_car1 &lt;- errorsarlm(inc_100 ~ area_da_unidade + densidade_demográfica, \n                          data = dad, listw = lw, zero.policy = TRUE)\nsummary(modelo_car1)\n\n\n\n\n5.2.7 Visualização e Mapas\n\n\nCódigo\n# Adicionando resultados ao mapa\ndad$pred_sar &lt;- modelo_sar1$fitted.values\ndad$resid_sar &lt;- residuals(modelo_sar1)\n\n# Mapa de Predição\nggplot(dad) +\n  geom_sf(aes(fill = pred_sar), color = NA) +\n  scale_fill_viridis_c(option = \"magma\", name = \"Predição SAR\") +\n  annotation_scale(location = \"bl\", width_hint = 0.4) +\n  annotation_north_arrow(location = \"tl\", which_north = \"true\") +\n  theme_minimal()\n\n# Clusters LISA\ndad_sf &lt;- st_as_sf(dad)\nlisa &lt;- localmoran(dad_sf$inc_100, lw)\ndad_sf$lisa_i &lt;- lisa[,1]\ndad_sf$pval &lt;- lisa[,5]\n\ndad_sf &lt;- dad_sf %&gt;%\n  mutate(cluster = case_when(\n    lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Alto\",\n    lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Baixo\",\n    lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Baixo\",\n    lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Alto\",\n    TRUE ~ \"Não significativo\"\n  ))\n\ntm_shape(dad_sf) +\n  tm_polygons(\"cluster\", palette = c(\"red\", \"blue\", \"white\", \"lightblue\", \"gray80\"))\n\n\n\n\n5.2.8 Para modelos que lidam com Outliers, vai a sugestão de alguns modelos e minha dissertação de mestrado.\n\nModelos de Regressão Geograficamente Ponderada (GWR)\nModelos de Regressão Geograficamente Ponderada Robusta (RGWR)\nModelos de Regressão Geograficamente Ponderada Multiescala (MGWR)\nModelo Autorregressivo Espacial Robusto (SAR Robusto) com Estimador MM\nModelo de Erro Espacial Robusto (SEM Robusto) com Estimador MM\nRegressão Quantílica Espacial (SQR)\nModelo de Erro Espacial Robusto (SEM Robusto) com Estimador S\n\n\n\n\n\n\n\nNota🎓 Minha Dissertação de Mestrado\n\n\n\n\nPara quem quiser pesquisar mais sobre o tema, minha dissertação está disponível para consulta no repositório da UFLA:\n\n🔗 Acesse aqui: Dissertação",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Introdução",
     "section": "",
-    "text": "👤 Sou Gean Pereira Damaceno\n🎓 Técnico em Administração pelo IFPI (2019).\n🎓 Graduado em Licenciatura em Matemática pelo IFPI (2023).\n🎓 Mestre em Estatística e experimentação agropecuária pela UFLA (2025).\n📚 Estudante de estatística Departamento de Estatística da UFLA.\n💼 Bolsista na Zetta no projeto do Ministério da Gestão e da Inovação em Serviços Públicos MGI.\n\n📧 Email: gedamaceno030@gmail.com 🌐 Website: Site\n\n\nSobre o minicurso\n\n\n\n\n\n\nSobre o minicurso\n\n\n\n📍 Este minicurso apresenta métodos de análise espacial em três contextos principais:\n\n🗺️ Dados agregados por áreas\n\n📌 Processos pontuais\n\n🌐 Geoestatística\n\n🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em regressão e estatística espacial.\n📘 O material é baseado no livro Análise de Dados Espaciais com Aplicações em R (Scalon 2024) e conta com exemplos práticos em cada seção.\n✍️ Como citar este minicurso:\nDamaceno, G. P. (2026). Minicurso de Estatística Espacial em R.\n📥 Baixar citação BibTeX:\nDownload do .bib\n\n\n\n\n\n\n\n\n🎯 Objetivos do minicurso\n\n\n\nOs principais objetivos deste minicurso são:\n\nIntroduzir os conceitos fundamentais da estatística espacial.\nApresentar métodos e técnicas para analisar dados espaciais.\nDemonstrar como implementar esses métodos usando a linguagem de programação R.\nFornecer exemplos práticos e exercícios para consolidar o aprendizado.\n\n\n\n\n\n\n\n\n\n📚 Estrutura do Minicurso (Seções)\n\n\n\n\nSeção A — Instalação e Introdução: pacotes, estrutura de arquivos, como renderizar.\nSeção B — Dados de Áreas: teoria, matrizes de pesos, Moran’s I, SAR/SEM, exemplos em R, exercícios.\nSeção C — Processos Pontuais: Poisson inhomogêneo, LGCP, ajuste com spatstat, exercícios.\nSeção D — Geoestatística: variogramas, ajuste, krigagem universal, predição, exercícios.\nSeção E — Projeto de Pesquisa: sugestões para desenvolver um projeto em estatística espacial.\n\n\n\n\n\nInstale os pacotes necessários para uma análise espacial em R\n\n\nInstalação dos pacotes\ninstall.packages(c(\n  \"spdep\", \"spatialreg\", \"spatstat.core\", \"spatstat.geom\", \"gstat\",\n  \"sp\", \"sf\", \"rgdal\", \"raster\", \"geoR\", \"dplyr\"\n))"
+    "text": "👤 Sou Gean Pereira Damaceno\n🎓 Técnico em Administração pelo IFPI (2019).\n🎓 Graduado em Licenciatura em Matemática pelo IFPI (2023).\n🎓 Mestre em Estatística e Experimentação Agropecuária pela UFLA (2025).\n📚 Estudante de estatística no Departamento de Estatística da UFLA.\n💼 Bolsista na Zetta no projeto do Ministério da Gestão e da Inovação em Serviços Públicos (MGI).\n\n📧 Email: gedamaceno030@gmail.com 🌐 Website: Site\n\n\n\n\n\n\n\n\nImportanteSobre o minicurso\n\n\n\n📍 Este minicurso apresenta métodos de análise de dados de áreas (lattice data), abordando desde os conceitos fundamentais até a aplicação prática de modelos de regressão espacial.\n🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em regressão e estatística espacial.\n📘 O material é baseado no livro Análise de Dados Espaciais com Aplicações em R (Scalon 2024). O conteúdo também se baseia em minha dissertação de mestrado acesse a dissertação aqui.\n✍️ Como citar este minicurso:\nDamaceno, G. P. (2026). Minicurso de Estatística Espacial em R.\n📥 Baixar citação BibTeX:\nDownload do .bib\n\n\n\n\n\n\n\n\nImportante🎯 Objetivos do minicurso\n\n\n\nOs principais objetivos deste minicurso são:\n\nIntroduzir os conceitos fundamentais da estatística espacial aplicada a dados de áreas.\nApresentar métodos de dependência espacial, matrizes de pesos e autocorrelação (Moran).\nDemonstrar modelos de regressão espacial (SAR e SEM) usando a linguagem R.\nFornecer exemplos práticos e exercícios para consolidar o aprendizado.\n\n\n\n\n\n\n\n\n\nNota📚 Estrutura do Minicurso\n\n\n\n📅 1º Dia: 15 de junho\n\nInstalação do Software R e IDE RStudio\nIntrodução à Estatística Espacial\nFundamentos de Dados de Áreas (centroides, matrizes de pesos)\nAutocorrelação espacial (Moran I global e local, LISA)\nModelos de Regressão Espacial (SAR e SEM)\nDiagnóstico e seleção de modelos\n\n📅 2º Dia: 16 de junho\n\nPrática: Estudo de caso completo com dados reais\nAplicação dos modelos em R (OLS, SAR, SEM)\nVisualização e mapas temáticos\nClusters LISA e interpretação dos resultados",
+    "crumbs": [
+      "Introdução"
+    ]
   },
   {
     "objectID": "index.html#quem-sou-eu",
     "href": "index.html#quem-sou-eu",
     "title": "Introdução",
     "section": "",
-    "text": "👤 Sou Gean Pereira Damaceno\n🎓 Técnico em Administração pelo IFPI (2019).\n🎓 Graduado em Licenciatura em Matemática pelo IFPI (2023).\n🎓 Mestre em Estatística e experimentação agropecuária pela UFLA (2025).\n📚 Estudante de estatística Departamento de Estatística da UFLA.\n💼 Bolsista na Zetta no projeto do Ministério da Gestão e da Inovação em Serviços Públicos MGI.\n\n📧 Email: gedamaceno030@gmail.com 🌐 Website: Site\n\n\nSobre o minicurso\n\n\n\n\n\n\nSobre o minicurso\n\n\n\n📍 Este minicurso apresenta métodos de análise espacial em três contextos principais:\n\n🗺️ Dados agregados por áreas\n\n📌 Processos pontuais\n\n🌐 Geoestatística\n\n🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em regressão e estatística espacial.\n📘 O material é baseado no livro Análise de Dados Espaciais com Aplicações em R (Scalon 2024) e conta com exemplos práticos em cada seção.\n✍️ Como citar este minicurso:\nDamaceno, G. P. (2026). Minicurso de Estatística Espacial em R.\n📥 Baixar citação BibTeX:\nDownload do .bib\n\n\n\n\n\n\n\n\n🎯 Objetivos do minicurso\n\n\n\nOs principais objetivos deste minicurso são:\n\nIntroduzir os conceitos fundamentais da estatística espacial.\nApresentar métodos e técnicas para analisar dados espaciais.\nDemonstrar como implementar esses métodos usando a linguagem de programação R.\nFornecer exemplos práticos e exercícios para consolidar o aprendizado.\n\n\n\n\n\n\n\n\n\n📚 Estrutura do Minicurso (Seções)\n\n\n\n\nSeção A — Instalação e Introdução: pacotes, estrutura de arquivos, como renderizar.\nSeção B — Dados de Áreas: teoria, matrizes de pesos, Moran’s I, SAR/SEM, exemplos em R, exercícios.\nSeção C — Processos Pontuais: Poisson inhomogêneo, LGCP, ajuste com spatstat, exercícios.\nSeção D — Geoestatística: variogramas, ajuste, krigagem universal, predição, exercícios.\nSeção E — Projeto de Pesquisa: sugestões para desenvolver um projeto em estatística espacial.\n\n\n\n\n\nInstale os pacotes necessários para uma análise espacial em R\n\n\nInstalação dos pacotes\ninstall.packages(c(\n  \"spdep\", \"spatialreg\", \"spatstat.core\", \"spatstat.geom\", \"gstat\",\n  \"sp\", \"sf\", \"rgdal\", \"raster\", \"geoR\", \"dplyr\"\n))"
+    "text": "👤 Sou Gean Pereira Damaceno\n🎓 Técnico em Administração pelo IFPI (2019).\n🎓 Graduado em Licenciatura em Matemática pelo IFPI (2023).\n🎓 Mestre em Estatística e Experimentação Agropecuária pela UFLA (2025).\n📚 Estudante de estatística no Departamento de Estatística da UFLA.\n💼 Bolsista na Zetta no projeto do Ministério da Gestão e da Inovação em Serviços Públicos (MGI).\n\n📧 Email: gedamaceno030@gmail.com 🌐 Website: Site\n\n\n\n\n\n\n\n\nImportanteSobre o minicurso\n\n\n\n📍 Este minicurso apresenta métodos de análise de dados de áreas (lattice data), abordando desde os conceitos fundamentais até a aplicação prática de modelos de regressão espacial.\n🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em regressão e estatística espacial.\n📘 O material é baseado no livro Análise de Dados Espaciais com Aplicações em R (Scalon 2024). O conteúdo também se baseia em minha dissertação de mestrado acesse a dissertação aqui.\n✍️ Como citar este minicurso:\nDamaceno, G. P. (2026). Minicurso de Estatística Espacial em R.\n📥 Baixar citação BibTeX:\nDownload do .bib\n\n\n\n\n\n\n\n\nImportante🎯 Objetivos do minicurso\n\n\n\nOs principais objetivos deste minicurso são:\n\nIntroduzir os conceitos fundamentais da estatística espacial aplicada a dados de áreas.\nApresentar métodos de dependência espacial, matrizes de pesos e autocorrelação (Moran).\nDemonstrar modelos de regressão espacial (SAR e SEM) usando a linguagem R.\nFornecer exemplos práticos e exercícios para consolidar o aprendizado.\n\n\n\n\n\n\n\n\n\nNota📚 Estrutura do Minicurso\n\n\n\n📅 1º Dia: 15 de junho\n\nInstalação do Software R e IDE RStudio\nIntrodução à Estatística Espacial\nFundamentos de Dados de Áreas (centroides, matrizes de pesos)\nAutocorrelação espacial (Moran I global e local, LISA)\nModelos de Regressão Espacial (SAR e SEM)\nDiagnóstico e seleção de modelos\n\n📅 2º Dia: 16 de junho\n\nPrática: Estudo de caso completo com dados reais\nAplicação dos modelos em R (OLS, SAR, SEM)\nVisualização e mapas temáticos\nClusters LISA e interpretação dos resultados",
+    "crumbs": [
+      "Introdução"
+    ]
   },
   {
     "objectID": "index.html#tipos-de-dados-espaciais",
     "href": "index.html#tipos-de-dados-espaciais",
     "title": "Introdução",
     "section": "1.1 Tipos de Dados Espaciais",
-    "text": "1.1 Tipos de Dados Espaciais\nN. Cressie (1991) , N. A. C. Cressie (1993) , Gatrell et al. (1996) e Waller e Gotway (2004) classificam os dados espaciais em diferentes tipos, conforme a natureza da distribuição espacial, em três principais categorias:\n\n\n\n\n\n\nTipos de Dados Espaciais\n\n\n\n\nDados de Áreas\nDados Pontuais\nDados Geoestatísticos\n\n\n\n\n1.1.1 Definições\n\n\n\n\n\n\n\n\n\n\nDefinições dos Tipos de Dados Espaciais (Scalon 2024)\n\n\n\n\nDados de áreas, também conhecidos como dados de lattice ou dados de superfice discreta, são dados espaciais indexados a sub-regiões que constituem uma partição de um dominio contínuo.\nDados pontuais surgem quando as próprias localizações do evento é o objeto de interesse.\nDados geoestatísticos, também conhecidos como dados de superfícies contínuas."
+    "text": "1.1 Tipos de Dados Espaciais\nN. Cressie (1991) , N. A. C. Cressie (1993) , Gatrell et al. (1996) e Waller e Gotway (2004) classificam os dados espaciais em diferentes tipos, conforme a natureza da distribuição espacial, em três principais categorias:\n\n\n\n\n\n\nNotaTipos de Dados Espaciais\n\n\n\n\nDados de Áreas\nDados Pontuais\nDados Geoestatísticos\n\n\n\n\n1.1.1 Definições\n\n\n\n\n\n\n\n\n\n\nNotaDefinições dos Tipos de Dados Espaciais (Scalon 2024)\n\n\n\n\nDados de áreas, também conhecidos como dados de lattice ou dados de superfície discreta, são dados espaciais indexados a sub-regiões que constituem uma partição de um domínio contínuo.\nDados pontuais surgem quando as próprias localizações dos eventos são o objeto de interesse.\nDados geoestatísticos, também conhecidos como dados de superfícies contínuas.",
+    "crumbs": [
+      "Introdução"
+    ]
   },
   {
     "objectID": "index.html#onde-aplicar-a-estatística-espacial",
     "href": "index.html#onde-aplicar-a-estatística-espacial",
     "title": "Introdução",
     "section": "1.2 Onde aplicar a estatística espacial?",
-    "text": "1.2 Onde aplicar a estatística espacial?\nA estatística espacial é amplamente aplicada em diversas áreas, incluindo:\n\nEpidemiologia: Análise da distribuição espacial de doenças.\nEcologia: Estudo da distribuição de espécies e habitats.\nGeografia: Análise de padrões espaciais em fenômenos geográficos.\nCiências ambientais: Monitoramento da qualidade do ar e da água.\nPlanejamento urbano: Análise de uso do solo e desenvolvimento urbano.\nAgricultura: Mapeamento de produtividade e gestão de recursos.\nEconomia: Análise de mercados imobiliários e padrões econômicos regionais.\nCiências sociais: Estudo de padrões demográficos e sociais.\nSaúde pública: Análise de acesso a serviços de saúde e distribuição de recursos.\nTransportes: Planejamento de redes de transporte e análise de tráfego.\nClimatologia: Estudo de padrões climáticos e mudanças ambientais.\nRecursos naturais: Gestão e monitoramento de recursos naturais, como florestas e corpos d’água.\n\ne muito mais áreas que envolvem dados geograficamente referenciados.\n\n\n\n\n\n\n\nAgradecimentos e Apoio\n\n\n\n\nMinisterio do desenvolvimento e inovação (MGI): apoio financeiro e na qual faço parte do projeto como colaborador.\nZetta agência de Tecnologia: apoio na divulgação e infraestrutura.\nZetta Lab: suporte técnico e infraestrutura computacional.\nUFLA: Universidade Federal de Lavras, instituição de ensino e pesquisa."
+    "text": "1.2 Onde aplicar a estatística espacial?\nA estatística espacial é amplamente aplicada em diversas áreas, incluindo:\n\nEpidemiologia: Análise da distribuição espacial de doenças.\nEcologia: Estudo da distribuição de espécies e habitats.\nGeografia: Análise de padrões espaciais em fenômenos geográficos.\nCiências ambientais: Monitoramento da qualidade do ar e da água.\nPlanejamento urbano: Análise de uso do solo e desenvolvimento urbano.\nAgricultura: Mapeamento de produtividade e gestão de recursos.\nEconomia: Análise de mercados imobiliários e padrões econômicos regionais.\nCiências sociais: Estudo de padrões demográficos e sociais.\nSaúde pública: Análise de acesso a serviços de saúde e distribuição de recursos.\nTransportes: Planejamento de redes de transporte e análise de tráfego.\nClimatologia: Estudo de padrões climáticos e mudanças ambientais.\nRecursos naturais: Gestão e monitoramento de recursos naturais, como florestas e corpos d’água.\n\ne muito mais áreas que envolvem dados geograficamente referenciados.",
+    "crumbs": [
+      "Introdução"
+    ]
   },
   {
     "objectID": "pontuais.html",
@@ -291,90 +563,349 @@
     "href": "sistema_quarto.html",
     "title": "Sistema Quarto",
     "section": "",
-    "text": "📌 Lembrete importante\n\n\n\nCom o software R e a IDE RStudio já instalados, o próximo passo é a instalação do sistema Quarto. Esta plataforma permite a criação de documentos dinâmicos, apresentações e sites, integrando códigos de linguagens como R, Python e Julia em um único documento."
+    "text": "📌 Lembrete importante\n\n\n\nCom o software R e a IDE RStudio já instalados, o próximo passo é a instalação do sistema Quarto. Esta plataforma permite a criação de documentos dinâmicos, apresentações e sites, integrando códigos de linguagens como R, Python e Julia em um único documento.",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---download-do-quarto",
     "href": "sistema_quarto.html#passo---download-do-quarto",
     "title": "Sistema Quarto",
     "section": "1.1 Passo - Download do Quarto",
-    "text": "1.1 Passo - Download do Quarto"
+    "text": "1.1 Passo - Download do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---download-do-quarto-1",
     "href": "sistema_quarto.html#passo---download-do-quarto-1",
     "title": "Sistema Quarto",
     "section": "1.2 Passo - Download do Quarto",
-    "text": "1.2 Passo - Download do Quarto"
+    "text": "1.2 Passo - Download do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---download-do-quarto-2",
     "href": "sistema_quarto.html#passo---download-do-quarto-2",
     "title": "Sistema Quarto",
     "section": "1.3 Passo - Download do Quarto",
-    "text": "1.3 Passo - Download do Quarto"
+    "text": "1.3 Passo - Download do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---instalação-do-quarto",
     "href": "sistema_quarto.html#passo---instalação-do-quarto",
     "title": "Sistema Quarto",
     "section": "1.4 Passo - Instalação do Quarto",
-    "text": "1.4 Passo - Instalação do Quarto"
+    "text": "1.4 Passo - Instalação do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---instalação-do-quarto-1",
     "href": "sistema_quarto.html#passo---instalação-do-quarto-1",
     "title": "Sistema Quarto",
     "section": "1.5 Passo - Instalação do Quarto",
-    "text": "1.5 Passo - Instalação do Quarto"
+    "text": "1.5 Passo - Instalação do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---instalação-do-quarto-2",
     "href": "sistema_quarto.html#passo---instalação-do-quarto-2",
     "title": "Sistema Quarto",
     "section": "1.6 Passo - Instalação do Quarto",
-    "text": "1.6 Passo - Instalação do Quarto"
+    "text": "1.6 Passo - Instalação do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---instalação-do-quarto-3",
     "href": "sistema_quarto.html#passo---instalação-do-quarto-3",
     "title": "Sistema Quarto",
     "section": "1.7 Passo - Instalação do Quarto",
-    "text": "1.7 Passo - Instalação do Quarto"
+    "text": "1.7 Passo - Instalação do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---instalação-do-quarto-4",
     "href": "sistema_quarto.html#passo---instalação-do-quarto-4",
     "title": "Sistema Quarto",
     "section": "1.8 Passo - Instalação do Quarto",
-    "text": "1.8 Passo - Instalação do Quarto"
+    "text": "1.8 Passo - Instalação do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---instalação-do-quarto-5",
     "href": "sistema_quarto.html#passo---instalação-do-quarto-5",
     "title": "Sistema Quarto",
     "section": "1.9 Passo - Instalação do Quarto",
-    "text": "1.9 Passo - Instalação do Quarto"
+    "text": "1.9 Passo - Instalação do Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---verificando-a-instalação-no-rstudio",
     "href": "sistema_quarto.html#passo---verificando-a-instalação-no-rstudio",
     "title": "Sistema Quarto",
     "section": "1.10 Passo - Verificando a instalação no RStudio",
-    "text": "1.10 Passo - Verificando a instalação no RStudio"
+    "text": "1.10 Passo - Verificando a instalação no RStudio",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---criando-um-documento-quarto",
     "href": "sistema_quarto.html#passo---criando-um-documento-quarto",
     "title": "Sistema Quarto",
     "section": "1.11 Passo - Criando um documento Quarto",
-    "text": "1.11 Passo - Criando um documento Quarto"
+    "text": "1.11 Passo - Criando um documento Quarto",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
   },
   {
     "objectID": "sistema_quarto.html#passo---renderizando-o-documento",
     "href": "sistema_quarto.html#passo---renderizando-o-documento",
     "title": "Sistema Quarto",
     "section": "1.12 Passo - Renderizando o documento",
-    "text": "1.12 Passo - Renderizando o documento\n\n\n\n\n\n\n\nCom o R, RStudio e Quarto instalados, seu ambiente está pronto. Agora você pode criar documentos dinâmicos, apresentações e sites integrando código e texto de forma eficiente.\nApós as instalações, reinicie seu computador para garantir que todas as mudanças sejam aplicadas corretamente."
+    "text": "1.12 Passo - Renderizando o documento\n\n\n\n\n\n\n\nCom o R, RStudio e Quarto instalados, seu ambiente está pronto. Agora você pode criar documentos dinâmicos, apresentações e sites integrando código e texto de forma eficiente.\nApós as instalações, reinicie seu computador para garantir que todas as mudanças sejam aplicadas corretamente.",
+    "crumbs": [
+      "Sistema Quarto"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#o-que-são-dados-de-áreas",
+    "href": "dados_areas.html#o-que-são-dados-de-áreas",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "3.1 O que são dados de áreas?",
+    "text": "3.1 O que são dados de áreas?\nDados de áreas, também conhecidos como dados de lattice ou de superfície discreta, referem-se a variáveis aleatórias associadas a áreas contíguas e disjuntas de uma superfície (Scalon 2024). Essas observações são agregadas em unidades espaciais discretas, como bairros, municípios ou regiões administrativas, que são representadas por polígonos em sistemas de informação geográfica (SIG).\n\n\n\n\n\n\nDica📌 Estado de Minas Gerais\n\n\n\n\n\n\n\n\n\n\n\n\nFigura 1: Mapa de Minas Gerais com Divisão Municipal\n\n\n\n\n\n\n\n\n\n\n\nFigura 2: Mapa dos bairros de Belo Horizonte - MG\n\n\n\n\n\n\n\n\nAs áreas podem ser regulares ou irregulares.\nEm geral, áreas representadas por regiões geográficas como estados e municípios são denominadas de espacialmente irregulares, enquanto áreas representadas por pixels, como imagens de sensoriamento remoto, são denominadas espacialmente regulares formadas por uma grade de espaços iguais(Scalon 2024).",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#a-matriz-de-pesos-espaciais-w-1",
+    "href": "dados_areas.html#a-matriz-de-pesos-espaciais-w-1",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "4.1 A Matriz de Pesos Espaciais (W)",
+    "text": "4.1 A Matriz de Pesos Espaciais (W)\nPara analisar dados de áreas, é necessário definir uma matriz de vizinhança espacial \\(W = [W_{ij}]\\), que descreve a relação espacial entre as áreas. A matriz \\(W\\) é uma matriz quadrada de ordem \\(n \\times n\\), onde \\(n\\) é o número de áreas na região de estudo. Cada elemento \\(W_{ij}\\) da matriz representa a proximidade ou peso entre as áreas \\(i\\) e \\(j\\). A definição dos pesos pode variar dependendo do contexto e do objetivo da análise. A escolha da matriz é arbitrária, mas deve refletir a estrutura espacial dos dados e o fenômeno em estudo (Scalon 2024). Uma das escolhas mais comuns para definir a matriz de pesos é a matriz binária de contiguidade, onde \\(W_{ij} = 1\\) se as áreas \\(i\\) e \\(j\\) são vizinhas (compartilham uma fronteira comum) e \\(W_{ij} = 0\\) caso contrário.\n\n4.1.1 Matriz de contiguidade espacial\nA matriz de contiguidade expressa formalmente a estrutura espacial resultante, onde cada unidade espacial é representada tanto como uma linha quanto como uma coluna. Em cada linha, os elementos de coluna não nulos correspondem às unidades espaciais contíguas, refletindo as interações espaciais entre elas. Por convenção, uma célula não é contígua a si mesma, resultando em elementos diagonais zero (Anselin 1988).\nEssa matriz é uma ferramenta fundamental para caracterizar a dependência espacial e é amplamente utilizada na análise de dados espaciais de área, ajudando a identificar padrões de vizinhança e autocorrelação espacial, elementos essenciais para compreender as dinâmicas espaciais e aprimorar a interpretação dos dados, como detalhado por Anselin (1988).\nMatrizes de contiguidade, como apresentadas na Figura Figura 8, ilustram como a estrutura espacial é representada nas unidades de uma rede regular, evidenciando as interações espaciais entre as áreas. A Figura Figura 8 exibe a matriz de contiguidade detalhada por Anselin (1988), permitindo visualizar as relações de vizinhança entre as unidades espaciais.\n\n\n\n\n\n\n\n\nFigura 8: Tipos de vizinhança espacial.\n\n\n\n\n\nFonte: Anselin (1988)\nComo mostrado na Figura 8, a matriz de contiguidade ilustra a estrutura espacial das unidades geográficas, sendo um dos elementos-chave para a análise de dados espaciais (Anselin 1988). A escolha dessa matriz é fundamental, pois ela determina o tipo de vizinhança a ser considerada, influenciando diretamente os resultados da análise espacial. Dependendo da configuração da matriz de contiguidade, diferentes padrões de interação espacial entre as unidades de análise são destacados, o que pode alterar a interpretação dos dados e os resultados modelados.\nDe acordo com Anselin (1988), a matriz de contiguidade para áreas irregulares pode ser representada a seguir:\n\\[\nw_{ij} =\n\\begin{cases}\n1 & \\text{se a área } i \\text{ e a área } j \\text{ são vizinhas}, \\\\\n0 & \\text{caso contrário},\n\\end{cases}\n\\]\nem que convenciona-se que \\(c_{ii} = 0\\) para todo \\(i\\) (N. Cressie 1991).\nA Figura Figura 9 apresenta a estrutura da matriz binária utilizada para representar áreas irregulares.\n\n\n\n\n\n\n\n\nFigura 9: Representação genérica de uma matriz de pesos espaciais \\(C\\) de ordem \\(n \\times n\\).\n\n\n\n\n\nFonte: Autor (2025).\nDe acordo com Anselin (1988), o uso de uma matriz de pesos espaciais tem como objetivo principal relacionar os valores de uma variável observada em um ponto específico do espaço com os valores dessa variável em outras unidades espaciais ao redor. Esse tipo de relação é essencial para a modelagem de dependência espacial, onde a proximidade geográfica entre as unidades influencia a variável de interesse, permitindo uma compreensão das interações espaciais. Esse conceito de dependência espacial está diretamente relacionado à autocorrelação espacial, que será discutida a seguir.\n\n\n4.1.2 Matriz de proximidade espacial binária\n\n\n\n\n\n\n\nMatriz de contiguidade binária\n\n\nConforme discutido por Scalon (2024), é recomendável padronizar a matriz de pesos espaciais \\(\\mathbf{W}\\) de modo que a soma dos pesos em cada linha seja igual a 1. Essa padronização permite interpretar os pesos espaciais como proporções, além de facilitar a comparação entre diferentes unidades espaciais, especialmente quando o número de vizinhos varia entre as áreas.\nA matriz de contiguidade binária \\(\\mathbf{W}\\) é definida a partir da relação de vizinhança entre as áreas, assumindo valor \\(1\\) quando as áreas \\(i\\) e \\(j\\) são vizinhas e \\(0\\) caso contrário.\n\n\n\n4.1.3 Padronização da matriz de pesos espaciais\nA padronização nas linhas da matriz de pesos espaciais segue a seguinte estrutura:\n\\[\nw_{ij}^{(W)} =\n\\begin{cases}\n\\dfrac{w_{ij}}{\\sum_{j=1}^{n} w_{ij}}, & \\text{se } \\sum_{j=1}^{n} w_{ij} &gt; 0, \\\\\n0, & \\text{caso contrário}.\n\\end{cases}\n\\]\nDe forma matricial, a padronização pode ser expressa como:\n\\[\n\\mathbf{W}^{(W)} = \\mathbf{D}^{-1}\\mathbf{W},\n\\]\nem que \\(\\mathbf{D}\\) é uma matriz diagonal cujos elementos\n\\(d_{ii} = \\sum_{j=1}^{n} w_{ij}\\) representam o número de vizinhos da área \\(i\\).\nNo pacote spdep, essa padronização corresponde à opção style = \"W\" na função nb2mat().\n\n\n\n4.1.4 Matriz de pesos espaciais padronizada nas linhas\n\n\n\n\n\n\n\nMatriz de pesos espaciais padronizada nas linhas\n\n\nA figura acima apresenta a matriz de pesos espaciais padronizada nas linhas, obtida a partir da matriz de contiguidade binária. Nessa representação, cada elemento indica a influência relativa de uma área vizinha sobre a área de referência, respeitando a condição de soma unitária em cada linha.\n\n\n\n4.1.5 Matriz de vizinhança do tipo Queen\n\n\n\n\n\n\n\nMatriz de vizinhança do tipo Queen\n\n\nNa vizinhança do tipo Queen, duas áreas são consideradas vizinhas quando compartilham qualquer ponto de fronteira, seja um lado ou um vértice, resultando em uma estrutura de dependência espacial mais abrangente quando comparada à vizinhança do tipo Rook.\n\n\n4.1.6 Autocorrelação espacial\nA autocorrelação espacial é uma medida que indica o grau de similaridade ou dissimilaridade de uma mesma variável no espaço. A ideia básica da autocorrelação espacial é determinar um indicador que mede a relação de uma determinada variável no espaço, ou seja, como essa variável se comporta numa determinada região geográfica (Manuel 2011).\nOs primeiros passos para a autocorrelação espacial (spatial autocorrelation) foram abordados por Moran (1948) e Geary (1954) que desenvolveram suas medidas de autocorrelação espacial (Anselin 1988).\nPara Anselin (1988), o problema da unidade de área modificável está relacionado à influência da definição das unidades espaciais sobre os resultados estatísticos em análises de dados geográficos. Esse problema pode impactar a interpretação da autocorrelação espacial, uma vez que medidas como o índice global e local de Moran, o índice de Geary e o variograma são sensíveis à maneira como as unidades espaciais são organizadas.\nConforme Druck et al. (2004), a autocorrelação espacial pode ser medida por meio de diversos índices, como o Índice global e local de Moran, o índice de Geary e o variograma. Dentre esses indicadores, o Índice de Moran é o mais amplamente utilizado em análises de dados de áreas, pois oferece uma maneira robusta de quantificar a dependência espacial global, ou seja, a relação entre os valores observados em diferentes unidades espaciais. Esse índice é fundamental para a detecção de padrões espaciais e é apresentado a seguir.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html",
+    "href": "pratica.html",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "",
+    "text": "⏳🧑‍💻🚧\n\n\n\nEsta atividade prática será realizada no 2º Dia do Minicurso (16 de Junho).\n\n\n\n\n\n\nImportanteAguarde para mais!\n\n\n\nTraga seu computador com o R e o RStudio instalados. Os dados e scripts para esta prática serão liberados no momento da aula! 😉",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#software-e-pacotes",
+    "href": "pratica.html#software-e-pacotes",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "1.1 Software e Pacotes",
+    "text": "1.1 Software e Pacotes\nUtilizaremos o R através da IDE RStudio. Os pacotes listados abaixo são essenciais para a manipulação de dados, análise espacial e visualização.\n\n\n\n\n\n\nNota📦 Pacotes R Necessários\n\n\n\nExecute o código abaixo para instalar as bibliotecas:\n\n\nCódigo\ninstall.packages(c(\n    \"sf\", \"sp\", \"spdata\", \"terra\", \"raster\",\n    \"spdep\", \"spatialreg\",\n    \"readxl\", \"dplyr\", \"stringr\", \"janitor\",\n    \"ggplot2\", \"geobr\", \"ggspatial\", \"ggthemes\",\n    \"ggrepel\", \"viridis\", \"tmap\", \"RColorBrewer\", \"car\"\n))\n\n\n\nsf: Para manipulação de dados espaciais (Simple Features).\nsp: Classes e métodos para dados espaciais (formato clássico).\nspdata: Contém conjuntos de dados espaciais para exemplos.\nterra: Para manipulação de dados raster e vetoriais (substituto moderno do rgdal).\nraster: Para manipulação de dados raster (imagens de satélite, modelos de elevação).\nspdep: Para criar matrizes de pesos espaciais e testes de autocorrelação (Moran, Geary).\nspatialreg: Para ajustar modelos espaciais autoregressivos (SAR, SEM).\nreadxl: Para leitura de arquivos Excel (.xls, .xlsx).\ndplyr: Para manipulação e transformação de dados.\nstringr: Para manipulação de strings (limpeza de nomes, extração de texto).\njanitor: Para limpeza de dados (ex: padronização de nomes de colunas).\nggplot2: Para criação de gráficos e visualização de dados.\ngeobr: Para baixar shapefiles oficiais do Brasil (IBGE).\nggspatial: Adiciona elementos espaciais (norte, escala) ao ggplot2.\nggthemes: Temas adicionais para gráficos.\nggrepel: Para rótulos de texto que não se sobrepõem.\nviridis: Paletas de cores acessíveis para visualização de dados.\ntmap: Para criação de mapas temáticos flexíveis.\nRColorBrewer: Para criação de paletas de cores em mapas.\ncar: Para diagnósticos de regressão (ex: VIF, QQ-plots).\n\nObtendo ajuda: Para consultar a documentação de um pacote ou função, utilize os comandos help() ou ?.\n\n\nCódigo\nhelp(sf)\n?sf",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#conjunto-de-dados",
+    "href": "pratica.html#conjunto-de-dados",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "1.2 Conjunto de Dados",
+    "text": "1.2 Conjunto de Dados\n\n\n\n\n\n\nImportante📥 Download dos Dados\n\n\n\nPara acompanhar esta prática, faça o download dos dois conjuntos de dados abaixo e salve-os em uma pasta de sua preferência (por exemplo, dados/):\n\n\n\nArquivo\nDescrição\nDownload\n\n\n\n\nchiku.xlsx\nCasos de Chikungunya por município do Maranhão (2023)\n⬇ Baixar\n\n\ndensidad.xlsx\nDensidade demográfica e população dos municípios\n⬇ Baixar\n\n\n\nFonte dos dados: Os dados de incidência de Chikungunya foram obtidos do DATASUS/SINAN, e os dados de densidade demográfica do IBGE.",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#passo-1-carregamento-de-pacotes",
+    "href": "pratica.html#passo-1-carregamento-de-pacotes",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.1 Passo 1: Carregamento de Pacotes",
+    "text": "2.1 Passo 1: Carregamento de Pacotes\nPrimeiramente, carregamos todas as bibliotecas que serão utilizadas na análise.\n\n\nCódigo\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(stringr)\nlibrary(geobr)\nlibrary(sf)\nlibrary(spdep)\nlibrary(spatialreg)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(ggthemes)\nlibrary(ggrepel)\nlibrary(viridis)\nlibrary(tmap)\nlibrary(car)\nlibrary(janitor)",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#passo-2-carregamento-e-tratamento-dos-dados",
+    "href": "pratica.html#passo-2-carregamento-e-tratamento-dos-dados",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.2 Passo 2: Carregamento e Tratamento dos Dados",
+    "text": "2.2 Passo 2: Carregamento e Tratamento dos Dados\nNesta etapa, importamos os dados de incidência de Chikungunya e os dados de densidade demográfica. É importante realizar a limpeza dos dados, substituindo valores ausentes ou inválidos (como \"-\") por zero.\n\n\n\n\n\n\nAviso⚠️ Atenção\n\n\n\n\n\nAltere o caminho do arquivo read_excel(...) para o local onde você salvou os dados baixados no passo anterior.\n\n\n\n\n\nCódigo\n# Carregando dados de incidência\ndados &lt;- read_excel(\"dados/chiku.xlsx\")\ndados &lt;- janitor::clean_names(dados)\ndados &lt;- dados |&gt;\n    select(cod, muni, x2023_0) |&gt;\n    mutate(x2023_0 = as.numeric(replace(x2023_0, x2023_0 == \"-\", 0)))\n\n# Carregando dados de densidade/população\ndados1 &lt;- read_excel(\"dados/densidad.xlsx\", sheet = 3)\ndados1 &lt;- dados1 |&gt;\n    separate(muni, into = c(\"Municipio\", \"Estado\"), sep = \" \\\\(\") %&gt;%\n    mutate(Estado = gsub(\"\\\\)\", \"\", Estado))\ndados1 &lt;- dados1[-c(1, 219:222), -2] # Limpeza de linhas\n\n\n\n\n\n\n\n\nDica💡 O que fizemos?\n\n\n\n\n\n\nclean_names(): Padroniza os nomes das colunas (minúsculas, sem espaços).\nselect(): Selecionamos apenas as colunas necessárias (código do município, nome e casos em 2023).\nmutate() com replace(): Substituímos valores \"-\" por 0 e convertemos para numérico.\nseparate(): Separamos a coluna muni em “Municipio” e “Estado”.",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#passo-3-obtenção-da-malha-e-unificação",
+    "href": "pratica.html#passo-3-obtenção-da-malha-e-unificação",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.3 Passo 3: Obtenção da Malha e Unificação",
+    "text": "2.3 Passo 3: Obtenção da Malha e Unificação\nAqui utilizamos o pacote geobr para baixar a malha municipal oficial do IBGE e realizamos a junção (join) com os dados de incidência. Em seguida, calculamos a taxa de incidência por 10.000 habitantes.\n\n\nCódigo\n# Baixar malha municipal (MA)\ntodos &lt;- read_municipality(code_muni = \"all\", year = 2022, showProgress = FALSE)\nma &lt;- filter(todos, abbrev_state == \"MA\")\nma &lt;- ma |&gt;\n    mutate(\n        code_muni = str_sub(code_muni, 1, -2),\n        code_muni = as.numeric(code_muni)\n    )\n\n# Unificação (Join)\ndados_juntos &lt;- ma |&gt;\n    left_join(dados, by = c(\"code_muni\" = \"cod\"))\ndados_juntos &lt;- dados_juntos[, -c(4, 5, 7, 8)]\n\ndad &lt;- cbind(dados_juntos, dados1) |&gt;\n    mutate(across(everything(), ~ replace_na(., 0))) |&gt;\n    mutate(popu = as.numeric(popu))\ndad &lt;- dad[, -c(3, 4, 6)]\n\n# Cálculo da taxa de incidência\ndad &lt;- dad |&gt;\n    mutate(\n        inc_100 = (x2023_0 / popu) * 10000, .after = x2023_0,\n        log_inc_100 = log((x2023_0 / popu) * 10000)\n    )\n\n\n\n\n\n\n\n\nDica💡 Por que usamos a taxa de incidência?\n\n\n\n\n\nO número absoluto de casos não é adequado para comparação entre municípios de tamanhos diferentes. A taxa de incidência (casos por 10.000 habitantes) permite uma comparação justa, normalizando pela população de cada município.",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#passo-4-análise-exploratória-e-ols",
+    "href": "pratica.html#passo-4-análise-exploratória-e-ols",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.4 Passo 4: Análise Exploratória e OLS",
+    "text": "2.4 Passo 4: Análise Exploratória e OLS\nAntes de ajustar modelos espaciais, é fundamental realizar uma análise exploratória para entender a distribuição dos dados e identificar possíveis outliers. Em seguida, ajustamos um modelo de regressão linear clássico (OLS) como linha de base para comparação com os modelos espaciais.\n\n\nCódigo\n# Gráficos exploratórios\npar(mfrow = c(1, 2))\nboxplot(dad$inc_100, main = \"Incidência\")\nhist(dad$inc_100, main = \"Histograma\")\n\n# Regressão Linear (OLS)\nmodelo_lm_2 &lt;- lm(inc_100 ~ area_da_unidade + densidade_demográfica, data = dad)\nsummary(modelo_lm_2)\n\n# Diagnóstico\nvif(modelo_lm_2)\nqqPlot(modelo_lm_2$residuals, main = \"QQ Plot OLS\")\n\n\n\n\n\n\n\n\nDica💡 Interpretação\n\n\n\n\n\n\nBoxplot: Identifique a presença de outliers (pontos fora dos bigodes).\nHistograma: Observe se a distribuição é assimétrica, o que é comum em dados epidemiológicos.\nVIF (Variance Inflation Factor): Valores acima de 5 indicam possível multicolinearidade entre as variáveis explicativas.\nQQ-Plot: Desvios da linha reta indicam afastamento da normalidade nos resíduos.",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#passo-5-autocorrelação-espacial",
+    "href": "pratica.html#passo-5-autocorrelação-espacial",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.5 Passo 5: Autocorrelação Espacial",
+    "text": "2.5 Passo 5: Autocorrelação Espacial\nEste é um dos passos mais importantes da análise de dados de áreas. Construímos a matriz de vizinhança do tipo Queen e testamos a presença de autocorrelação espacial com o teste de Moran.\n\n\nCódigo\n# Matriz de vizinhança e pesos\nnb &lt;- poly2nb(dad$geom, queen = TRUE)\nlw &lt;- nb2listw(nb, style = \"W\", zero.policy = TRUE)\n\n# Teste de Moran Global\nmoran.test(dad$inc_100, lw, randomisation = TRUE)\n\n# Diagrama de Dispersão de Moran\nmoran.plot(modelo_lm_2$residual, lw, main = \"Diagrama de Dispersão de Moran (OLS)\")\n\n\n\n\n\n\n\n\nDica💡 Como interpretar o teste de Moran?\n\n\n\n\n\n\np-valor &lt; 0,05: Rejeita-se a hipótese nula de aleatoriedade espacial → há evidência de autocorrelação espacial.\nI &gt; 0: Autocorrelação positiva (municípios vizinhos tendem a ter valores semelhantes).\nI &lt; 0: Autocorrelação negativa (municípios vizinhos tendem a ter valores contrastantes).\nDiagrama de Moran: Os pontos nos quadrantes Q1 (Alto-Alto) e Q2 (Baixo-Baixo) indicam clusters espaciais.",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#passo-6-modelagem-espacial-sar-e-sem",
+    "href": "pratica.html#passo-6-modelagem-espacial-sar-e-sem",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.6 Passo 6: Modelagem Espacial (SAR e SEM)",
+    "text": "2.6 Passo 6: Modelagem Espacial (SAR e SEM)\nCaso o teste de Moran indique autocorrelação espacial significativa, ajustamos modelos que incorporam essa dependência. Aqui comparamos dois modelos:\n\nSAR (Spatial Autoregressive Model): Captura a dependência pela variável resposta defasada espacialmente.\nSEM (Spatial Error Model): Captura a dependência pelo termo de erro.\n\n\n\nCódigo\n# Modelo SAR (Spatial Lag)\nmodelo_sar1 &lt;- lagsarlm(inc_100 ~ area_da_unidade + densidade_demográfica,\n    data = dad, listw = lw, zero.policy = TRUE\n)\nsummary(modelo_sar1)\n\n# Modelo SEM (Spatial Error)\nmodelo_car1 &lt;- errorsarlm(inc_100 ~ area_da_unidade + densidade_demográfica,\n    data = dad, listw = lw, zero.policy = TRUE\n)\nsummary(modelo_car1)\n\n\n\n\n\n\n\n\nDica💡 Como escolher entre SAR e SEM?\n\n\n\n\n\n\nCompare os valores de AIC: o modelo com menor AIC é preferível.\nCompare a log-verossimilhança: valores maiores indicam melhor ajuste.\nNo SAR, verifique se o parâmetro \\(\\rho\\) é significativo (p-valor &lt; 0,05).\nNo SEM, verifique se o parâmetro \\(\\lambda\\) é significativo (p-valor &lt; 0,05).\nSe ambos os parâmetros forem significativos, escolha pelo menor AIC.",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica.html#passo-7-visualização-e-mapas",
+    "href": "pratica.html#passo-7-visualização-e-mapas",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.7 Passo 7: Visualização e Mapas",
+    "text": "2.7 Passo 7: Visualização e Mapas\nFinalizamos a análise visualizando os resultados no mapa. Criamos um mapa de predição do modelo SAR e um mapa de clusters LISA para identificar agrupamentos espaciais significativos.\n\n\nCódigo\n# Adicionando resultados ao mapa\ndad$pred_sar &lt;- modelo_sar1$fitted.values\ndad$resid_sar &lt;- residuals(modelo_sar1)\n\n# Mapa de Predição\nggplot(dad) +\n    geom_sf(aes(fill = pred_sar), color = NA) +\n    scale_fill_viridis_c(option = \"magma\", name = \"Predição SAR\") +\n    annotation_scale(location = \"bl\", width_hint = 0.4) +\n    annotation_north_arrow(location = \"tl\", which_north = \"true\") +\n    theme_minimal()\n\n# Clusters LISA\ndad_sf &lt;- st_as_sf(dad)\nlisa &lt;- localmoran(dad_sf$inc_100, lw)\ndad_sf$lisa_i &lt;- lisa[, 1]\ndad_sf$pval &lt;- lisa[, 5]\n\ndad_sf &lt;- dad_sf %&gt;%\n    mutate(cluster = case_when(\n        lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Alto\",\n        lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Baixo\",\n        lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Baixo\",\n        lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Alto\",\n        TRUE ~ \"Não significativo\"\n    ))\n\ntm_shape(dad_sf) +\n    tm_polygons(\"cluster\", palette = c(\"red\", \"blue\", \"white\", \"lightblue\", \"gray80\"))\n\n\n\n\n\n\n\n\nDica💡 Interpretação dos clusters LISA\n\n\n\n\n\n\n🔴 Alto-Alto: Municípios com alta incidência cercados por vizinhos com alta incidência (hotspots).\n🔵 Baixo-Baixo: Municípios com baixa incidência cercados por vizinhos com baixa incidência (coldspots).\n⬜ Alto-Baixo / Baixo-Alto: Municípios que diferem significativamente de seus vizinhos (outliers espaciais).\n⚪ Não significativo: Não há padrão espacial estatisticamente significativo.",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#tipos-de-dados-espaciais",
+    "href": "dados_areas.html#tipos-de-dados-espaciais",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "",
+    "text": "N. Cressie (1991) , N. A. C. Cressie (1993) , Gatrell et al. (1996) e Waller e Gotway (2004) classificam os dados espaciais em diferentes tipos, conforme a natureza da distribuição espacial, em três principais categorias:\n\n\n\n\n\n\nNotaTipos de Dados Espaciais\n\n\n\n\nDados de Áreas\nDados Pontuais\nDados Geoestatísticos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNotaDefinições dos Tipos de Dados Espaciais (Scalon 2024)\n\n\n\n\nDados de áreas, também conhecidos como dados de lattice ou dados de superfície discreta, são dados espaciais indexados a sub-regiões que constituem uma partição de um domínio contínuo.\nDados pontuais surgem quando as próprias localizações dos eventos são o objeto de interesse.\nDados geoestatísticos, também conhecidos como dados de superfícies contínuas.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "dados_areas.html#onde-aplicar-a-estatística-espacial",
+    "href": "dados_areas.html#onde-aplicar-a-estatística-espacial",
+    "title": "Minicurso: Análise de Dados de Áreas com R",
+    "section": "",
+    "text": "A estatística espacial é amplamente aplicada em diversas áreas, incluindo:\n\nEpidemiologia: Análise da distribuição espacial de doenças.\nEcologia: Estudo da distribuição de espécies e habitats.\nGeografia: Análise de padrões espaciais em fenômenos geográficos.\nCiências ambientais: Monitoramento da qualidade do ar e da água.\nPlanejamento urbano: Análise de uso do solo e desenvolvimento urbano.\nAgricultura: Mapeamento de produtividade e gestão de recursos.\nEconomia: Análise de mercados imobiliários e padrões econômicos regionais.\nCiências sociais: Estudo de padrões demográficos e sociais.\nSaúde pública: Análise de acesso a serviços de saúde e distribuição de recursos.\nTransportes: Planejamento de redes de transporte e análise de tráfego.\nClimatologia: Estudo de padrões climáticos e mudanças ambientais.\nRecursos naturais: Gestão e monitoramento de recursos naturais, como florestas e corpos d’água.\n\ne muito mais áreas que envolvem dados geograficamente referenciados.\n\n\n\n\n\n\n\nNota📌 Introdução\n\n\n\nNeste minicurso, vamos explorar as análises de dados de áreas, desde os conceitos fundamentais até a aplicação prática de modelos de regressão espacial, utilizando o software R.\nA estrutura foi pensada para construir o conhecimento de forma gradual, didática e aplicada.",
+    "crumbs": [
+      "Minicurso: Análise de Dados de Áreas com R"
+    ]
+  },
+  {
+    "objectID": "pratica_real.html",
+    "href": "pratica_real.html",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "",
+    "text": "Nota📌 Sobre esta prática\n\n\n\nNesta seção, colocaremos a teoria em prática com um estudo de caso completo, analisando dados de incidência de Chikungunya nos municípios do Maranhão.\nTodos os blocos de código estão configurados com eval: false, permitindo que você os execute um a um durante o minicurso."
+  },
+  {
+    "objectID": "pratica_real.html#software-e-pacotes",
+    "href": "pratica_real.html#software-e-pacotes",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "1.1 Software e Pacotes",
+    "text": "1.1 Software e Pacotes\nUtilizaremos o R através da IDE RStudio. Os pacotes listados abaixo são essenciais para a manipulação de dados, análise espacial e visualização.\n\n\n\n\n\n\nNota📦 Pacotes R Necessários\n\n\n\nExecute o código abaixo para instalar as bibliotecas:\n\n\nCódigo\ninstall.packages(c(\n    \"sf\", \"sp\", \"spdata\", \"terra\", \"raster\",\n    \"spdep\", \"spatialreg\",\n    \"readxl\", \"dplyr\", \"stringr\", \"janitor\",\n    \"ggplot2\", \"geobr\", \"ggspatial\", \"ggthemes\",\n    \"ggrepel\", \"viridis\", \"tmap\", \"RColorBrewer\", \"car\"\n))\n\n\n\nsf: Para manipulação de dados espaciais (Simple Features).\nsp: Classes e métodos para dados espaciais (formato clássico).\nspdata: Contém conjuntos de dados espaciais para exemplos.\nterra: Para manipulação de dados raster e vetoriais (substituto moderno do rgdal).\nraster: Para manipulação de dados raster (imagens de satélite, modelos de elevação).\nspdep: Para criar matrizes de pesos espaciais e testes de autocorrelação (Moran, Geary).\nspatialreg: Para ajustar modelos espaciais autoregressivos (SAR, SEM).\nreadxl: Para leitura de arquivos Excel (.xls, .xlsx).\ndplyr: Para manipulação e transformação de dados.\nstringr: Para manipulação de strings (limpeza de nomes, extração de texto).\njanitor: Para limpeza de dados (ex: padronização de nomes de colunas).\nggplot2: Para criação de gráficos e visualização de dados.\ngeobr: Para baixar shapefiles oficiais do Brasil (IBGE).\nggspatial: Adiciona elementos espaciais (norte, escala) ao ggplot2.\nggthemes: Temas adicionais para gráficos.\nggrepel: Para rótulos de texto que não se sobrepõem.\nviridis: Paletas de cores acessíveis para visualização de dados.\ntmap: Para criação de mapas temáticos flexíveis.\nRColorBrewer: Para criação de paletas de cores em mapas.\ncar: Para diagnósticos de regressão (ex: VIF, QQ-plots).\n\nObtendo ajuda: Para consultar a documentação de um pacote ou função, utilize os comandos help() ou ?.\n\n\nCódigo\nhelp(sf)\n?sf"
+  },
+  {
+    "objectID": "pratica_real.html#conjunto-de-dados",
+    "href": "pratica_real.html#conjunto-de-dados",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "1.2 Conjunto de Dados",
+    "text": "1.2 Conjunto de Dados\n\n\n\n\n\n\nImportante📥 Download dos Dados\n\n\n\nPara acompanhar esta prática, faça o download dos dois conjuntos de dados abaixo e salve-os em uma pasta de sua preferência (por exemplo, dados/):\n\n\n\nArquivo\nDescrição\nDownload\n\n\n\n\nchiku.xlsx\nCasos de Chikungunya por município do Maranhão (2023)\n⬇ Baixar\n\n\ndensidad.xlsx\nDensidade demográfica e população dos municípios\n⬇ Baixar\n\n\n\nFonte dos dados: Os dados de incidência de Chikungunya foram obtidos do DATASUS/SINAN, e os dados de densidade demográfica do IBGE."
+  },
+  {
+    "objectID": "pratica_real.html#passo-1-carregamento-de-pacotes",
+    "href": "pratica_real.html#passo-1-carregamento-de-pacotes",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.1 Passo 1: Carregamento de Pacotes",
+    "text": "2.1 Passo 1: Carregamento de Pacotes\nPrimeiramente, carregamos todas as bibliotecas que serão utilizadas na análise.\n\n\nCódigo\nlibrary(readxl)\nlibrary(dplyr)\nlibrary(stringr)\nlibrary(geobr)\nlibrary(sf)\nlibrary(spdep)\nlibrary(spatialreg)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(ggthemes)\nlibrary(ggrepel)\nlibrary(viridis)\nlibrary(tmap)\nlibrary(car)\nlibrary(janitor)"
+  },
+  {
+    "objectID": "pratica_real.html#passo-2-carregamento-e-tratamento-dos-dados",
+    "href": "pratica_real.html#passo-2-carregamento-e-tratamento-dos-dados",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.2 Passo 2: Carregamento e Tratamento dos Dados",
+    "text": "2.2 Passo 2: Carregamento e Tratamento dos Dados\nNesta etapa, importamos os dados de incidência de Chikungunya e os dados de densidade demográfica. É importante realizar a limpeza dos dados, substituindo valores ausentes ou inválidos (como \"-\") por zero.\n\n\n\n\n\n\nAviso⚠️ Atenção\n\n\n\n\n\nAltere o caminho do arquivo read_excel(...) para o local onde você salvou os dados baixados no passo anterior.\n\n\n\n\n\nCódigo\n# Carregando dados de incidência\ndados &lt;- read_excel(\"dados/chiku.xlsx\")\ndados &lt;- janitor::clean_names(dados)\ndados &lt;- dados |&gt;\n    select(cod, muni, x2023_0) |&gt;\n    mutate(x2023_0 = as.numeric(replace(x2023_0, x2023_0 == \"-\", 0)))\n\n# Carregando dados de densidade/população\ndados1 &lt;- read_excel(\"dados/densidad.xlsx\", sheet = 3)\ndados1 &lt;- dados1 |&gt;\n    separate(muni, into = c(\"Municipio\", \"Estado\"), sep = \" \\\\(\") %&gt;%\n    mutate(Estado = gsub(\"\\\\)\", \"\", Estado))\ndados1 &lt;- dados1[-c(1, 219:222), -2] # Limpeza de linhas\n\n\n\n\n\n\n\n\nDica💡 O que fizemos?\n\n\n\n\n\n\nclean_names(): Padroniza os nomes das colunas (minúsculas, sem espaços).\nselect(): Selecionamos apenas as colunas necessárias (código do município, nome e casos em 2023).\nmutate() com replace(): Substituímos valores \"-\" por 0 e convertemos para numérico.\nseparate(): Separamos a coluna muni em “Municipio” e “Estado”."
+  },
+  {
+    "objectID": "pratica_real.html#passo-3-obtenção-da-malha-e-unificação",
+    "href": "pratica_real.html#passo-3-obtenção-da-malha-e-unificação",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.3 Passo 3: Obtenção da Malha e Unificação",
+    "text": "2.3 Passo 3: Obtenção da Malha e Unificação\nAqui utilizamos o pacote geobr para baixar a malha municipal oficial do IBGE e realizamos a junção (join) com os dados de incidência. Em seguida, calculamos a taxa de incidência por 10.000 habitantes.\n\n\nCódigo\n# Baixar malha municipal (MA)\ntodos &lt;- read_municipality(code_muni = \"all\", year = 2022, showProgress = FALSE)\nma &lt;- filter(todos, abbrev_state == \"MA\")\nma &lt;- ma |&gt;\n    mutate(\n        code_muni = str_sub(code_muni, 1, -2),\n        code_muni = as.numeric(code_muni)\n    )\n\n# Unificação (Join)\ndados_juntos &lt;- ma |&gt;\n    left_join(dados, by = c(\"code_muni\" = \"cod\"))\ndados_juntos &lt;- dados_juntos[, -c(4, 5, 7, 8)]\n\ndad &lt;- cbind(dados_juntos, dados1) |&gt;\n    mutate(across(everything(), ~ replace_na(., 0))) |&gt;\n    mutate(popu = as.numeric(popu))\ndad &lt;- dad[, -c(3, 4, 6)]\n\n# Cálculo da taxa de incidência\ndad &lt;- dad |&gt;\n    mutate(\n        inc_100 = (x2023_0 / popu) * 10000, .after = x2023_0,\n        log_inc_100 = log((x2023_0 / popu) * 10000)\n    )\n\n\n\n\n\n\n\n\nDica💡 Por que usamos a taxa de incidência?\n\n\n\n\n\nO número absoluto de casos não é adequado para comparação entre municípios de tamanhos diferentes. A taxa de incidência (casos por 10.000 habitantes) permite uma comparação justa, normalizando pela população de cada município."
+  },
+  {
+    "objectID": "pratica_real.html#passo-4-análise-exploratória-e-ols",
+    "href": "pratica_real.html#passo-4-análise-exploratória-e-ols",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.4 Passo 4: Análise Exploratória e OLS",
+    "text": "2.4 Passo 4: Análise Exploratória e OLS\nAntes de ajustar modelos espaciais, é fundamental realizar uma análise exploratória para entender a distribuição dos dados e identificar possíveis outliers. Em seguida, ajustamos um modelo de regressão linear clássico (OLS) como linha de base para comparação com os modelos espaciais.\n\n\nCódigo\n# Gráficos exploratórios\npar(mfrow = c(1, 2))\nboxplot(dad$inc_100, main = \"Incidência\")\nhist(dad$inc_100, main = \"Histograma\")\n\n# Regressão Linear (OLS)\nmodelo_lm_2 &lt;- lm(inc_100 ~ area_da_unidade + densidade_demográfica, data = dad)\nsummary(modelo_lm_2)\n\n# Diagnóstico\nvif(modelo_lm_2)\nqqPlot(modelo_lm_2$residuals, main = \"QQ Plot OLS\")\n\n\n\n\n\n\n\n\nDica💡 Interpretação\n\n\n\n\n\n\nBoxplot: Identifique a presença de outliers (pontos fora dos bigodes).\nHistograma: Observe se a distribuição é assimétrica, o que é comum em dados epidemiológicos.\nVIF (Variance Inflation Factor): Valores acima de 5 indicam possível multicolinearidade entre as variáveis explicativas.\nQQ-Plot: Desvios da linha reta indicam afastamento da normalidade nos resíduos."
+  },
+  {
+    "objectID": "pratica_real.html#passo-5-autocorrelação-espacial",
+    "href": "pratica_real.html#passo-5-autocorrelação-espacial",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.5 Passo 5: Autocorrelação Espacial",
+    "text": "2.5 Passo 5: Autocorrelação Espacial\nEste é um dos passos mais importantes da análise de dados de áreas. Construímos a matriz de vizinhança do tipo Queen e testamos a presença de autocorrelação espacial com o teste de Moran.\n\n\nCódigo\n# Matriz de vizinhança e pesos\nnb &lt;- poly2nb(dad$geom, queen = TRUE)\nlw &lt;- nb2listw(nb, style = \"W\", zero.policy = TRUE)\n\n# Teste de Moran Global\nmoran.test(dad$inc_100, lw, randomisation = TRUE)\n\n# Diagrama de Dispersão de Moran\nmoran.plot(modelo_lm_2$residual, lw, main = \"Diagrama de Dispersão de Moran (OLS)\")\n\n\n\n\n\n\n\n\nDica💡 Como interpretar o teste de Moran?\n\n\n\n\n\n\np-valor &lt; 0,05: Rejeita-se a hipótese nula de aleatoriedade espacial → há evidência de autocorrelação espacial.\nI &gt; 0: Autocorrelação positiva (municípios vizinhos tendem a ter valores semelhantes).\nI &lt; 0: Autocorrelação negativa (municípios vizinhos tendem a ter valores contrastantes).\nDiagrama de Moran: Os pontos nos quadrantes Q1 (Alto-Alto) e Q2 (Baixo-Baixo) indicam clusters espaciais."
+  },
+  {
+    "objectID": "pratica_real.html#passo-6-modelagem-espacial-sar-e-sem",
+    "href": "pratica_real.html#passo-6-modelagem-espacial-sar-e-sem",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.6 Passo 6: Modelagem Espacial (SAR e SEM)",
+    "text": "2.6 Passo 6: Modelagem Espacial (SAR e SEM)\nCaso o teste de Moran indique autocorrelação espacial significativa, ajustamos modelos que incorporam essa dependência. Aqui comparamos dois modelos:\n\nSAR (Spatial Autoregressive Model): Captura a dependência pela variável resposta defasada espacialmente.\nSEM (Spatial Error Model): Captura a dependência pelo termo de erro.\n\n\n\nCódigo\n# Modelo SAR (Spatial Lag)\nmodelo_sar1 &lt;- lagsarlm(inc_100 ~ area_da_unidade + densidade_demográfica,\n    data = dad, listw = lw, zero.policy = TRUE\n)\nsummary(modelo_sar1)\n\n# Modelo SEM (Spatial Error)\nmodelo_car1 &lt;- errorsarlm(inc_100 ~ area_da_unidade + densidade_demográfica,\n    data = dad, listw = lw, zero.policy = TRUE\n)\nsummary(modelo_car1)\n\n\n\n\n\n\n\n\nDica💡 Como escolher entre SAR e SEM?\n\n\n\n\n\n\nCompare os valores de AIC: o modelo com menor AIC é preferível.\nCompare a log-verossimilhança: valores maiores indicam melhor ajuste.\nNo SAR, verifique se o parâmetro \\(\\rho\\) é significativo (p-valor &lt; 0,05).\nNo SEM, verifique se o parâmetro \\(\\lambda\\) é significativo (p-valor &lt; 0,05).\nSe ambos os parâmetros forem significativos, escolha pelo menor AIC."
+  },
+  {
+    "objectID": "pratica_real.html#passo-7-visualização-e-mapas",
+    "href": "pratica_real.html#passo-7-visualização-e-mapas",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "2.7 Passo 7: Visualização e Mapas",
+    "text": "2.7 Passo 7: Visualização e Mapas\nFinalizamos a análise visualizando os resultados no mapa. Criamos um mapa de predição do modelo SAR e um mapa de clusters LISA para identificar agrupamentos espaciais significativos.\n\n\nCódigo\n# Adicionando resultados ao mapa\ndad$pred_sar &lt;- modelo_sar1$fitted.values\ndad$resid_sar &lt;- residuals(modelo_sar1)\n\n# Mapa de Predição\nggplot(dad) +\n    geom_sf(aes(fill = pred_sar), color = NA) +\n    scale_fill_viridis_c(option = \"magma\", name = \"Predição SAR\") +\n    annotation_scale(location = \"bl\", width_hint = 0.4) +\n    annotation_north_arrow(location = \"tl\", which_north = \"true\") +\n    theme_minimal()\n\n# Clusters LISA\ndad_sf &lt;- st_as_sf(dad)\nlisa &lt;- localmoran(dad_sf$inc_100, lw)\ndad_sf$lisa_i &lt;- lisa[, 1]\ndad_sf$pval &lt;- lisa[, 5]\n\ndad_sf &lt;- dad_sf %&gt;%\n    mutate(cluster = case_when(\n        lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Alto\",\n        lisa_i &gt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Baixo\",\n        lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &gt; mean(inc_100) ~ \"Alto-Baixo\",\n        lisa_i &lt; 0 & pval &lt;= 0.05 & inc_100 &lt; mean(inc_100) ~ \"Baixo-Alto\",\n        TRUE ~ \"Não significativo\"\n    ))\n\ntm_shape(dad_sf) +\n    tm_polygons(\"cluster\", palette = c(\"red\", \"blue\", \"white\", \"lightblue\", \"gray80\"))\n\n\n\n\n\n\n\n\nDica💡 Interpretação dos clusters LISA\n\n\n\n\n\n\n🔴 Alto-Alto: Municípios com alta incidência cercados por vizinhos com alta incidência (hotspots).\n🔵 Baixo-Baixo: Municípios com baixa incidência cercados por vizinhos com baixa incidência (coldspots).\n⬜ Alto-Baixo / Baixo-Alto: Municípios que diferem significativamente de seus vizinhos (outliers espaciais).\n⚪ Não significativo: Não há padrão espacial estatisticamente significativo."
+  },
+  {
+    "objectID": "pratica.html#conteúdo-bloqueado-temporariamente",
+    "href": "pratica.html#conteúdo-bloqueado-temporariamente",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "",
+    "text": "Esta atividade prática será realizada no 2º Dia do Minicurso (16 de Junho).\n\n\n\n\n\n\nImportanteAguarde para mais!\n\n\n\nTraga seu computador com o R e o RStudio instalados. Os dados e scripts para esta prática serão liberados no momento da aula! 😉",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
+    ]
   }
 ]

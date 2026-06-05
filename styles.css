@@ -1,77 +1,47 @@
 /* ===============================
-   TÍTULO "Índice"
+   TOC – CORES POR TEMA
 ================================ */
-#toc-title {
-  color: #1f77b4;      /* cor do título */
-  font-weight: 700;
+
+/* ===== Tema claro ===== */
+body[data-bs-theme="light"] #toc-title {
+  color: #000000;
 }
 
-/* ===============================
-   SETINHA (BOTÃO DO TOC)
-================================ */
-button.toc-toggle {
-  color: #1f77b4 !important;   /* seta */
+body[data-bs-theme="light"] nav#TOC a {
+  color: #333333;
 }
 
-button.toc-toggle svg {
-  fill: #1f77b4 !important;    /* SVG da seta */
-}
-
-/* ===============================
-   BARRA VERTICAL DO TOC
-================================ */
-nav#TOC {
-  border-left: 4px solid #1f77b4 !important;
-  padding-left: 10px;
-}
-
-/* ===============================
-   LINKS DO ÍNDICE
-================================ */
-nav#TOC a {
-  color: #333;
-}
-
-nav#TOC a.active {
-  color: #1f77b4;
-  font-weight: 600;
-}
-
-nav#TOC a:hover {
+body[data-bs-theme="light"] nav#TOC a.active,
+body[data-bs-theme="light"] nav#TOC a:hover {
   color: #1f77b4;
 }
 
-#sidebar-book-card {
-  position: fixed;
-  right: 10px;
-  bottom: 20px;
-  width: 150px;
-  padding: 16px 12px;
-  text-align: center;
-  background: white;
-  border-left: 4px solid #0b5394;
-  border-radius: 6px 0 0 6px;
-  box-shadow: -2px 2px 8px rgba(0,0,0,0.15);
-  z-index: 999;
+/* ===== Tema escuro ===== */
+body[data-bs-theme="dark"] #toc-title {
+  color: #ffffff;
 }
 
-#sidebar-book-card img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 10px;
-  border: 2px solid #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  cursor: pointer;
+body[data-bs-theme="dark"] nav#TOC a {
+  color: #ffffff;
 }
 
-#sidebar-book-card a {
-  display: block;
-  color: #0b5394;
-  text-decoration: none;
-  font-size: 0.75rem;
+body[data-bs-theme="dark"] nav#TOC a.active,
+body[data-bs-theme="dark"] nav#TOC a:hover {
+  color: #8ab4ff;
+}
+
+.quarto-page-navigation {
+  margin-top: 2rem;
+}
+
+.quarto-page-navigation a {
   font-weight: 600;
-  margin-top: 8px;
+  color: #0d6efd;
+}
+
+body[data-bs-theme="dark"] .quarto-page-navigation a {
+  color: #8ab4ff;
+}
+.quarto-page-navigation a:hover {
+  text-decoration: underline;
 }

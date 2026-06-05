@@ -1,0 +1,9 @@
+---
+title: "Resumo do minicurso: Estatística Espacial em R usando o sistema Quarto"
+author: "Gean Pereira Damaceno"
+format: docx
+lang: pt
+---
+
+
+O minicurso tem como objetivo apresentar a modelagem em Estatística Espacial, com foco na análise de dados de áreas. A abordagem prática envolve a elaboração de um relatório utilizando o sistema Quarto, integrado à IDE RStudio. O participante será guiado passo a passo na preparação do ambiente, com instruções detalhadas sobre como instalar os softwares R, RStudio e Quarto, aprendendo a gerar relatórios em HTML. Além das etapas computacionais, o minicurso introduzirá os fundamentos teóricos que embasam a dependência espacial e a aplicação de modelos espaciais, como o Modelo Autorregressivo Espacial (SAR) e o Modelo Condicional Autorregressivo (CAR), incluindo a aplicação prática com dados reais em casos de Dengue. Por fim, serão discutidas abordagens e sugestões para lidar com a heterocedasticidade espacial, oferecendo ferramentas para diagnósticos mais robustos.

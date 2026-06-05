@@ -4,20 +4,23 @@ _site/
 _freeze/
 *.Rproj
 *.RData
-Livros/*.pdf
 .Rhistory
 *.zip
 julia-workshop-main/
+
 # Dados locais (não versionar)
 dados/
 *.xlsx
 *.kml
 
-# Pastas de imagens (não versionar)
+# Imagens FONTE (não versionar)
 images/
 imagens/
 
-# Imagens geradas dentro do site
-docs/images/
-docs/imagens/
+# PDFs fonte
+Livros/*.pdf
 
+**/*.quarto_ipynb
+
+# Backup do dia 2 (não enviar ao GitHub antes do tempo)
+pratica_real.qmd

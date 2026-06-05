@@ -8,3 +8,5 @@ bibliography: referencia.bib
 ## Processos Pontuais
 
 Para @scalon2024, um processo pontual espacial **Z** é um mecanismo estocástico que gera um conjunto finito de eventos z($s_i$), i = 1, ..., n de maneira irregular em um espaço euclidiano bidimensional, porém, observados para dentro de uma determinada regição fechada *W*.
+
+::: {.callout-tip title ="Em construção"}

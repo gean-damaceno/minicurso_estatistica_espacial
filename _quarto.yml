@@ -2,19 +2,28 @@ project:
   type: website
   output-dir: docs
   resources:
+    - imagens_espacial/mapas.html
+    - imagens_espacial/*.png
+    - imagens_espacial/*.jpg
     - "Livros/*.jpg"
     - "Livros/*.png"
     - "Livros/*.gif"
+    - "dados/*.xlsx"
 lang: pt
 
 website:
+  page-navigation: true
   title: "Minicurso de Estatística Espacial"
   repo-url: https://github.com/gean-damaceno/minicurso_estatistica_espacial # Isto cria o ícone do GitHub automaticamente
   favicon: logo_book.ico
+  page-footer:
+    left: "© 2026 Gean Pereira Damaceno. Todos os direitos reservados."
+    center: "Material de autoria própria."
+    right: "Minicurso de Estatística Espacial"
 
   navbar:
     logo: logo_book.png
-    title: "Minicurso de Estatística Espacial com R - Congresso de estatística Lima (Peru) de 15 a 18 de junho de 2026"
+    title: "Minicurso de introdução à estatística espacial com R - Congresso de estatística Lima (Peru) de 15 a 18 de junho de 2026"
     background: primary
     search: true
     left:
@@ -28,40 +37,63 @@ website:
             href: sistema_quarto.qmd
           - text: "Dados de Áreas"
             href: dados_areas.qmd
-          - text: "Processos Pontuais"
-            href: processos_pontuais.qmd
-          - text: "Geoestatística"
-            href: geoestatistica.qmd
+          - text: "Prática: Dados de Áreas"
+            href: pratica.qmd
+          # - text: "Processos Pontuais"
+          #   href: processos_pontuais.qmd
+          # - text: "Geoestatística"
+          #   href: geoestatistica.qmd
     right:
     - icon: github
       href: https://github.com/gean-damaceno/minicurso_estatistica_espacial
+      target: _blank
     - icon: linkedin
       href: https://www.linkedin.com/in/gean-damaceno-559569231
+      target: _blank
+    - icon: instagram
+      href: https://www.instagram.com/gean.damaceno?igsh=MnJ1ZDlqZTNpZmNn
+      target: _blank
 
   sidebar:
     style: "docked"
+    contents:
+      - index.qmd
+      - software_R.qmd
+      - sistema_quarto.qmd
+      - dados_areas.qmd
+      - pratica.qmd
+      # - processos_pontuais.qmd
+      # - geoestatistica.qmd
     footer: |
       <div style="text-align: center; margin-top: 1px; padding-top: 1px; border-top: 1px solid #dee2e6;">
         <p style="margin: 0; font-weight: bold; color: #1e90ff;"><strong>APOIO</strong></p>
         <a href="https://ufla.br/" target="_blank" rel="noopener">
-          <img src="Livros/ufla.gif" alt="UFLA" style="width: 180px; margin: -5px;">
+          <img src="Livros/ufla1.png" alt="UFLA" style="width: 160px; margin: 5px;">
         </a>
         <a href="https://www.gov.br/gestao/pt-br" target="_blank" rel="noopener">
-          <img src="Livros/MGI.png" alt="MGI" style="width: 180px; margin: 5px;">
+          <img src="Livros/MGI1.png" alt="MGI" style="width: 150px; margin: 5px;">
         </a>
         <a href="https://agenciazetta.ufla.br/" target="_blank" rel="noopener">
-          <img src="Livros/logo_zetta.png" alt="Zetta" style="width: 170px; margin: 5px;">
+          <img src="Livros/logo_zetta.png" alt="Zetta" style="width: 140px; margin: 5px;">
         </a>
-        <p><strong>Livro base</strong></p>
         <a href="https://www.editoraufla.com.br/product-page/an%C3%A1lise-de-dados-espaciais-com-aplica%C3%A7%C3%B5es-em-r" target="_blank" rel="noopener">
-          <img src="Livros/livros.jpg" alt="EDUFLA" style="width: 120px; margin: 5px;">
-        <p style="color: #1e90ff;"><strong>Análise espaciais em R</strong></p>
-
+          <img src="Livros/livros.jpg" alt="EDUFLA" style="width: 80px; margin: 5px;">
         </a>
+        <a href="https://biometria.ufla.br/index.php/BBJ" target="_blank" rel="noopener">
+          <img src="Livros/biometrics.png" alt="Journal of Biometrics" style="width: 120px; margin: 8px;">
+        </a>
+        <a href="https://des.ufla.br/" target="_blank" rel="noopener">
+          <img src="Livros/depart_estatiss.png" alt="DEs" style="width: 140px; margin: 8px;">
+        </a>
+        <a href="https://www.gov.br/ibama/pt-br" target="_blank" rel="noopener">
+          <img src="Livros/Logo_IBAMA.svg" alt="IBAMA" style="width: 130px; margin: 8px;">
+        </a>
+
       </div>
 
 format:
   html:
+    color-scheme-toggle: true
     theme:
       light: [cosmo, custom-theme.scss]
       dark: [superhero, custom-theme.scss]
@@ -74,6 +106,11 @@ format:
     toc-float: false
     grid:
       body-width: 1200px
+    include-in-header: # oculta a barra lateral
+      text: |
+        <style>
+        .sidebar-menu-container { display: none !important; }
+        </style>
     code-fold: true
     number-sections: true
     embed-resources: true

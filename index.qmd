@@ -13,152 +13,78 @@ resources:
 
 ::::: {.columns style="display: flex; align-items: center; gap: 20px;"}
 ::: {.column width="30%"}
-![](imagens/eu.jpg){width="200" style="border-radius: 50%; border: 2px solid #e3f2fd;" fig-alt="Foto de Gean Pereira Damaceno"}
+![](imagens/eu1.jpeg){width="200" style="border-radius: 50%; border: 2px solid #e3f2fd;" fig-alt="Foto de Gean Pereira Damaceno"}
 :::
 
 ::: {.column width="70%"}
 - 👤 Sou **Gean Pereira Damaceno**
 - 🎓 Técnico em Administração pelo **IFPI** (2019).
 - 🎓 Graduado em Licenciatura em Matemática pelo **IFPI** (2023).
-- 🎓 Mestre em Estatística e experimentação agropecuária pela **UFLA** (2025).
-- 📚 Estudante de estatística **Departamento de Estatística da UFLA**.
-- 💼 Bolsista na **Zetta** no projeto do Ministério da Gestão e da Inovação em Serviços Públicos
- **MGI**.
+- 🎓 Mestre em Estatística e Experimentação Agropecuária pela **UFLA** (2025).
+- 📚 Estudante de estatística no **Departamento de Estatística da UFLA**.
+- 💼 Bolsista na **Zetta** no projeto do Ministério da Gestão e da Inovação em Serviços Públicos (**MGI**).
 
 📧 **Email:** [gedamaceno030@gmail.com](mailto:gedamaceno030@gmail.com)
-🌐 **Website:** [Site](https://gean-damaceno.github.io/site-gean/)
+🌐 **Website:** <a href="https://gean-damaceno.github.io/site-gean/" target="_blank" rel="noopener noreferrer">Site</a>
 :::
 :::::
 
-**Sobre o minicurso**
-
 ::: {.callout-important title="Sobre o minicurso" style="background-color: #e3f2fd;"}
-📍 Este minicurso apresenta métodos de **análise espacial** em três contextos principais:
-
-- 🗺️ **Dados agregados por áreas**  
-- 📌 **Processos pontuais**  
-- 🌐 **Geoestatística**
+📍 Este minicurso apresenta métodos de **análise de dados de áreas** (*lattice data*), abordando desde os conceitos fundamentais até a aplicação prática de modelos de regressão espacial.
 
 🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em **regressão** e **estatística espacial**.
 
-📘 O material é baseado no livro *Análise de Dados Espaciais com Aplicações em R*  [@scalon2024] e conta com exemplos práticos em cada seção.
+📘 O material é baseado no livro *Análise de Dados Espaciais com Aplicações em R* [@scalon2024]. O conteúdo também se baseia em minha dissertação de mestrado <a href="https://repositorio.ufla.br/items/51aa8d00-63be-4e95-8509-a3ed3ee3cde8" target="_blank" rel="noopener noreferrer">acesse a dissertação aqui</a>.
 
 ✍️ **Como citar este minicurso:**  
 
-Damaceno, G. P. (2026). *Minicurso de Estatística Espacial em R*.
+Damaceno, G. P. (2026). *Minicurso de Estatística Espacial em R*.
 
 📥 **Baixar citação BibTeX:**  
-[Download do .bib](./minicurso_estatistica_espacial.bib){download="minicurso_estatistica_espacial.bib"}
+<a href="./minicurso_estatistica_espacial.bib" download="minicurso_estatistica_espacial.bib" target="_blank" rel="noopener noreferrer">Download do .bib</a>
 
 :::
 
 ::: {.callout-important title="🎯 Objetivos do minicurso" style="background-color: #e3f2fd;"}
 Os principais objetivos deste minicurso são:
 
-- Introduzir os conceitos fundamentais da estatística espacial.
-- Apresentar métodos e técnicas para analisar dados espaciais.
-- Demonstrar como implementar esses métodos usando a linguagem de programação R.
+- Introduzir os conceitos fundamentais da estatística espacial aplicada a dados de áreas.
+- Apresentar métodos de dependência espacial, matrizes de pesos e autocorrelação (Moran).
+- Demonstrar modelos de regressão espacial (SAR e SEM) usando a linguagem R.
 - Fornecer exemplos práticos e exercícios para consolidar o aprendizado.
 :::
 
-::: {.callout-note title="📚 Estrutura do Minicurso (Seções)" style="background-color: #e3f2fd;"}
+::: {.callout-note title="📚 Estrutura do Minicurso" style="background-color: #e3f2fd;"}
 
-- **Seção A — Instalação e Introdução:** pacotes, estrutura de arquivos, como renderizar.
-- **Seção B — Dados de Áreas:** teoria, matrizes de pesos, Moran's I, SAR/SEM, exemplos em R, exercícios.
-- **Seção C — Processos Pontuais:** Poisson inhomogêneo, LGCP, ajuste com `spatstat`, exercícios.
-- **Seção D — Geoestatística:** variogramas, ajuste, krigagem universal, predição, exercícios.
-- **Seção E — Projeto de Pesquisa:** sugestões para desenvolver um projeto em estatística espacial.
+📅 **1º Dia: 15 de junho**
+
+- Instalação do Software R e IDE RStudio
+- Introdução à Estatística Espacial
+- Fundamentos de Dados de Áreas (centroides, matrizes de pesos)
+- Autocorrelação espacial (Moran I global e local, LISA)
+- Modelos de Regressão Espacial (SAR e SEM)
+- Diagnóstico e seleção de modelos
+
+📅 **2º Dia: 16 de junho**
+
+- Prática: Estudo de caso completo com dados reais
+- Aplicação dos modelos em R (OLS, SAR, SEM)
+- Visualização e mapas temáticos
+- Clusters LISA e interpretação dos resultados
+
 :::
-
-### Instalação e execução
-
-Instale os pacotes necessários para uma análise espacial em R
-
-```{r}
-#| eval: false
-#| code-fold: true
-#| code-summary: "Instalação dos pacotes"
-install.packages(c(
-  "spdep", "spatialreg", "spatstat.core", "spatstat.geom", "gstat",
-  "sp", "sf", "rgdal", "raster", "geoR", "dplyr"
-))
-```
 
 ---
 
-# Introdução à Estatística Espacial
+# Agradecimentos e Apoio
 
-::::: {.columns style="display: flex; align-items: center; background-color: #f0f4f8; border: 2px solid #d1d9e6; border-radius: 15px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"}
-::: {.column width="50%"}
+::: {.callout-tip title="Agradecimentos e Apoio" style="background-color: #e3fdf3;"}
+- **(MGI):** Ministério do Desenvolvimento e Inovação em Serviços Públicos. <a href="https://www.gov.br/gestao/pt-br" target="_blank" rel="noopener noreferrer">MGI</a>
+- **(Zetta)** Agência UFLA de Inovação em Geotecnologias e Sistemas Inteligentes no Agronegócio. <a href="https://agenciazetta.ufla.br/" target="_blank" rel="noopener noreferrer">Zetta</a>
+- **(ICET):** Instituto de Ciências Exatas e Tecnológicas (Sede). <a href="https://icet.ufla.br/" target="_blank" rel="noopener noreferrer">ICET</a>
+- **(UFLA):** Universidade Federal de Lavras, instituição de ensino e pesquisa. <a href="https://www.ufla.br/" target="_blank" rel="noopener noreferrer">UFLA</a>
+- **(BJB):** Brazilian Journal of Biometrics. <a href="https://biometria.ufla.br/index.php/BBJ" target="_blank" rel="noopener noreferrer">BJB</a>
+- **(DES):** Departamento de Estatística - UFLA. <a href="https://des.ufla.br/" target="_blank" rel="noopener noreferrer">DES</a>
 
-![](images/scalon.jpg){alt="" width="300"}
-:::
-
-::: {.column width="50%"}
-::: {.callout-note title="O que é Estatística Espacial?" style="background-color: #e3f2fd;"}
--   De acordo com @scalon2024, a estatística espacial é um ramo da estatística que se concentra na análise de dados que possuem uma localização, representada por coordenadas geográficas e/ou regiões.
-
--   Conforme descrito por @scalon2024 o que distingue a estatística espacial da clássica é a necessidade de que os dados possuam localizações geográficas, característica ausente na estatística clássica.
-:::
-:::
-:::::
-
-## Tipos de Dados Espaciais
-
-@cressie1991statistics , @cressie1993statistics , @gatrell1996 e @waller2004 classificam os dados espaciais em diferentes tipos, conforme a natureza da distribuição espacial, em três principais categorias:
-
-::: {.callout-note title="Tipos de Dados Espaciais"}
--   Dados de Áreas
--   Dados Pontuais
--   Dados Geoestatísticos
-:::
-
-### Definições
-
-::::: {.columns style="display: flex; align-items: center; background-color: #f0f4f8; border: 2px solid #d1d9e6; border-radius: 15px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"}
-
-::: {.column width="50%"}
-![](images/ge.png){fig-alt="Mapa ilustrando diferentes tipos de dados espaciais: dados de áreas, dados pontuais e dados geoestatísticos." width="422"}
-:::
-
-::: {.column width="50%"}
-
-::: {.callout-note title="Definições dos Tipos de Dados Espaciais [@scalon2024]" style="background-color: #e3f2fd;"}
--   Dados de áreas, também conhecidos como dados de lattice ou dados de superfice discreta, são dados espaciais indexados a sub-regiões que constituem uma partição de um dominio contínuo.
-
--   Dados pontuais surgem quando as próprias localizações do evento é o objeto de interesse.
-
--   Dados geoestatísticos, também conhecidos como dados de superfícies contínuas.
-:::
-
-:::
-:::::
-
-
-## Onde aplicar a estatística espacial?
-A estatística espacial é amplamente aplicada em diversas áreas, incluindo:
-
-- **Epidemiologia:** Análise da distribuição espacial de doenças.
-- **Ecologia:** Estudo da distribuição de espécies e habitats.
-- **Geografia:** Análise de padrões espaciais em fenômenos geográficos.
-- **Ciências ambientais:** Monitoramento da qualidade do ar e da água.
-- **Planejamento urbano:** Análise de uso do solo e desenvolvimento urbano.
-- **Agricultura:** Mapeamento de produtividade e gestão de recursos.
-- **Economia:** Análise de mercados imobiliários e padrões econômicos regionais.
-- **Ciências sociais:** Estudo de padrões demográficos e sociais.
-- **Saúde pública:** Análise de acesso a serviços de saúde e distribuição de recursos.
-- **Transportes:** Planejamento de redes de transporte e análise de tráfego.
-- **Climatologia:** Estudo de padrões climáticos e mudanças ambientais.
-- **Recursos naturais:** Gestão e monitoramento de recursos naturais, como florestas e corpos d'água.
-  
-e muito mais áreas que envolvem dados geograficamente referenciados.
-
----
-
-::: {.callout-tip title="Agradecimentos e Apoio"}
-- **Ministerio do desenvolvimento e inovação (MGI):** apoio financeiro e na qual faço parte do projeto como colaborador.
-- **Zetta** agência de Tecnologia: apoio na divulgação e infraestrutura.
-- **Zetta Lab:** suporte técnico e infraestrutura computacional.
-- **UFLA:** Universidade Federal de Lavras, instituição de ensino e pesquisa.
   
 :::
