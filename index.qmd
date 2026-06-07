@@ -2,6 +2,7 @@
 title: "Introdução"
 author:
   - name: "Gean Pereira Damaceno"
+    url: "http://lattes.cnpq.br/9118771007853418"
     affiliation: "Departamento de Estatística - UFLA"
   - name: "João Domingos Scalon"
     url: "http://lattes.cnpq.br/0962359014791482"
