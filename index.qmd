@@ -7,7 +7,7 @@ author:
   - name: "João Domingos Scalon"
     url: "http://lattes.cnpq.br/0962359014791482"
     affiliation: "Departamento de Estatística - UFLA"
-  - name: "Alex monito nhancoloco"
+  - name: "Alex Monito Nhancoloco"
     url: "http://lattes.cnpq.br/1851789763743579"
     affiliation: "Departamento de Estatística - USP"
 #date: 2026-06-14

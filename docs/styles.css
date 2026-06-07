@@ -42,6 +42,7 @@ body[data-bs-theme="dark"] nav#TOC a:hover {
 body[data-bs-theme="dark"] .quarto-page-navigation a {
   color: #8ab4ff;
 }
+
 .quarto-page-navigation a:hover {
   text-decoration: underline;
 }
@@ -65,4 +66,3 @@ body[data-bs-theme="dark"] .quarto-title-meta-author a {
 body[data-bs-theme="dark"] .quarto-title-meta-author a:hover {
   color: #b0c9ff !important;
 }
-
