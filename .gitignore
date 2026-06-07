@@ -24,3 +24,10 @@ Livros/*.pdf
 
 # Backup do dia 2 (não enviar ao GitHub antes do tempo)
 _pratica_real.qmd
+_pratica_real_files/
+_pratica_real.html
+/dados_shp/
+/dados_novos/
+
+# Scratch folder do agente
+/scratch/

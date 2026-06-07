@@ -5,7 +5,39 @@ lightbox: true
 number-sections: true
 ---
 
-# Introdução à Estatística Espacial
+# Introdução
+
+::: {.callout-note title="📌" style="background-color:#f3f6fb; border-left: 6px solid #3b82f6;"}
+Neste minicurso, vamos explorar as **análises de dados de áreas**, desde os conceitos fundamentais até a aplicação prática de **modelos de regressão espacial**, utilizando o software **R**.
+
+A estrutura foi pensada para construir o conhecimento de forma **gradual, didática e aplicada**.
+:::
+
+# O minicurso será organizado nos seguintes tópicos:
+
+::: {.callout-note title="🗂️ Estrutura do Minicurso"
+style="background-color:#f8fafc; border-left:6px solid #2563eb;"}
+
+Tópicos:
+
+1. **Fundamentos de dados de Áreas**  
+   Introdução aos conceitos básicos, como o que são dados de área e a importância dos centroides.
+
+2. **Dependência espacial**  
+   Exploração da dependência espacial, construção da matriz de pesos e métodos para medir a autocorrelação (Índice de Moran).
+
+3. **Modelos de regressão espacial**  
+   Apresentação dos modelos SAR e SEM, diagnóstico e critérios de seleção.
+
+4. **Exemplos práticos com Interpretação**  
+   Um estudo de caso completo, do tratamento dos dados à visualização e interpretação dos resultados.
+
+5. **Tópicos de sugestão**  
+   Sugestões de modelos robustos para lidar com outliers
+
+:::
+
+# O que é a Estatística Espacial?
 
 ::::: {.columns style="display: flex; align-items: center; background-color: #f0f4f8; border: 2px solid #d1d9e6; border-radius: 15px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"}
 ::: {.column width="50%"}
@@ -73,37 +105,6 @@ A estatística espacial é amplamente aplicada em diversas áreas, incluindo:
 e muito mais áreas que envolvem dados geograficamente referenciados.
 
 ---
-
-::: {.callout-note title="📌 Introdução" style="background-color:#f3f6fb; border-left: 6px solid #3b82f6;"}
-Neste minicurso, vamos explorar as **análises de dados de áreas**, desde os conceitos fundamentais até a aplicação prática de **modelos de regressão espacial**, utilizando o software **R**.
-
-A estrutura foi pensada para construir o conhecimento de forma **gradual, didática e aplicada**.
-:::
-
-
-# O minicurso será organizado nos seguintes tópicos:
-
-::: {.callout-note title="🗂️ Estrutura do Minicurso"
-style="background-color:#f8fafc; border-left:6px solid #2563eb;"}
-
-Tópicos:
-
-1. **Fundamentos de dados de Áreas**  
-   Introdução aos conceitos básicos, como o que são dados de área e a importância dos centroides.
-
-2. **Dependência espacial**  
-   Exploração da dependência espacial, construção da matriz de pesos e métodos para medir a autocorrelação (Índice de Moran).
-
-3. **Modelos de regressão espacial**  
-   Apresentação dos modelos SAR e SEM, diagnóstico e critérios de seleção.
-
-4. **Exemplos práticos com Interpretação**  
-   Um estudo de caso completo, do tratamento dos dados à visualização e interpretação dos resultados.
-
-5. **Tópicos de sugestão**  
-   Sugestões de modelos robustos para lidar com outliers
-
-:::
 
 
 # Parte: Fundamentos de dados de áreas
@@ -378,6 +379,17 @@ Matrizes de contiguidade, como apresentadas na Figura @fig-contiguity_matr, ilus
 ```
 
 Fonte: @anselin1988spatial
+Figura @fig-contiguity_matr. Critérios de contiguidade espacial. 
+- **(Borda comum)** contiguidade por borda comum (rook); 
+- **(Vertice comum)** contiguidade por vértice comum (bishop); 
+- **(Raio)** contiguidade baseada em raio de distância; 
+- **(Segunda ordem)**	contiguidade de primeira, segunda ordem e vizinhos do vizinhos que considera os vizinhos dos vizinhos, vizinhos dos vizinhos dos vizinhos e sucessivamente.
+
+Onde:
+b = vizinhos de 1ª ordem (borda comum)
+c = vizinhos de 2ª ordem diagonal
+d = vizinhos a duas células de distância
+
 
 Como mostrado na @fig-contiguity_matr, a matriz de contiguidade ilustra a estrutura espacial das unidades geográficas, sendo um dos elementos-chave para a análise de dados espaciais [@anselin1988spatial]. A escolha dessa matriz é fundamental, pois ela determina o tipo de vizinhança a ser considerada, influenciando diretamente os resultados da análise espacial. Dependendo da configuração da matriz de contiguidade, diferentes padrões de interação espacial entre as unidades de análise são destacados, o que pode alterar a interpretação dos dados e os resultados modelados.
 

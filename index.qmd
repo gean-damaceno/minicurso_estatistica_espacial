@@ -3,12 +3,19 @@ title: "Introdução"
 author:
   - name: "Gean Pereira Damaceno"
     affiliation: "Departamento de Estatística - UFLA"
+  - name: "João Domingos Scalon"
+    url: "http://lattes.cnpq.br/0962359014791482"
+    affiliation: "Departamento de Estatística - UFLA"
+  - name: "Alex monito nhancoloco"
+    url: "http://lattes.cnpq.br/1851789763743579"
+    affiliation: "Departamento de Estatística - USP"
 #date: 2026-06-14
 lang: pt
 bibliography: referencia.bib
 resources:
   - minicurso_estatistica_espacial.bib
 ---
+
 ## Quem sou eu!
 
 ::::: {.columns style="display: flex; align-items: center; gap: 20px;"}
@@ -23,6 +30,7 @@ resources:
 - 🎓 Mestre em Estatística e Experimentação Agropecuária pela **UFLA** (2025).
 - 📚 Estudante de estatística no **Departamento de Estatística da UFLA**.
 - 💼 Bolsista na **Zetta** no projeto do Ministério da Gestão e da Inovação em Serviços Públicos (**MGI**).
+- 🗺️📊 Grupo de pesquisa em estatística espacial (GPS) da UFLA: <a href="https://gean-damaceno.github.io/GPS/" target="_blank" rel="noopener noreferrer">GPS</a>
 
 📧 **Email:** [gedamaceno030@gmail.com](mailto:gedamaceno030@gmail.com)
 🌐 **Website:** <a href="https://gean-damaceno.github.io/site-gean/" target="_blank" rel="noopener noreferrer">Site</a>
