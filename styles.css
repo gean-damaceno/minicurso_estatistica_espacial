@@ -42,6 +42,7 @@ body[data-bs-theme="dark"] nav#TOC a:hover {
 body[data-bs-theme="dark"] .quarto-page-navigation a {
   color: #8ab4ff;
 }
+
 .quarto-page-navigation a:hover {
   text-decoration: underline;
 }

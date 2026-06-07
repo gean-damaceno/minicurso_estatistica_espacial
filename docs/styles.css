@@ -45,3 +45,24 @@ body[data-bs-theme="dark"] .quarto-page-navigation a {
 .quarto-page-navigation a:hover {
   text-decoration: underline;
 }
+
+/* ===== Links dos autores no cabeçalho ===== */
+.quarto-title-meta-author a {
+  color: #1054e6 !important;
+  text-decoration: underline !important;
+  font-weight: 500;
+}
+
+body[data-bs-theme="dark"] .quarto-title-meta-author a {
+  color: #8ab4ff !important;
+}
+
+.quarto-title-meta-author a:hover {
+  color: #0b3fa3 !important;
+  text-decoration: underline !important;
+}
+
+body[data-bs-theme="dark"] .quarto-title-meta-author a:hover {
+  color: #b0c9ff !important;
+}
+
