@@ -43,7 +43,7 @@ resources:
 
 🎯 O público-alvo inclui estudantes e profissionais com conhecimentos básicos em **regressão** e **estatística espacial**.
 
-📘 O material é baseado no livro *Análise de Dados Espaciais com Aplicações em R* [@scalon2024]. O conteúdo também se baseia em minha dissertação de mestrado <a href="https://repositorio.ufla.br/items/51aa8d00-63be-4e95-8509-a3ed3ee3cde8" target="_blank" rel="noopener noreferrer">acesse a dissertação aqui</a>.
+📘 O material é baseado no livro *Análise de Dados Espaciais com Aplicações em R* [@scalon2024]. No material produzido pelo Alex Monito Nhancololo <a href="https://introducao-a-estatistica-espacial.netlify.app/" target="_blank" rel="noopener noreferrer">acesse o material aqui</a>, e também é baseado na minha dissertação de mestrado <a href="https://repositorio.ufla.br/items/51aa8d00-63be-4e95-8509-a3ed3ee3cde8" target="_blank" rel="noopener noreferrer">acesse a dissertação aqui</a>.
 
 ✍️ **Como citar este minicurso:**  
 
