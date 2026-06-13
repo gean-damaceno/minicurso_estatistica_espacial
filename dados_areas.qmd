@@ -85,6 +85,7 @@ Tópicos:
 :::
 :::::
 
+![](imagens_espacial/mapas.png){fig-alt="Mapa ilustrando diferentes tipos de dados espaciais: dados de áreas, dados pontuais e dados geoestatísticos." width="900" height="500" fig-align="center"}
 
 ## Onde aplicar a estatística espacial?
 A estatística espacial é amplamente aplicada em diversas áreas, incluindo:
