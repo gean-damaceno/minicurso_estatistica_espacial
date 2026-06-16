@@ -1,27 +1,69 @@
 ---
 title: "Prática: Análise de Dados de Áreas com R"
+bibliography: referencia.bib
+lightbox: true
+number-sections: true
 ---
 
-::: {.text-center style="text-align: center; margin-top: 80px; margin-bottom: 80px;"}
+::: {.callout-note title="📌 Sobre esta prática" style="background-color:#f3f6fb; border-left: 6px solid #3b82f6;"}
 
-::: {style="font-size: 80px; margin-bottom: 20px; animation: pulse 2s infinite;"}
-⏳🧑‍💻🚧
+Nesta seção, colocaremos a teoria em prática com um estudo de caso completo, analisando os dados de incidência de **Dengue** nos municípios de **Minas Gerais (2024)**.
 :::
 
-## [Aguarde para mais!]{style="color: #1e90ff; font-weight: bold;"}
+## Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)
 
-[Esta atividade prática será realizada no **2º Dia do Minicurso (16 de Junho)**.]{style="font-size: 1.2em; max-width: 600px; margin: 20px auto; color: #555; display: block;"}
+::: {.callout-important title="📥 Download do Projeto e Dados" style="background-color: #fff3e0;"}
 
-::: {.callout-important title="Importante" style="max-width: 500px; margin: 20px auto; text-align: left;"}
-Traga seu computador com o **R** e o **RStudio** instalados. Os dados e scripts para esta prática serão liberados no momento da aula! 😉
+Para acompanhar esta prática, você pode baixar o projeto completo do RStudio com todos os dados já organizados, ou apenas os arquivos de dados caso já tenha seu próprio projeto.
+
+| Arquivo | Descrição | Download |
+|---|---|:---:|
+| `pratica_estadistica_espacial.zip` | **Projeto RStudio completo** contendo scripts, dados e estrutura de pastas pronta para uso | [⬇ Baixar Projeto Completo](dados/pratica_estadistica_espacial.zip) |
+| `base_final_minas.zip` | Apenas o Shapefile (casos e taxas de dengue 2024, variáveis socioambientais) | [⬇ Baixar Shapefile](dados_shp/base_final_minas.zip) |
+
+: {.striped .hover}
+
 :::
 
+# Estudo de Caso: Incidência de Dengue em Minas Gerais
+
+::: {.callout-tip title="🛠️ Passos para Análise de Dados de Áreas" style="background-color: #e8f5e9;"}
+
+1.  ***Carregamento dos Pacotes***: Inicie carregando todas as bibliotecas necessárias para a análise.
+2.  ***Carregamento e Tratamento dos Dados (Shapefile)***: Importe o arquivo shapefile de Minas Gerais, realize a renomeação das colunas e trate valores ausentes (NAs).
+3.  ***Estrutura Espacial***: Explore a estrutura do objeto espacial e visualize as colunas disponíveis.
+4.  ***Análise Exploratória e LM***: Realize uma análise exploratória da taxa de dengue e ajuste um modelo de regressão clássico (LM).
+5.  ***Autocorrelação Espacial***: Crie a matriz de vizinhança e execute o teste de Moran sobre os resíduos e a taxa.
+6.  ***Modelagem Espacial (SAR e SEM)***: Ajuste modelos autorregressivos espaciais (SAR e SEM) para incorporar a dependência espacial.
+7.  ***Visualização e Mapas***: Produza mapas de predição e clusters LISA dos resultados.
+
+::: 
+
+# Tópicos de Sugestão
+
+::: {.callout-note title="📚 Modelos para lidar com Outliers" style="background-color: #f3e8fd;"}
+
+Para dados espaciais com presença de valores discrepantes (*outliers*), existem alternativas robustas aos modelos clássicos:
+
+- Modelos de Regressão Geograficamente Ponderada (**GWR**)
+- Modelos de Regressão Geograficamente Ponderada Robusta (**RGWR**)
+- Modelos de Regressão Geograficamente Ponderada Multiescala (**MGWR**)
+- Regressão Quantílica Espacial (**SQR**)
+- Modelos de Erro Espacial Robusto (**CAR**) e Autorregressivo Espacial (**SAR**) Robustos
+
 :::
 
-<style>
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-</style>
+::: {.callout-tip title="📱 Pratique Conosco!" style="background-color: #fffde7; text-align: center;"}
+
+**Escaneie o QR Code abaixo para praticar junto conosco!**
+
+![](images/qrcode.png){fig-align="center" width="250px"}
+
+:::
+
+::: {.callout-note title="🎓 Minha Dissertação de Mestrado" style="background-color: #e3f2fd;"}
+- Para quem quiser pesquisar mais sobre o tema, minha dissertação está disponível para consulta no repositório da UFLA:
+
+🔗 **Acesse aqui:** <a href="https://repositorio.ufla.br/items/51aa8d00-63be-4e95-8509-a3ed3ee3cde8" target="_blank" rel="noopener noreferrer">Dissertação</a>
+
+:::

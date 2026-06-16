@@ -234,7 +234,7 @@
     "href": "pratica.html",
     "title": "Prática: Análise de Dados de Áreas com R",
     "section": "",
-    "text": "⏳🧑‍💻🚧\n\n\n\nEsta atividade prática será realizada no 2º Dia do Minicurso (16 de Junho).\n\n\n\n\n\n\nImportanteImportante\n\n\n\nTraga seu computador com o R e o RStudio instalados. Os dados e scripts para esta prática serão liberados no momento da aula! 😉",
+    "text": "Nota📌 Sobre esta prática\n\n\n\nNesta seção, colocaremos a teoria em prática com um estudo de caso completo, analisando os dados de incidência de Dengue nos municípios de Minas Gerais (2024).",
     "crumbs": [
       "Prática: Análise de Dados de Áreas com R"
     ]
@@ -673,6 +673,16 @@
     "text": "1.12 Passo - Renderizando o documento\n\n\n\n\n\n\n\nCom o R, RStudio e Quarto instalados, seu ambiente está pronto. Agora você pode criar documentos dinâmicos, apresentações e sites integrando código e texto de forma eficiente.\nApós as instalações, reinicie seu computador para garantir que todas as mudanças sejam aplicadas corretamente.",
     "crumbs": [
       "Sistema Quarto"
+    ]
+  },
+  {
+    "objectID": "pratica.html#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024",
+    "href": "pratica.html#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024",
+    "title": "Prática: Análise de Dados de Áreas com R",
+    "section": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)",
+    "text": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)\n\n\n\n\n\n\nImportante📥 Download do Projeto e Dados\n\n\n\nPara acompanhar esta prática, você pode baixar o projeto completo do RStudio com todos os dados já organizados, ou apenas os arquivos de dados caso já tenha seu próprio projeto.\n\n\n\nArquivo\nDescrição\nDownload\n\n\n\n\npratica_estadistica_espacial.zip\nProjeto RStudio completo contendo scripts, dados e estrutura de pastas pronta para uso\n⬇ Baixar Projeto Completo\n\n\nbase_final_minas.zip\nApenas o Shapefile (casos e taxas de dengue 2024, variáveis socioambientais)\n⬇ Baixar Shapefile",
+    "crumbs": [
+      "Prática: Análise de Dados de Áreas com R"
     ]
   }
 ]

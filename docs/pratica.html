@@ -47,6 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-d849377a8691ec3d0e1a09e6d9202725.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-9ad87935b43b311774c6572033f99928.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/bootstrap/bootstrap-d849377a8691ec3d0e1a09e6d9202725.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -375,8 +378,16 @@ ul.task-list li input[type="checkbox"] {
 </div></div></nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024" id="toc-conjunto-de-dados-e-projeto-minas-gerais---dengue-2024" class="nav-link active" data-scroll-target="#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024"><span class="header-section-number">0.1</span> Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)</a></li>
+  <li><a href="#estudo-de-caso-incidência-de-dengue-em-minas-gerais" id="toc-estudo-de-caso-incidência-de-dengue-em-minas-gerais" class="nav-link" data-scroll-target="#estudo-de-caso-incidência-de-dengue-em-minas-gerais"><span class="header-section-number">1</span> Estudo de Caso: Incidência de Dengue em Minas Gerais</a></li>
+  <li><a href="#tópicos-de-sugestão" id="toc-tópicos-de-sugestão" class="nav-link" data-scroll-target="#tópicos-de-sugestão"><span class="header-section-number">2</span> Tópicos de Sugestão</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -401,37 +412,139 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="text-center" style="text-align: center; margin-top: 80px; margin-bottom: 80px;">
-<div style="font-size: 80px; margin-bottom: 20px; animation: pulse 2s infinite;">
-<p>⏳🧑‍💻🚧</p>
-</div>
-<section id="aguarde-para-mais" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="aguarde-para-mais"><span class="header-section-number">1</span> <span style="color: #1e90ff; font-weight: bold;">Aguarde para mais!</span></h2>
-<p><span style="font-size: 1.2em; max-width: 600px; margin: 20px auto; color: #555; display: block;">Esta atividade prática será realizada no <strong>2º Dia do Minicurso (16 de Junho)</strong>.</span></p>
-<div class="callout callout-style-default callout-important callout-titled" title="Importante" style="max-width: 500px; margin: 20px auto; text-align: left;">
+<div class="callout callout-style-default callout-note callout-titled" title="📌 Sobre esta prática" style="background-color:#f3f6fb; border-left: 6px solid #3b82f6;">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Importante</span>Importante
+<span class="screen-reader-only">Nota</span>📌 Sobre esta prática
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Traga seu computador com o <strong>R</strong> e o <strong>RStudio</strong> instalados. Os dados e scripts para esta prática serão liberados no momento da aula! 😉</p>
+<p>Nesta seção, colocaremos a teoria em prática com um estudo de caso completo, analisando os dados de incidência de <strong>Dengue</strong> nos municípios de <strong>Minas Gerais (2024)</strong>.</p>
+</div>
+</div>
+<section id="conjunto-de-dados-e-projeto-minas-gerais---dengue-2024" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="conjunto-de-dados-e-projeto-minas-gerais---dengue-2024"><span class="header-section-number">0.1</span> Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="📥 Download do Projeto e Dados" style="background-color: #fff3e0;">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>📥 Download do Projeto e Dados
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para acompanhar esta prática, você pode baixar o projeto completo do RStudio com todos os dados já organizados, ou apenas os arquivos de dados caso já tenha seu próprio projeto.</p>
+<table class="table-striped table-hover caption-top table">
+<thead>
+<tr class="header">
+<th>Arquivo</th>
+<th>Descrição</th>
+<th style="text-align: center;">Download</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>pratica_estadistica_espacial.zip</code></td>
+<td><strong>Projeto RStudio completo</strong> contendo scripts, dados e estrutura de pastas pronta para uso</td>
+<td style="text-align: center;"><a href="dados/pratica_estadistica_espacial.zip">⬇ Baixar Projeto Completo</a></td>
+</tr>
+<tr class="even">
+<td><code>base_final_minas.zip</code></td>
+<td>Apenas o Shapefile (casos e taxas de dengue 2024, variáveis socioambientais)</td>
+<td style="text-align: center;"><a href="dados_shp/base_final_minas.zip">⬇ Baixar Shapefile</a></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </section>
+<section id="estudo-de-caso-incidência-de-dengue-em-minas-gerais" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Estudo de Caso: Incidência de Dengue em Minas Gerais</h1>
+<div class="callout callout-style-default callout-tip callout-titled" title="🛠️ Passos para Análise de Dados de Áreas" style="background-color: #e8f5e9;">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<style>
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-</style>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>🛠️ Passos para Análise de Dados de Áreas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong><em>Carregamento dos Pacotes</em></strong>: Inicie carregando todas as bibliotecas necessárias para a análise.</li>
+<li><strong><em>Carregamento e Tratamento dos Dados (Shapefile)</em></strong>: Importe o arquivo shapefile de Minas Gerais, realize a renomeação das colunas e trate valores ausentes (NAs).</li>
+<li><strong><em>Estrutura Espacial</em></strong>: Explore a estrutura do objeto espacial e visualize as colunas disponíveis.</li>
+<li><strong><em>Análise Exploratória e LM</em></strong>: Realize uma análise exploratória da taxa de dengue e ajuste um modelo de regressão clássico (LM).</li>
+<li><strong><em>Autocorrelação Espacial</em></strong>: Crie a matriz de vizinhança e execute o teste de Moran sobre os resíduos e a taxa.</li>
+<li><strong><em>Modelagem Espacial (SAR e SEM)</em></strong>: Ajuste modelos autorregressivos espaciais (SAR e SEM) para incorporar a dependência espacial.</li>
+<li><strong><em>Visualização e Mapas</em></strong>: Produza mapas de predição e clusters LISA dos resultados.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="tópicos-de-sugestão" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Tópicos de Sugestão</h1>
+<div class="callout callout-style-default callout-note callout-titled" title="📚 Modelos para lidar com Outliers" style="background-color: #f3e8fd;">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>📚 Modelos para lidar com Outliers
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para dados espaciais com presença de valores discrepantes (<em>outliers</em>), existem alternativas robustas aos modelos clássicos:</p>
+<ul>
+<li>Modelos de Regressão Geograficamente Ponderada (<strong>GWR</strong>)</li>
+<li>Modelos de Regressão Geograficamente Ponderada Robusta (<strong>RGWR</strong>)</li>
+<li>Modelos de Regressão Geograficamente Ponderada Multiescala (<strong>MGWR</strong>)</li>
+<li>Regressão Quantílica Espacial (<strong>SQR</strong>)</li>
+<li>Modelos de Erro Espacial Robusto (<strong>CAR</strong>) e Autorregressivo Espacial (<strong>SAR</strong>) Robustos</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="📱 Pratique Conosco!" style="background-color: #fffde7; text-align: center;">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>📱 Pratique Conosco!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Escaneie o QR Code abaixo para praticar junto conosco!</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/qrcode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/qrcode.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="250"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="🎓 Minha Dissertação de Mestrado" style="background-color: #e3f2fd;">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>🎓 Minha Dissertação de Mestrado
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Para quem quiser pesquisar mais sobre o tema, minha dissertação está disponível para consulta no repositório da UFLA:</li>
+</ul>
+<p>🔗 <strong>Acesse aqui:</strong> <a href="https://repositorio.ufla.br/items/51aa8d00-63be-4e95-8509-a3ed3ee3cde8" target="_blank" rel="noopener noreferrer">Dissertação</a></p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -875,6 +988,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
