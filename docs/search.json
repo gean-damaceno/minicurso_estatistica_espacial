@@ -240,11 +240,11 @@
     ]
   },
   {
-    "objectID": "pratica.html#aguarde-para-mais",
-    "href": "pratica.html#aguarde-para-mais",
+    "objectID": "pratica.html#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024",
+    "href": "pratica.html#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024",
     "title": "Prática: Análise de Dados de Áreas com R",
-    "section": "",
-    "text": "Esta atividade prática será realizada no 2º Dia do Minicurso (16 de Junho).\n\n\n\n\n\n\nImportanteImportante\n\n\n\nTraga seu computador com o R e o RStudio instalados. Os dados e scripts para esta prática serão liberados no momento da aula! 😉",
+    "section": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)",
+    "text": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)\n\n\n\n\n\n\nImportante📥 Download do Projeto e Dados\n\n\n\nPara acompanhar esta prática, você pode baixar o projeto completo do RStudio com todos os dados já organizados, ou apenas os arquivos de dados caso já tenha seu próprio projeto.\n\n\n\nArquivo\nDescrição\nDownload\n\n\n\n\npratica_estadistica_espacial.zip\nProjeto RStudio completo contendo scripts, dados e estrutura de pastas pronta para uso\n⬇ Baixar Projeto Completo\n\n\nbase_final_minas.zip\nApenas o Shapefile (casos e taxas de dengue 2024, variáveis socioambientais)\n⬇ Baixar Shapefile",
     "crumbs": [
       "Prática: Análise de Dados de Áreas com R"
     ]
@@ -317,7 +317,7 @@
     "href": "geoestatistica.html#prática-dados-e-análise-exploratória",
     "title": "Geoestatística",
     "section": "3 Prática: Dados e Análise Exploratória",
-    "text": "3 Prática: Dados e Análise Exploratória\nVamos utilizar o pacote geoR, uma referência na área. Usaremos o conjunto de dados ca20 (teor de cálcio no solo), que já vem incluído no pacote.\n\n\nCódigo\n# Instalando e carregando o pacote necessário\nif(!require(geoR)) install.packages(\"geoR\")\n\n\nCarregando pacotes exigidos: geoR\n\n\n--------------------------------------------------------------\n Analysis of Geostatistical Data\n For an Introduction to geoR go to http://www.leg.ufpr.br/geoR\n geoR version 1.9-6 (built on 2025-08-29) is now loaded\n--------------------------------------------------------------\n\n\nCódigo\nlibrary(geoR)\n\n# Carregando dados de exemplo\ndata(ca20) \n\n# Visualização inicial dos pontos e seus valores\n# O tamanho do ponto (cex) é proporcional ao valor do Cálcio\npoints(ca20, main = \"Distribuição Espacial das Amostras (Cálcio)\", \n       col = \"blue\", cex.min = 1, cex.max = 3, \n       xlab = \"Coord X\", ylab = \"Coord Y\")"
+    "text": "3 Prática: Dados e Análise Exploratória\nVamos utilizar o pacote geoR, uma referência na área. Usaremos o conjunto de dados ca20 (teor de cálcio no solo), que já vem incluído no pacote.\n\n\nCódigo\n# Instalando e carregando o pacote necessário\nif(!require(geoR)) install.packages(\"geoR\")\n\n\nLoading required package: geoR\n\n\n--------------------------------------------------------------\n Analysis of Geostatistical Data\n For an Introduction to geoR go to http://www.leg.ufpr.br/geoR\n geoR version 1.9-6 (built on 2025-08-29) is now loaded\n--------------------------------------------------------------\n\n\nCódigo\nlibrary(geoR)\n\n# Carregando dados de exemplo\ndata(ca20) \n\n# Visualização inicial dos pontos e seus valores\n# O tamanho do ponto (cex) é proporcional ao valor do Cálcio\npoints(ca20, main = \"Distribuição Espacial das Amostras (Cálcio)\", \n       col = \"blue\", cex.min = 1, cex.max = 3, \n       xlab = \"Coord X\", ylab = \"Coord Y\")"
   },
   {
     "objectID": "geoestatistica.html#direções-para-verificar-a-anisotropia-espacial",
@@ -673,26 +673,6 @@
     "text": "1.12 Passo - Renderizando o documento\n\n\n\n\n\n\n\nCom o R, RStudio e Quarto instalados, seu ambiente está pronto. Agora você pode criar documentos dinâmicos, apresentações e sites integrando código e texto de forma eficiente.\nApós as instalações, reinicie seu computador para garantir que todas as mudanças sejam aplicadas corretamente.",
     "crumbs": [
       "Sistema Quarto"
-    ]
-  },
-  {
-    "objectID": "pratica.html#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024",
-    "href": "pratica.html#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024",
-    "title": "Prática: Análise de Dados de Áreas com R",
-    "section": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)",
-    "text": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)\n\n\n\n\n\n\nImportante📥 Download do Projeto e Dados\n\n\n\nPara acompanhar esta prática, você pode baixar o projeto completo do RStudio com todos os dados já organizados, ou apenas os arquivos de dados caso já tenha seu próprio projeto.\n\n\n\nArquivo\nDescrição\nDownload\n\n\n\n\npratica_estadistica_espacial.zip\nProjeto RStudio completo contendo scripts, dados e estrutura de pastas pronta para uso\n⬇ Baixar Projeto Completo\n\n\nbase_final_minas.zip\nApenas o Shapefile (casos e taxas de dengue 2024, variáveis socioambientais)\n⬇ Baixar Shapefile",
-    "crumbs": [
-      "Prática: Análise de Dados de Áreas com R"
-    ]
-  },
-  {
-    "objectID": "agradecimentos.html",
-    "href": "agradecimentos.html",
-    "title": "Agradecimentos",
-    "section": "",
-    "text": "0.1 Nossos sinceros agradecimentos\nGostaríamos de expressar a nossa gratidão a todas as instituições, departamentos, editoras e parceiros que forneceram apoio fundamental para a realização deste trabalho e minicurso. Muito obrigado!",
-    "crumbs": [
-      "Agradecimentos"
     ]
   }
 ]
