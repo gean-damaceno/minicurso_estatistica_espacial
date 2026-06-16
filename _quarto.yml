@@ -40,6 +40,8 @@ website:
             href: dados_areas.qmd
           - text: "Prática: Dados de Áreas"
             href: pratica.qmd
+          - text: "Agradecimentos"
+            href: agradecimentos.qmd
           # - text: "Processos Pontuais"
           #   href: processos_pontuais.qmd
           # - text: "Geoestatística"
@@ -63,6 +65,7 @@ website:
       - sistema_quarto.qmd
       - dados_areas.qmd
       - pratica.qmd
+      - agradecimentos.qmd
       # - processos_pontuais.qmd
       # - geoestatistica.qmd
     footer: |
