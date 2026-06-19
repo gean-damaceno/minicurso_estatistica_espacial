@@ -19,7 +19,7 @@ Para acompanhar esta prática, você pode baixar o projeto completo do RStudio c
 | Arquivo | Descrição | Download |
 |---|---|:---:|
 | `pratica_estadistica_espacial.zip` | **Projeto RStudio completo** contendo scripts, dados e estrutura de pastas pronta para uso | [⬇ Baixar Projeto Completo](dados/pratica_estadistica_espacial.zip) |
-| `base_final_minas.zip` | Apenas o Shapefile (casos e taxas de dengue 2024, variáveis socioambientais) | [⬇ Baixar Shapefile](dados_shp/base_final_minas.zip) |
+
 
 : {.striped .hover}
 

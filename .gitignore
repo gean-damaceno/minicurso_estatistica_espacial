@@ -6,6 +6,7 @@ _freeze/
 *.RData
 .Rhistory
 *.zip
+!docs/**/*.zip
 julia-workshop-main/
 
 # Dados locais (não versionar)

@@ -244,7 +244,7 @@
     "href": "pratica.html#conjunto-de-dados-e-projeto-minas-gerais---dengue-2024",
     "title": "Prática: Análise de Dados de Áreas com R",
     "section": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)",
-    "text": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)\n\n\n\n\n\n\nImportante📥 Download do Projeto e Dados\n\n\n\nPara acompanhar esta prática, você pode baixar o projeto completo do RStudio com todos os dados já organizados, ou apenas os arquivos de dados caso já tenha seu próprio projeto.\n\n\n\nArquivo\nDescrição\nDownload\n\n\n\n\npratica_estadistica_espacial.zip\nProjeto RStudio completo contendo scripts, dados e estrutura de pastas pronta para uso\n⬇ Baixar Projeto Completo\n\n\nbase_final_minas.zip\nApenas o Shapefile (casos e taxas de dengue 2024, variáveis socioambientais)\n⬇ Baixar Shapefile",
+    "text": "0.1 Conjunto de Dados e Projeto (Minas Gerais - Dengue 2024)\n\n\n\n\n\n\nImportante📥 Download do Projeto e Dados\n\n\n\nPara acompanhar esta prática, você pode baixar o projeto completo do RStudio com todos os dados já organizados, ou apenas os arquivos de dados caso já tenha seu próprio projeto.\n\n\n\nArquivo\nDescrição\nDownload\n\n\n\n\npratica_estadistica_espacial.zip\nProjeto RStudio completo contendo scripts, dados e estrutura de pastas pronta para uso\n⬇ Baixar Projeto Completo",
     "crumbs": [
       "Prática: Análise de Dados de Áreas com R"
     ]

@@ -9,7 +9,6 @@ project:
     - "Livros/*.png"
     - "Livros/*.gif"
     - "dados/*.xlsx"
-    - "dados_shp/*.zip"
 lang: pt
 
 website:
